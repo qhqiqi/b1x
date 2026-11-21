@@ -12,8 +12,14 @@
 
 import argparse
 import json
+import sys
 from datetime import date
 from pathlib import Path
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
 
 ROOT = Path(__file__).resolve().parents[2]
 SKUS = ROOT / "data" / "structured" / "skus.json"
