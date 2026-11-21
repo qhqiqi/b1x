@@ -1,0 +1,8 @@
+{"case_id":301,"input":"客户要 FMSI 4524","expected":{"shoe_code":"4524Q"}}
+{"case_id":302,"input":"FMSI 4719 有没有","expected":{"shoe_code":"4719ES2"}}
+{"case_id":303,"input":"老外给的 OE 号是 A3222E1383","expected":{"shoe_code":"4524Q"}}
+{"case_id":304,"input":"4524Q","expected":{"shoe_code":"4524Q"}}
+{"case_id":305,"input":"BPW 420X180 的后蹄","expected":{"shoe_code":"BPW180"}}
+{"case_id":306,"input":"SAF 420X178","expected":{"shoe_code":"SMB178"}}
+{"case_id":307,"input":"衬片号 WVA 19094","expected":{"shoe_code":"BPW200"}}
+{"case_id":308,"input":"斯堪尼亚 后轮","expected":{"none":true}}

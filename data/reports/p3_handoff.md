@@ -52,7 +52,13 @@ r = match_query("汉德 35 吨桥，前面那副")
     "axles": [],                 // 识别到的车桥 [{axle_id, brand, model}]
     "car_models": []             // 识别到的车型
   },
-  "mode": "rule",                // rule=有把握 / ask=信息不足要追问 / llm=LLM 兜底
+  "mode": "rule",                // rule=有把握 / ask=信息不足要追问 / export=海外对码命中（见下）
+  "export_matches": [            // ★ 外商场景：FMSI / OE / WVA / 英制尺寸 对回出口册
+    { "score": 0.98, "kind": "american", "fmsi": "4524", "oe_ref": "A3222E1383",
+      "shoe_code": "4524Q", "size": "5", "wva": null, "hardware": null,
+      "page": 32, "verified": false, "why": "FMSI 4524 命中",
+      "source": "kooying catalog p32（出口册图页，OCR）" }
+  ],
   "candidates": [                // Top3 候选，按 score 降序
     {
       "sku_id": "FIT-解放虎威前AABS",
@@ -96,6 +102,7 @@ r = match_query("汉德 35 吨桥，前面那副")
 | 追问 | `followups` | `mode == "ask"` 时把 1–3 条渲染成追问卡片，**不要给候选** |
 | **可溯源徽章** | `verified` | true 才显示「已核对产品册原文」；false 显示「未核对」。**别对 false 的说"可溯源"** |
 | **OCR 来源标** | `ocr` | true 时在出处旁加个小灰标「扫描图页识别」 |
+| **海外对码卡片** | `export_matches` | 外商场景才渲染：一行一个「外商报的码 → 我方型号 → 册子页码」。`mode=="export"` 时**不要**渲染成空结果 |
 
 > 红线：`candidates` 为空时必须走追问界面，不能前端"猜一个"填上。
 
@@ -109,8 +116,12 @@ r = match_query("汉德 35 吨桥，前面那副")
 | 车型+型号数字 | `客户说这车是欧曼 400` | rule，Top1 `FIT-新欧曼400A`（A/B 并列） | 5 ms |
 | **真正的追问场景** | `BPW 空压桥的片子` | **ask**，0 候选（资料包无 BPW） | 5 ms |
 | 内部型号 | `GY1054` | rule，1 候选 `FIT-GY1054` | 5 ms |
+| **海外对码（外商场景）** | `客户要 FMSI 4524` | **export**，0 候选 + 1 条对码 → `4524Q`（p32） | 7 ms |
+| 海外对码·欧系 | `BPW 420X180 的后蹄` | **export** → `BPW180`（p33） | 7 ms |
 
 「只有车型」这条是**加分项不是缺陷**：演示时就按它讲"不瞎猜，主动追问"。
+
+**海外对码（`mode=export`）是老板点名的重点**：外商报的不是中文车型，是 FMSI 号 / OE 号 / WVA 衬片号。这时界面要切到"对码卡片"：左边外商报的码，右边我方型号 + 册子页码，**不要**显示成"没找到"。数据来自出口册 p32–34 图页 OCR，共 34 条，**未人工核对**，话术只能用「册子上写着」，不能说「我们核过」。
 
 ## 5. 你要动的工程（按优先级）
 

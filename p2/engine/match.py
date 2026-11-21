@@ -403,16 +403,29 @@ def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
                     c["confidence"] = "中"
             followups = ["同尺寸有多个材质（%s），客户要哪一种？" % " / ".join(sorted(mats))] + followups
 
+    # 海外对码：外商报 FMSI / OE / WVA / 英制尺寸 → 反查出口册（p32–34）
+    export_matches = []
+    try:
+        from engine.export_refs import lookup as _export_lookup
+        export_matches = _export_lookup(query)
+    except Exception:
+        export_matches = []
+
     result = {
         "query": query,
         "parsed": parsed,
         "mode": "rule",
         "candidates": top_hits if best >= 0.3 else [],
         "followups": followups[:3],
+        "export_matches": export_matches,
         "elapsed_ms": int((time.time() - t0) * 1000),
     }
     if not result["candidates"]:
         result["mode"] = "ask"
+        if export_matches:
+            # 国内没有对口型号，但出口册里有码：不算"没答案"，改走对码口
+            result["mode"] = "export"
+            result["followups"] = []
 
     if use_llm and result["candidates"]:
         result = _llm_refine(query, result, use_llm=True)
@@ -482,7 +495,7 @@ def main(argv=None):
         res["parsed"]["dims"]["raw_text"], res["parsed"]["codes"],
         [a["axle_id"] for a in res["parsed"]["axles"]], res["parsed"]["car_models"]))
     print("模式: %s  (%d ms)" % (res["mode"], res["elapsed_ms"]))
-    if not res["candidates"]:
+    if not res["candidates"] and res["mode"] == "ask":
         print("\n[无可靠候选 —— 按红线只追问，不瞎配]")
     for i, c in enumerate(res["candidates"], 1):
         print("\n%d. %s  [%s]  score=%s" % (i, c["sku_id"], c["confidence"], c["score"]))
@@ -492,6 +505,12 @@ def main(argv=None):
                 print("   证据: %s 第 %s 页  %s" % (e.get("report_id"), e.get("page"), e.get("snippet", "")))
         if c["price"]:
             print("   参考价: %s  MOQ=%s" % (c["price"].get("range_cny"), c["price"].get("moq")))
+    if res.get("export_matches"):
+        print("\n海外对码（出口册 p32–34，未人工核对）:")
+        for e in res["export_matches"]:
+            print(" - %-9s %-8s %s  [p%s] %s" % (
+                e["shoe_code"], e.get("size") or "", e.get("oe_ref") or "",
+                e["page"], e["why"]))
     if res["followups"]:
         print("\n追问:")
         for q in res["followups"]:

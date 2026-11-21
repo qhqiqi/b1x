@@ -264,8 +264,10 @@ function renderResults(value) {
     lines.push('## ' + image.path + '  (' + image.mediaType + ', ' + String(image.bytes) + ' bytes)')
     if (image.ok) {
       lines.push(image.text)
-      if (image.finish === 'length') lines.push('')
-      if (image.finish === 'length') lines.push('_[回答被 maxTokens 截断]_')
+      if (image.finish === 'length') {
+        lines.push('')
+        lines.push('_[回答被 maxTokens 截断]_')
+      }
     } else {
       lines.push('读取失败: ' + image.text)
     }
@@ -288,16 +290,22 @@ function visionReadTool(ctx, settings) {
       'Give one to ' + String(settings.maxImages) + ' image paths (PNG/JPEG/GIF/WebP); paths may be absolute or relative to the working directory.',
       'Pass prompt to aim the extraction (for example "把这张表格转成 TSV" or "这个界面有哪些控件").',
     ].join(' '),
+    // `parameters` reaches the model verbatim, so it must be JSON Schema rather
+    // than the authoring DSL: `required` is a node-level array here.
     parameters: {
-      paths: {
-        type: 'array',
-        items: { type: 'string' },
-        required: true,
-        description: 'Image files to read, in order. Absolute paths, or paths relative to the working directory.',
-      },
-      prompt: {
-        type: 'string',
-        description: 'What to extract or answer about each image. Defaults to a full verbatim transcription plus a layout description.',
+      type: 'object',
+      additionalProperties: false,
+      required: ['paths'],
+      properties: {
+        paths: {
+          type: 'array',
+          items: { type: 'string' },
+          description: 'Image files to read, in order. Absolute paths, or paths relative to the working directory.',
+        },
+        prompt: {
+          type: 'string',
+          description: 'What to extract or answer about each image. Defaults to a full verbatim transcription plus a layout description.',
+        },
       },
     },
     output: {
