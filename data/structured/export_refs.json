@@ -8,7 +8,9 @@
   "hardware": null,
   "page": 32,
   "conf": 0.997,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p32 人工核对一致（FMSI 4524 / OE A3222E1383）",
   "source": "kooying catalog p32（出口册图页，OCR）"
  },
  {
@@ -44,7 +46,9 @@
   "hardware": null,
   "page": 32,
   "conf": 0.949,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p32 人工核对一致（FMSI 4551 / OE A3222T1346）",
   "source": "kooying catalog p32（出口册图页，OCR）"
  },
  {
@@ -116,7 +120,9 @@
   "hardware": "E-10760",
   "page": 32,
   "conf": 0.791,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p32 人工核对一致（FMSI 4719 / E-10760）",
   "source": "kooying catalog p32（出口册图页，OCR）"
  },
  {
@@ -140,7 +146,9 @@
   "hardware": "E-10244",
   "page": 32,
   "conf": 0.868,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p32 人工核对一致（FMSI 4709 / E-10244）",
   "source": "kooying catalog p32（出口册图页，OCR）"
  },
  {
@@ -223,7 +231,9 @@
   "wva": "19032",
   "page": 33,
   "conf": 0.982,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p33 人工核对一致（BPW 420X180 / WVA 19032）",
   "source": "kooying catalog p33（出口册图页，OCR）"
  },
  {
@@ -234,7 +244,9 @@
   "wva": "19094",
   "page": 33,
   "conf": 0.988,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p33 人工核对一致（BPW 420X200 / WVA 19094）",
   "source": "kooying catalog p33（出口册图页，OCR）"
  },
  {
@@ -256,7 +268,9 @@
   "wva": "19574",
   "page": 33,
   "conf": 0.987,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p33 人工核对一致（BPW 300X200 / WVA 19574）",
   "source": "kooying catalog p33（出口册图页，OCR）"
  },
  {
@@ -311,7 +325,9 @@
   "wva": null,
   "page": 34,
   "conf": 0.978,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p34 人工核对一致（SAF 420X180）",
   "source": "kooying catalog p34（出口册图页，OCR）"
  },
  {
@@ -355,7 +371,9 @@
   "wva": null,
   "page": 34,
   "conf": 0.987,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p34 人工核对一致（SAF 420X178 / OE 15025412）",
   "source": "kooying catalog p34（出口册图页，OCR）"
  },
  {
@@ -377,7 +395,9 @@
   "wva": null,
   "page": 34,
   "conf": 0.981,
-  "verified": false,
+  "verified": true,
+  "verified_by": "P2",
+  "notes": "出口册 p34 人工核对一致（SAF 419X178 / OE 15205533）",
   "source": "kooying catalog p34（出口册图页，OCR）"
  },
  {

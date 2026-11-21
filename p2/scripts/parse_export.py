@@ -86,33 +86,53 @@ def parse_page(page: int, kind: str):
     return out
 
 
+def _apply_verified(recs):
+    """人工核对结果存 data/verified_export.json（键 = kind|shoe_code|page），
+    重跑本脚本不会把核对状态冲掉。"""
+    side = ROOT / "data" / "verified_export.json"
+    if not side.exists():
+        return
+    vd = json.loads(side.read_text(encoding="utf-8"))
+    for r in recs:
+        k = "%s|%s|%d" % (r.get("kind"), r.get("shoe_code"), r.get("page"))
+        if k in vd:
+            r["verified"] = True
+            r["verified_by"] = vd[k].get("by")
+            r["notes"] = vd[k].get("notes")
+
+
 def main() -> int:
     recs = parse_page(32, "american") + parse_page(33, "bpw") + parse_page(34, "saf")
+    _apply_verified(recs)
     for r in recs:
-        r["verified"] = False
+        r.setdefault("verified", False)
         r["source"] = "kooying catalog p%d（出口册图页，OCR）" % r["page"]
     OUT.write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding="utf-8")
     md = ["# 出口册对码表（kooying p32–34，OCR 重建）", "",
           "> 这三页是给海外客户的**码对码**表：外商报 FMSI / OE / WVA 号，我们反查自己的刹车蹄与硬件包。",
-          "> 全部来自图页 OCR，**未人工核对（verified=false）**，置信度见每行。", "",
+          "> 全部来自图页 OCR；其中 **10 条已人工对原页核对**（✅），其余未核对，置信度见每行。", "",
           "**已知断点（必须说清）**：这 34 条把「外商号」对到了「出口册型号」（如 4524Q、BPW180），",
           "但这些出口型号**不在国内 217 条 SKU 里**（交叉核对 0/34 命中）。",
           "也就是说：外商报 FMSI → 我们能说'对应 4524Q，册子 p32'；但'4524Q 对应哪个国内型号/多少钱/有没有货'，",
           "资料包里没有这张对照表，**不能编**。要打通，得向客户要「出口编码 ↔ 国内型号」映射。", "",
-          "| 类型 | 关键码 | 尺寸 | 我方型号 | OE 参考 | 硬件包/WVA | 页 | 置信 |",
-          "|---|---|---|---|---|---|---|---|"]
+          "| 类型 | 关键码 | 尺寸 | 我方型号 | OE 参考 | 硬件包/WVA | 页 | 置信 | 判定 |",
+          "|---|---|---|---|---|---|---|---|---|"]
     for r in recs:
-        md.append("| %s | %s | %s | %s | %s | %s | p%s | %.2f |" % (
+        md.append("| %s | %s | %s | %s | %s | %s | p%s | %.2f | %s |" % (
             r["kind"], r.get("fmsi") or r.get("shoe_code"), r.get("width") or r.get("size") or "—",
             r["shoe_code"], r.get("oe_ref") or "—", r.get("hardware") or r.get("wva") or "—",
-            r["page"], r["conf"]))
+            r["page"], r["conf"],
+            "✅ 已核对" if r.get("verified") else "☐ 未核对"))
+    nv = sum(1 for r in recs if r.get("verified"))
+    md.insert(4, "")
+    md.insert(5, "**已人工核对 %d / %d 条**（其余为 OCR 重建，未核对）。" % (nv, len(recs)))
     REPORT.write_text("\n".join(md) + "\n", encoding="utf-8")
     print("解析出 %d 条：美系 %d / BPW %d / SAF %d" % (
         len(recs), sum(1 for r in recs if r["kind"] == "american"),
         sum(1 for r in recs if r["kind"] == "bpw"), sum(1 for r in recs if r["kind"] == "saf")))
     print("->", OUT)
     print("->", REPORT)
-    for r in recs[:10]:
+    for r in recs[:3]:
         print("   ", r)
     return 0
 
