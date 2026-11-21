@@ -51,8 +51,19 @@ class Handler(BaseHTTPRequestHandler):
         u = urlparse(self.path)
         if u.path == "/health":
             return self._json(200, {"ok": True, "skus": len(SKUS), "axles": len(AXLES)})
+        if u.path in ("/", "/index.html"):
+            page = ROOT / "p2" / "web" / "index.html"
+            if not page.exists():
+                return self._json(404, {"error": "演示页 p2/web/index.html 不存在"})
+            body = page.read_bytes()
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
         if u.path != "/match":
-            return self._json(404, {"error": "use /match?q=...  or /health"})
+            return self._json(404, {"error": "use /  (演示页)  or /match?q=...  or /health"})
         q = (parse_qs(u.query).get("q") or [""])[0]
         q = unquote(q).strip()
         if not q:
