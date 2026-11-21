@@ -78,6 +78,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .btn-ghost:hover { border-color: rgba(255, 255, 255, .45); background: rgba(255, 255, 255, .07); }
 .btn-dark { background: var(--ink); color: #fff; }
 .btn-dark:hover { background: #1a2130; }
+.btn-ghost-dark { border-color: #d8dce3; color: #343d4b; background: #fff; }
+.btn-ghost-dark:hover { border-color: #b9c0cb; background: #f7f8fa; }
 .btn-lg { padding: 15px 26px; font-size: 15.5px; }
 .btn-block { width: 100%; }
 
@@ -432,6 +434,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   padding: 18px 22px; background: #fafafb;
 }
 .selector-foot .micro { max-width: 52ch; }
+.selector-foot-actions { display: flex; gap: 10px; align-items: center; flex: 0 0 auto; }
 
 /* ---------- 产品 ---------- */
 .product-card { display: flex; flex-direction: column; }
@@ -639,7 +642,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .results { grid-template-columns: 1fr; }
   .result:nth-child(odd) { border-right: 0; }
   .selector-foot { flex-direction: column; align-items: flex-start; }
-  .selector-foot .btn { width: 100%; }
+  .selector-foot-actions { width: 100%; }
+  .selector-foot-actions .btn { flex: 1 1 0; }
   .grid-4, .grid-3 { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .steps li { padding: 22px 0; }
