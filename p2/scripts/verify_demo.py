@@ -14,6 +14,7 @@ from engine.match import match_query
 from spotcheck import machine_check, page_lines, norm
 
 APPLY = "--apply" in sys.argv
+TOP = 3 if "--top3" in sys.argv else 1
 DEMO = ["147×100×14.5", "汉德 35 吨桥，前面那副", "解放虎威前", "沃胜桥 11.5 吨的，A 款",
         "客户发来旧片，说大概是 151×80×13", "客户说这车是欧曼 400，要前片"]
 spoken = [json.loads(l)["input"] for l in (ROOT / "data" / "eval" / "cases_spoken.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -22,8 +23,8 @@ skus, axles = load_skus(), load_axles()
 idx = {s["sku_id"]: s for s in skus}
 todo = []
 for q in DEMO + spoken:
-    r = match_query(q, skus, axles, top=3)
-    for c in (r["candidates"] or [])[:1]:
+    r = match_query(q, skus, axles, top=TOP)
+    for c in (r["candidates"] or [])[:TOP]:
         s = idx.get(c["sku_id"])
         if s and not (s.get("provenance") or {}).get("verified"):
             todo.append((q, s))
