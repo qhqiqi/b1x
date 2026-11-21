@@ -94,6 +94,7 @@ def main() -> int:
             crossed.append(r)
             continue
 
+        r["raw_dims"] = re.sub(r"[xX*]", "×", r["raw_dims"])
         s = to_sku(r)
         s["provenance"]["extractor"] = "rule_ocr"
         s["provenance"]["notes"] = "OCR 识别（RapidOCR conf %.2f），未人工核对；尺寸格式 外弧×宽度×厚度" % r.get("conf", 0)

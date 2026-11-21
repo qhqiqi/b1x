@@ -6258,7 +6258,7 @@
    "width_mm": 180.0,
    "thickness_mm": 16.5,
    "thickness_alt_mm": 20.5,
-   "raw_text": "195x180×16.5/20.5"
+   "raw_text": "195×180×16.5/20.5"
   },
   "material": "未知",
   "axle_fit": [],
@@ -6271,7 +6271,7 @@
    {
     "report_id": "冠隆产品册",
     "page": 13,
-    "snippet": "北方奔驰 195x180×16.5/20.5",
+    "snippet": "北方奔驰 195×180×16.5/20.5",
     "kind": "产品册"
    }
   ],
@@ -6344,7 +6344,7 @@
    "width_mm": 150.0,
    "thickness_mm": 14.5,
    "thickness_alt_mm": null,
-   "raw_text": "196×150x14.5"
+   "raw_text": "196×150×14.5"
   },
   "material": "未知",
   "axle_fit": [],
@@ -6357,7 +6357,7 @@
    {
     "report_id": "冠隆产品册",
     "page": 13,
-    "snippet": "欧曼 196×150x14.5",
+    "snippet": "欧曼 196×150×14.5",
     "kind": "产品册"
    }
   ],
@@ -8451,7 +8451,7 @@
    "width_mm": 150.0,
    "thickness_mm": 14.5,
    "thickness_alt_mm": null,
-   "raw_text": "181x150×14.5"
+   "raw_text": "181×150×14.5"
   },
   "material": "未知",
   "axle_fit": [],
@@ -8464,7 +8464,7 @@
    {
     "report_id": "冠隆产品册",
     "page": 16,
-    "snippet": "安徽桥 181x150×14.5",
+    "snippet": "安徽桥 181×150×14.5",
     "kind": "产品册"
    }
   ],
