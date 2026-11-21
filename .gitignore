@@ -16,6 +16,7 @@ credentials*
 # 中间渲染图（ocr_pages.py / make_ocr_review.py 可重生成）
 data/images/
 data/reports/ocr_crops/
+data/reports/export_crops/
 data/ocr/_log_*.txt
 
 # Python
