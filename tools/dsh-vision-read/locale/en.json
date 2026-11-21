@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Vision Reader",
+    "description": "Reads the text inside image files through a vision route and returns distilled text, so an agent can work with screenshots, slide renders and video frames even when its own model only accepts text."
+  }
+}

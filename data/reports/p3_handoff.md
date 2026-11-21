@@ -8,7 +8,18 @@
 
 ## 1. 怎么调（两种，任选）
 
-**命令行（做接口壳最快）**
+**起一个本地 HTTP 服务（前端直接 fetch，最省事）**
+
+```powershell
+cd Y:\hks\p2
+python scripts/api_server.py --port 8787
+# GET http://127.0.0.1:8787/match?q=汉德%2035%20吨桥，前面那副
+# GET http://127.0.0.1:8787/health   → {"ok":true,"skus":217,"axles":7}
+```
+
+只用标准库（不用装 FastAPI），已开 CORS，单次 3–6 ms。
+
+**命令行（调试用）**
 
 ```powershell
 cd Y:\hks\p2
