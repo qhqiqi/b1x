@@ -166,9 +166,12 @@ def to_sku(row: dict) -> dict:
     return {
         "sku_id": sid, "brand": "冠英", "category": "鼓式",
         "fit_name": name, "position": pos, "abs": is_abs, "part_no": part,
-        "dims": {"width_mm": row["width_mm"], "length_mm": row["length_mm"],
-                 "thickness_mm": row["thickness_mm"], "thickness_alt_mm": row["thickness_alt_mm"],
-                 "outer_dia_mm": None, "raw_text": row["raw_dims"]},
+        # 产品册表头（中/英）：外弧 × 宽度 × 厚度 = outer arch / width / thickness
+        "dims": {"arc_mm": row.get("arc_mm", row.get("width_mm")),
+                 "width_mm": row.get("width_mm", row.get("length_mm")),
+                 "thickness_mm": row.get("thickness_mm"),
+                 "thickness_alt_mm": row.get("thickness_alt_mm"),
+                 "raw_text": row["raw_dims"]},
         "material": "未知",
         "axle_fit": axle,
         "cross_refs": [],
@@ -179,7 +182,7 @@ def to_sku(row: dict) -> dict:
         "provenance": {"source_file": row["file"], "source_page": row["page"],
                        "extracted_at": "2026-11-21", "extractor": "rule_coord",
                        "verified": False, "verified_by": None,
-                       "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"},
+                       "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"},
         "_placeholder": False,
     }
 

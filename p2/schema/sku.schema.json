@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "冠英 SKU 主数据 v1.1",
-  "description": "v1.1（2026-11-21 15:45 修订）：按真实产品册口径改为 宽×长×厚(/备选厚)，新增 fit_name/position/abs/part_no。字段名冻结，只增不改。",
+  "title": "冠英 SKU 主数据 v1.2",
+  "description": "v1.2（11-21 17:10）：尺寸口径按产品册表头原文更正为「外弧 × 宽度 × 厚度」（英文 outer arch / width / thickness）。v1.1 误作「宽×长×厚」。",
   "type": "object",
   "required": [
     "sku_id",
@@ -14,7 +14,7 @@
   "properties": {
     "sku_id": {
       "type": "string",
-      "description": "主键：FIT-<适配名> 或 GY 型号"
+      "description": "主键：FIT-<适配名>，同名不同规格加 -2/-3 后缀"
     },
     "brand": {
       "type": "string",
@@ -29,15 +29,14 @@
     },
     "fit_name": {
       "type": "string",
-      "description": "产品册上的适配名：解放虎威前A / 汉德桥35T前 / GY1054（这是客户嘴里的东西，也是检索主键）"
+      "description": "产品册适配名：解放虎威前A / 汉德桥35T前 / GY1054"
     },
     "position": {
       "enum": [
         "前",
         "后",
         "未知"
-      ],
-      "description": "前片/后片"
+      ]
     },
     "abs": {
       "type": "boolean",
@@ -48,46 +47,49 @@
         "string",
         "null"
       ],
-      "description": "冠英型号，如 GY1054；适配名类记录为 null"
+      "description": "冠英型号 GY1054/GYS-143；适配名类记录为 null"
     },
     "dims": {
       "type": "object",
-      "description": "产品册口径：宽×长×厚(/备选厚)，单位 mm",
+      "description": "产品册表头：外弧×宽度×厚度（/备选厚），单位 mm。外弧 = outer arch，是沿鼓面弧长方向的名义尺寸，不是直径。",
       "required": [
         "raw_text"
       ],
       "properties": {
+        "arc_mm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "外弧（outer arch）"
+        },
         "width_mm": {
           "type": [
             "number",
             "null"
-          ]
-        },
-        "length_mm": {
-          "type": [
-            "number",
-            "null"
-          ]
+          ],
+          "description": "宽度（width，轴向）"
         },
         "thickness_mm": {
           "type": [
             "number",
             "null"
-          ]
+          ],
+          "description": "厚度（thickness）"
         },
         "thickness_alt_mm": {
           "type": [
             "number",
             "null"
           ],
-          "description": "原文 14/15.5 里的备选厚"
+          "description": "原文 14/15.5 的备选厚"
         },
         "outer_dia_mm": {
           "type": [
             "number",
             "null"
           ],
-          "description": "鼓径/外径，仅鼓体类产品有"
+          "description": "鼓径/直径，仅图纸类产品有，产品表里为空"
         },
         "raw_text": {
           "type": "string",
@@ -103,11 +105,11 @@
         "石墨",
         "其他",
         "未知"
-      ],
-      "description": "产品册未逐条标注，默认未知"
+      ]
     },
     "friction_coef": {
       "type": "object",
+      "description": "型号级摩擦系数：资料包里没有，留空。企业级指标见 data/structured/benchmark.json",
       "properties": {
         "nominal": {
           "type": [
@@ -167,7 +169,7 @@
     },
     "cross_refs": {
       "type": "array",
-      "description": "竞品/OE/旧编码，多对多；产品册里没有，靠客户反馈与历史询价补",
+      "description": "竞品/OE/旧编码，资料包里没有，靠客户反馈补",
       "items": {
         "type": "object",
         "required": [
@@ -207,7 +209,7 @@
     },
     "extras": {
       "type": "object",
-      "description": "产品册附列：数量/宽度/孔数，位置不固定，原样保留"
+      "description": "产品册附列：孔数/数量，位置不固定，原样保留"
     },
     "evidence": {
       "type": "array",

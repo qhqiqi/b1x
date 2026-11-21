@@ -13,6 +13,10 @@
 *.key
 credentials*
 
+# 中间渲染图（ocr_pages.py 可重生成）
+data/images/
+data/ocr/_log_*.txt
+
 # Python
 __pycache__/
 *.pyc

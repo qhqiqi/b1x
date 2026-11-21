@@ -8,11 +8,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 165.0,
-      "length_mm": 200.0,
+      "arc_mm": 165.0,
+      "width_mm": 200.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": 16.8,
-      "outer_dia_mm": null,
       "raw_text": "165×200×12.5/16.8"
     },
     "material": "未知",
@@ -47,7 +46,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -60,11 +59,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 214.0,
-      "length_mm": 200.0,
+      "arc_mm": 214.0,
+      "width_mm": 200.0,
       "thickness_mm": 11.0,
       "thickness_alt_mm": 16.8,
-      "outer_dia_mm": null,
       "raw_text": "214×200×11/16.8"
     },
     "material": "未知",
@@ -97,7 +95,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -110,11 +108,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 149.0,
-      "length_mm": 80.0,
+      "arc_mm": 149.0,
+      "width_mm": 80.0,
       "thickness_mm": 11.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "149×80×11"
     },
     "material": "未知",
@@ -140,7 +137,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -153,11 +150,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
+      "arc_mm": 150.0,
       "width_mm": 150.0,
-      "length_mm": 150.0,
       "thickness_mm": 9.5,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "150×150×9.5/13.5"
     },
     "material": "未知",
@@ -183,7 +179,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -196,11 +192,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 191.0,
-      "length_mm": 160.0,
+      "arc_mm": 191.0,
+      "width_mm": 160.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": 17.0,
-      "outer_dia_mm": null,
       "raw_text": "191×160×14/17"
     },
     "material": "未知",
@@ -226,7 +221,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -239,11 +234,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 230.0,
-      "length_mm": 160.0,
+      "arc_mm": 230.0,
+      "width_mm": 160.0,
       "thickness_mm": 8.8,
       "thickness_alt_mm": 17.0,
-      "outer_dia_mm": null,
       "raw_text": "230×160×8.8/17"
     },
     "material": "未知",
@@ -269,7 +263,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -282,11 +276,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 148.0,
-      "length_mm": 100.0,
+      "arc_mm": 148.0,
+      "width_mm": 100.0,
       "thickness_mm": 10.0,
       "thickness_alt_mm": 15.0,
-      "outer_dia_mm": null,
       "raw_text": "148×100×10/15"
     },
     "material": "未知",
@@ -312,7 +305,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -325,11 +318,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 201.0,
-      "length_mm": 160.0,
+      "arc_mm": 201.0,
+      "width_mm": 160.0,
       "thickness_mm": 15.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "201×160×15.5"
     },
     "material": "未知",
@@ -355,7 +347,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -368,11 +360,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 211.0,
-      "length_mm": 220.0,
+      "arc_mm": 211.0,
+      "width_mm": 220.0,
       "thickness_mm": 15.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "211×220×15.5"
     },
     "material": "未知",
@@ -398,7 +389,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -411,11 +402,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 100.0,
+      "arc_mm": 150.0,
+      "width_mm": 100.0,
       "thickness_mm": 15.0,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "150×100×15/16.5"
     },
     "material": "未知",
@@ -441,7 +431,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -454,11 +444,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 151.0,
-      "length_mm": 100.0,
+      "arc_mm": 151.0,
+      "width_mm": 100.0,
       "thickness_mm": 10.0,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "151×100×10/16"
     },
     "material": "未知",
@@ -484,7 +473,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -497,11 +486,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 206.0,
-      "length_mm": 220.0,
+      "arc_mm": 206.0,
+      "width_mm": 220.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": 16.8,
-      "outer_dia_mm": null,
       "raw_text": "206×220×12.5/16.8"
     },
     "material": "未知",
@@ -529,7 +517,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -542,11 +530,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 205.0,
-      "length_mm": 178.0,
+      "arc_mm": 205.0,
+      "width_mm": 178.0,
       "thickness_mm": 15.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "205×178×15.5"
     },
     "material": "未知",
@@ -572,7 +559,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -585,11 +572,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 142.0,
-      "length_mm": 80.0,
+      "arc_mm": 142.0,
+      "width_mm": 80.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "142×80×12"
     },
     "material": "未知",
@@ -615,7 +601,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -628,11 +614,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 148.0,
-      "length_mm": 80.0,
+      "arc_mm": 148.0,
+      "width_mm": 80.0,
       "thickness_mm": 11.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "148×80×11"
     },
     "material": "未知",
@@ -658,7 +643,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -671,11 +656,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 142.0,
-      "length_mm": 80.0,
+      "arc_mm": 142.0,
+      "width_mm": 80.0,
       "thickness_mm": 14.4,
       "thickness_alt_mm": 15.5,
-      "outer_dia_mm": null,
       "raw_text": "142×80×14.4/15.5"
     },
     "material": "未知",
@@ -701,7 +685,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -714,11 +698,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 146.0,
-      "length_mm": 80.0,
+      "arc_mm": 146.0,
+      "width_mm": 80.0,
       "thickness_mm": 10.5,
       "thickness_alt_mm": 15.0,
-      "outer_dia_mm": null,
       "raw_text": "146×80×10.5/15"
     },
     "material": "未知",
@@ -744,7 +727,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -757,11 +740,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 100.0,
+      "arc_mm": 150.0,
+      "width_mm": 100.0,
       "thickness_mm": 10.5,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "150×100×10.5/13.5"
     },
     "material": "未知",
@@ -787,7 +769,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -800,11 +782,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 130.0,
+      "arc_mm": 150.0,
+      "width_mm": 130.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "150×130×12"
     },
     "material": "未知",
@@ -830,7 +811,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -843,11 +824,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 130.0,
+      "arc_mm": 150.0,
+      "width_mm": 130.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": 15.5,
-      "outer_dia_mm": null,
       "raw_text": "150×130×14/15.5"
     },
     "material": "未知",
@@ -873,7 +853,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -886,11 +866,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 145.0,
-      "length_mm": 100.0,
+      "arc_mm": 145.0,
+      "width_mm": 100.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "145×100×12/13.5"
     },
     "material": "未知",
@@ -916,7 +895,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -929,11 +908,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 201.0,
-      "length_mm": 185.0,
+      "arc_mm": 201.0,
+      "width_mm": 185.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "201×185×14.5"
     },
     "material": "未知",
@@ -959,7 +937,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -972,11 +950,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 201.0,
-      "length_mm": 185.0,
+      "arc_mm": 201.0,
+      "width_mm": 185.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "201×185×14.5"
     },
     "material": "未知",
@@ -1002,7 +979,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1015,11 +992,10 @@
     "abs": false,
     "part_no": "GY1054",
     "dims": {
-      "width_mm": 149.0,
-      "length_mm": 160.0,
+      "arc_mm": 149.0,
+      "width_mm": 160.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "149×160×13"
     },
     "material": "未知",
@@ -1045,7 +1021,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1058,11 +1034,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 154.0,
-      "length_mm": 130.0,
+      "arc_mm": 154.0,
+      "width_mm": 130.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "154×130×13"
     },
     "material": "未知",
@@ -1088,7 +1063,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1101,11 +1076,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 151.0,
-      "length_mm": 160.0,
+      "arc_mm": 151.0,
+      "width_mm": 160.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "151×160×14"
     },
     "material": "未知",
@@ -1131,7 +1105,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1144,11 +1118,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 134.0,
-      "length_mm": 100.0,
+      "arc_mm": 134.0,
+      "width_mm": 100.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "134×100×12"
     },
     "material": "未知",
@@ -1174,7 +1147,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1187,11 +1160,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 154.0,
-      "length_mm": 100.0,
+      "arc_mm": 154.0,
+      "width_mm": 100.0,
       "thickness_mm": 10.5,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "154×100×10.5/13.5"
     },
     "material": "未知",
@@ -1219,7 +1191,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1232,11 +1204,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 201.0,
-      "length_mm": 180.0,
+      "arc_mm": 201.0,
+      "width_mm": 180.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "201×180×13/16.5"
     },
     "material": "未知",
@@ -1262,7 +1233,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1275,11 +1246,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 149.0,
-      "length_mm": 80.0,
+      "arc_mm": 149.0,
+      "width_mm": 80.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "149×80×13"
     },
     "material": "未知",
@@ -1305,7 +1275,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1318,11 +1288,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 147.0,
-      "length_mm": 100.0,
+      "arc_mm": 147.0,
+      "width_mm": 100.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "147×100×14.5/16.5"
     },
     "material": "未知",
@@ -1350,7 +1319,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1363,11 +1332,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 146.0,
-      "length_mm": 100.0,
+      "arc_mm": 146.0,
+      "width_mm": 100.0,
       "thickness_mm": 11.0,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "146×100×11/16"
     },
     "material": "未知",
@@ -1393,7 +1361,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1406,11 +1374,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 151.0,
-      "length_mm": 80.0,
+      "arc_mm": 151.0,
+      "width_mm": 80.0,
       "thickness_mm": 13.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "151×80×13.5"
     },
     "material": "未知",
@@ -1436,7 +1403,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1449,11 +1416,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 208.0,
-      "length_mm": 180.0,
+      "arc_mm": 208.0,
+      "width_mm": 180.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "208×180×14.5"
     },
     "material": "未知",
@@ -1479,7 +1445,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1492,11 +1458,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 120.0,
+      "arc_mm": 150.0,
+      "width_mm": 120.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "150×120×14.5"
     },
     "material": "未知",
@@ -1522,7 +1487,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1535,11 +1500,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 143.0,
-      "length_mm": 120.0,
+      "arc_mm": 143.0,
+      "width_mm": 120.0,
       "thickness_mm": 13.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "143×120×13.5"
     },
     "material": "未知",
@@ -1565,7 +1529,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1578,11 +1542,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 240.0,
-      "length_mm": 220.0,
+      "arc_mm": 240.0,
+      "width_mm": 220.0,
       "thickness_mm": 18.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "240×220×18.5"
     },
     "material": "未知",
@@ -1615,7 +1578,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1628,11 +1591,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
+      "arc_mm": 240.0,
       "width_mm": 240.0,
-      "length_mm": 240.0,
       "thickness_mm": 18.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "240×240×18.5"
     },
     "material": "未知",
@@ -1665,7 +1627,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1678,11 +1640,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 192.0,
-      "length_mm": 180.0,
+      "arc_mm": 192.0,
+      "width_mm": 180.0,
       "thickness_mm": 13.9,
       "thickness_alt_mm": 17.4,
-      "outer_dia_mm": null,
       "raw_text": "192×180×13.9/17.4"
     },
     "material": "未知",
@@ -1710,7 +1671,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1723,11 +1684,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 149.0,
-      "length_mm": 100.0,
+      "arc_mm": 149.0,
+      "width_mm": 100.0,
       "thickness_mm": 13.5,
       "thickness_alt_mm": 15.0,
-      "outer_dia_mm": null,
       "raw_text": "149×100×13.5/15"
     },
     "material": "未知",
@@ -1755,7 +1715,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1768,11 +1728,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 146.0,
-      "length_mm": 100.0,
+      "arc_mm": 146.0,
+      "width_mm": 100.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": 15.2,
-      "outer_dia_mm": null,
       "raw_text": "146×100×14/15.2"
     },
     "material": "未知",
@@ -1800,7 +1759,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1813,11 +1772,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 148.0,
-      "length_mm": 100.0,
+      "arc_mm": 148.0,
+      "width_mm": 100.0,
       "thickness_mm": 9.5,
       "thickness_alt_mm": 14.5,
-      "outer_dia_mm": null,
       "raw_text": "148×100×9.5/14.5"
     },
     "material": "未知",
@@ -1845,7 +1803,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1858,11 +1816,10 @@
     "abs": true,
     "part_no": null,
     "dims": {
-      "width_mm": 146.0,
-      "length_mm": 80.0,
+      "arc_mm": 146.0,
+      "width_mm": 80.0,
       "thickness_mm": 14.8,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "146×80×14.8/16.5"
     },
     "material": "未知",
@@ -1890,7 +1847,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1903,11 +1860,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 147.0,
-      "length_mm": 80.0,
+      "arc_mm": 147.0,
+      "width_mm": 80.0,
       "thickness_mm": 10.8,
       "thickness_alt_mm": 15.8,
-      "outer_dia_mm": null,
       "raw_text": "147×80×10.8/15.8"
     },
     "material": "未知",
@@ -1935,7 +1891,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1948,11 +1904,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 206.0,
-      "length_mm": 220.0,
+      "arc_mm": 206.0,
+      "width_mm": 220.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "206×220×14.5"
     },
     "material": "未知",
@@ -1978,7 +1933,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -1991,11 +1946,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 177.0,
-      "length_mm": 197.0,
+      "arc_mm": 177.0,
+      "width_mm": 197.0,
       "thickness_mm": 15.5,
       "thickness_alt_mm": 18.5,
-      "outer_dia_mm": null,
       "raw_text": "177×197×15.5/18.5"
     },
     "material": "未知",
@@ -2023,7 +1977,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2036,11 +1990,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 195.0,
-      "length_mm": 220.0,
+      "arc_mm": 195.0,
+      "width_mm": 220.0,
       "thickness_mm": 10.0,
       "thickness_alt_mm": 18.5,
-      "outer_dia_mm": null,
       "raw_text": "195×220×10/18.5"
     },
     "material": "未知",
@@ -2066,7 +2019,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2079,11 +2032,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 221.0,
-      "length_mm": 197.0,
+      "arc_mm": 221.0,
+      "width_mm": 197.0,
       "thickness_mm": 10.0,
       "thickness_alt_mm": 19.0,
-      "outer_dia_mm": null,
       "raw_text": "221×197×10/19"
     },
     "material": "未知",
@@ -2109,7 +2061,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2122,11 +2074,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 148.0,
-      "length_mm": 100.0,
+      "arc_mm": 148.0,
+      "width_mm": 100.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "148×100×12.5"
     },
     "material": "未知",
@@ -2152,7 +2103,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2165,11 +2116,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 152.0,
-      "length_mm": 100.0,
+      "arc_mm": 152.0,
+      "width_mm": 100.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "152×100×12.5"
     },
     "material": "未知",
@@ -2195,7 +2145,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2208,11 +2158,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 168.0,
-      "length_mm": 135.0,
+      "arc_mm": 168.0,
+      "width_mm": 135.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": 18.5,
-      "outer_dia_mm": null,
       "raw_text": "168×135×13/18.5"
     },
     "material": "未知",
@@ -2238,7 +2187,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2251,11 +2200,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 195.0,
-      "length_mm": 180.0,
+      "arc_mm": 195.0,
+      "width_mm": 180.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "195×180×12.5/16"
     },
     "material": "未知",
@@ -2281,7 +2229,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2294,11 +2242,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 206.0,
-      "length_mm": 135.0,
+      "arc_mm": 206.0,
+      "width_mm": 135.0,
       "thickness_mm": 11.0,
       "thickness_alt_mm": 18.5,
-      "outer_dia_mm": null,
       "raw_text": "206×135×11/18.5"
     },
     "material": "未知",
@@ -2324,7 +2271,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2337,11 +2284,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 235.0,
-      "length_mm": 180.0,
+      "arc_mm": 235.0,
+      "width_mm": 180.0,
       "thickness_mm": 9.0,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "235×180×9/16"
     },
     "material": "未知",
@@ -2367,7 +2313,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2380,11 +2326,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 209.0,
-      "length_mm": 178.0,
+      "arc_mm": 209.0,
+      "width_mm": 178.0,
       "thickness_mm": 19.5,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "209×178×19.5/16"
     },
     "material": "未知",
@@ -2410,7 +2355,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2423,11 +2368,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 218.0,
-      "length_mm": 180.0,
+      "arc_mm": 218.0,
+      "width_mm": 180.0,
       "thickness_mm": 12.3,
       "thickness_alt_mm": 15.5,
-      "outer_dia_mm": null,
       "raw_text": "218×180×12.3/15.5"
     },
     "material": "未知",
@@ -2453,7 +2397,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2466,11 +2410,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 206.0,
-      "length_mm": 178.0,
+      "arc_mm": 206.0,
+      "width_mm": 178.0,
       "thickness_mm": 19.0,
       "thickness_alt_mm": 12.5,
-      "outer_dia_mm": null,
       "raw_text": "206×178×19/12.5"
     },
     "material": "未知",
@@ -2496,7 +2439,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2509,11 +2452,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 218.0,
-      "length_mm": 180.0,
+      "arc_mm": 218.0,
+      "width_mm": 180.0,
       "thickness_mm": 9.8,
       "thickness_alt_mm": 15.5,
-      "outer_dia_mm": null,
       "raw_text": "218×180×9.8/15.5"
     },
     "material": "未知",
@@ -2539,7 +2481,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2552,11 +2494,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 145.0,
-      "length_mm": 130.0,
+      "arc_mm": 145.0,
+      "width_mm": 130.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "145×130×12"
     },
     "material": "未知",
@@ -2582,7 +2523,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2595,11 +2536,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 205.0,
-      "length_mm": 150.0,
+      "arc_mm": 205.0,
+      "width_mm": 150.0,
       "thickness_mm": 12.7,
       "thickness_alt_mm": 15.0,
-      "outer_dia_mm": null,
       "raw_text": "205×150×12.7/15"
     },
     "material": "未知",
@@ -2625,7 +2565,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2638,11 +2578,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 207.0,
-      "length_mm": 180.0,
+      "arc_mm": 207.0,
+      "width_mm": 180.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "207×180×14.5"
     },
     "material": "未知",
@@ -2668,7 +2607,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2681,11 +2620,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 205.0,
-      "length_mm": 160.0,
+      "arc_mm": 205.0,
+      "width_mm": 160.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "205×160×14.5"
     },
     "material": "未知",
@@ -2711,7 +2649,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2724,11 +2662,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 208.0,
-      "length_mm": 150.0,
+      "arc_mm": 208.0,
+      "width_mm": 150.0,
       "thickness_mm": 10.0,
       "thickness_alt_mm": 15.0,
-      "outer_dia_mm": null,
       "raw_text": "208×150×10/15"
     },
     "material": "未知",
@@ -2754,7 +2691,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2767,11 +2704,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 206.0,
-      "length_mm": 160.0,
+      "arc_mm": 206.0,
+      "width_mm": 160.0,
       "thickness_mm": 16.0,
       "thickness_alt_mm": 18.5,
-      "outer_dia_mm": null,
       "raw_text": "206×160×16/18.5"
     },
     "material": "未知",
@@ -2797,7 +2733,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2810,11 +2746,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 203.0,
-      "length_mm": 130.0,
+      "arc_mm": 203.0,
+      "width_mm": 130.0,
       "thickness_mm": 11.0,
       "thickness_alt_mm": 14.5,
-      "outer_dia_mm": null,
       "raw_text": "203×130×11/14.5"
     },
     "material": "未知",
@@ -2840,7 +2775,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2853,11 +2788,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 213.0,
-      "length_mm": 160.0,
+      "arc_mm": 213.0,
+      "width_mm": 160.0,
       "thickness_mm": 11.5,
       "thickness_alt_mm": 18.2,
-      "outer_dia_mm": null,
       "raw_text": "213×160×11.5/18.2"
     },
     "material": "未知",
@@ -2885,7 +2819,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2898,11 +2832,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 189.0,
-      "length_mm": 222.0,
+      "arc_mm": 189.0,
+      "width_mm": 222.0,
       "thickness_mm": 15.0,
       "thickness_alt_mm": 17.0,
-      "outer_dia_mm": null,
       "raw_text": "189×222×15/17"
     },
     "material": "未知",
@@ -2928,7 +2861,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2941,11 +2874,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 200.0,
-      "length_mm": 160.0,
+      "arc_mm": 200.0,
+      "width_mm": 160.0,
       "thickness_mm": 11.5,
       "thickness_alt_mm": 14.5,
-      "outer_dia_mm": null,
       "raw_text": "200×160×11.5/14.5"
     },
     "material": "未知",
@@ -2973,7 +2905,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -2986,11 +2918,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 234.0,
-      "length_mm": 222.0,
+      "arc_mm": 234.0,
+      "width_mm": 222.0,
       "thickness_mm": 9.0,
       "thickness_alt_mm": 17.0,
-      "outer_dia_mm": null,
       "raw_text": "234×222×9/17"
     },
     "material": "未知",
@@ -3016,7 +2947,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3029,11 +2960,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 208.0,
-      "length_mm": 140.0,
+      "arc_mm": 208.0,
+      "width_mm": 140.0,
       "thickness_mm": 16.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "208×140×16"
     },
     "material": "未知",
@@ -3059,7 +2989,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3072,11 +3002,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 188.0,
-      "length_mm": 155.0,
+      "arc_mm": 188.0,
+      "width_mm": 155.0,
       "thickness_mm": 12.2,
       "thickness_alt_mm": 14.0,
-      "outer_dia_mm": null,
       "raw_text": "188×155×12.2/14"
     },
     "material": "未知",
@@ -3102,7 +3031,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3115,11 +3044,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 142.0,
-      "length_mm": 80.0,
+      "arc_mm": 142.0,
+      "width_mm": 80.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "142×80×12"
     },
     "material": "未知",
@@ -3145,7 +3073,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3158,11 +3086,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 195.0,
-      "length_mm": 160.0,
+      "arc_mm": 195.0,
+      "width_mm": 160.0,
       "thickness_mm": 13.5,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "195×160×13.5/16"
     },
     "material": "未知",
@@ -3188,7 +3115,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3201,11 +3128,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 205.0,
-      "length_mm": 163.0,
+      "arc_mm": 205.0,
+      "width_mm": 163.0,
       "thickness_mm": 12.8,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "205×163×12.8/16.5"
     },
     "material": "未知",
@@ -3233,7 +3159,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3246,11 +3172,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 205.0,
-      "length_mm": 155.0,
+      "arc_mm": 205.0,
+      "width_mm": 155.0,
       "thickness_mm": 8.2,
       "thickness_alt_mm": 14.2,
-      "outer_dia_mm": null,
       "raw_text": "205×155×8.2/14.2"
     },
     "material": "未知",
@@ -3278,7 +3203,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3291,11 +3216,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 100.0,
+      "arc_mm": 150.0,
+      "width_mm": 100.0,
       "thickness_mm": 10.5,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "150×100×10.5/13.5"
     },
     "material": "未知",
@@ -3323,7 +3247,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3336,11 +3260,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 200.0,
-      "length_mm": 180.0,
+      "arc_mm": 200.0,
+      "width_mm": 180.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "200×180×13/16"
     },
     "material": "未知",
@@ -3366,7 +3289,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3379,11 +3302,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 191.0,
-      "length_mm": 150.0,
+      "arc_mm": 191.0,
+      "width_mm": 150.0,
       "thickness_mm": 13.5,
       "thickness_alt_mm": 17.0,
-      "outer_dia_mm": null,
       "raw_text": "191×150×13.5/17"
     },
     "material": "未知",
@@ -3409,7 +3331,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3422,11 +3344,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 206.0,
-      "length_mm": 220.0,
+      "arc_mm": 206.0,
+      "width_mm": 220.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": 16.8,
-      "outer_dia_mm": null,
       "raw_text": "206×220×12.5/16.8"
     },
     "material": "未知",
@@ -3454,7 +3375,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3467,11 +3388,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 151.0,
-      "length_mm": 80.0,
+      "arc_mm": 151.0,
+      "width_mm": 80.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "151×80×12.5"
     },
     "material": "未知",
@@ -3497,7 +3417,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3510,11 +3430,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 208.0,
-      "length_mm": 200.0,
+      "arc_mm": 208.0,
+      "width_mm": 200.0,
       "thickness_mm": 14.2,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "208×200×14.2"
     },
     "material": "未知",
@@ -3540,7 +3459,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3553,11 +3472,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 229.0,
-      "length_mm": 150.0,
+      "arc_mm": 229.0,
+      "width_mm": 150.0,
       "thickness_mm": 8.5,
       "thickness_alt_mm": 16.4,
-      "outer_dia_mm": null,
       "raw_text": "229×150×8.5/16.4"
     },
     "material": "未知",
@@ -3583,7 +3501,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3596,11 +3514,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 207.0,
-      "length_mm": 180.0,
+      "arc_mm": 207.0,
+      "width_mm": 180.0,
       "thickness_mm": 15.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "207×180×15.5"
     },
     "material": "未知",
@@ -3626,7 +3543,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3639,11 +3556,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 151.0,
-      "length_mm": 80.0,
+      "arc_mm": 151.0,
+      "width_mm": 80.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "151×80×14.5"
     },
     "material": "未知",
@@ -3669,7 +3585,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3682,11 +3598,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 192.0,
-      "length_mm": 150.0,
+      "arc_mm": 192.0,
+      "width_mm": 150.0,
       "thickness_mm": 13.7,
       "thickness_alt_mm": 16.3,
-      "outer_dia_mm": null,
       "raw_text": "192×150×13.7/16.3"
     },
     "material": "未知",
@@ -3714,7 +3629,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3727,11 +3642,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 189.0,
-      "length_mm": 130.0,
+      "arc_mm": 189.0,
+      "width_mm": 130.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": 14.5,
-      "outer_dia_mm": null,
       "raw_text": "189×130×12.5/14.5"
     },
     "material": "未知",
@@ -3759,7 +3673,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3772,11 +3686,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 100.0,
+      "arc_mm": 150.0,
+      "width_mm": 100.0,
       "thickness_mm": 15.0,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "150×100×15/16.5"
     },
     "material": "未知",
@@ -3802,7 +3715,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3815,11 +3728,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 227.0,
-      "length_mm": 150.0,
+      "arc_mm": 227.0,
+      "width_mm": 150.0,
       "thickness_mm": 7.3,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "227×150×7.3/16"
     },
     "material": "未知",
@@ -3845,7 +3757,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3858,11 +3770,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 197.0,
-      "length_mm": 130.0,
+      "arc_mm": 197.0,
+      "width_mm": 130.0,
       "thickness_mm": 8.5,
       "thickness_alt_mm": 13.8,
-      "outer_dia_mm": null,
       "raw_text": "197×130×8.5/13.8"
     },
     "material": "未知",
@@ -3888,7 +3799,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3901,11 +3812,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 200.0,
+      "arc_mm": 150.0,
+      "width_mm": 200.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "150×200×12.5/16"
     },
     "material": "未知",
@@ -3938,7 +3848,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3951,11 +3861,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 156.0,
-      "length_mm": 160.0,
+      "arc_mm": 156.0,
+      "width_mm": 160.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "156×160×12.5"
     },
     "material": "未知",
@@ -3981,7 +3890,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -3994,11 +3903,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 148.0,
-      "length_mm": 80.0,
+      "arc_mm": 148.0,
+      "width_mm": 80.0,
       "thickness_mm": 11.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "148×80×11"
     },
     "material": "未知",
@@ -4024,7 +3932,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4037,11 +3945,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 155.0,
-      "length_mm": 160.0,
+      "arc_mm": 155.0,
+      "width_mm": 160.0,
       "thickness_mm": 13.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "155×160×13.5"
     },
     "material": "未知",
@@ -4067,7 +3974,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4080,11 +3987,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
+      "arc_mm": 150.0,
       "width_mm": 150.0,
-      "length_mm": 150.0,
       "thickness_mm": 9.5,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "150×150×9.5/13.5"
     },
     "material": "未知",
@@ -4110,7 +4016,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4123,11 +4029,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 130.0,
+      "arc_mm": 150.0,
+      "width_mm": 130.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": 15.5,
-      "outer_dia_mm": null,
       "raw_text": "150×130×14/15.5"
     },
     "material": "未知",
@@ -4153,7 +4058,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4166,11 +4071,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 148.0,
-      "length_mm": 130.0,
+      "arc_mm": 148.0,
+      "width_mm": 130.0,
       "thickness_mm": 10.0,
       "thickness_alt_mm": 15.0,
-      "outer_dia_mm": null,
       "raw_text": "148×130×10/15"
     },
     "material": "未知",
@@ -4196,7 +4100,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4209,11 +4113,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 191.0,
-      "length_mm": 160.0,
+      "arc_mm": 191.0,
+      "width_mm": 160.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": 17.0,
-      "outer_dia_mm": null,
       "raw_text": "191×160×14/17"
     },
     "material": "未知",
@@ -4239,7 +4142,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4252,11 +4155,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 153.0,
-      "length_mm": 120.0,
+      "arc_mm": 153.0,
+      "width_mm": 120.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "153×120×14.5"
     },
     "material": "未知",
@@ -4282,7 +4184,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4295,11 +4197,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 190.0,
-      "length_mm": 220.0,
+      "arc_mm": 190.0,
+      "width_mm": 220.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": 16.0,
-      "outer_dia_mm": null,
       "raw_text": "190×220×12/16"
     },
     "material": "未知",
@@ -4325,7 +4226,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4338,11 +4239,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 208.0,
-      "length_mm": 140.0,
+      "arc_mm": 208.0,
+      "width_mm": 140.0,
       "thickness_mm": 16.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "208×140×16"
     },
     "material": "未知",
@@ -4368,7 +4268,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4381,11 +4281,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 158.0,
-      "length_mm": 120.0,
+      "arc_mm": 158.0,
+      "width_mm": 120.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "158×120×14.5"
     },
     "material": "未知",
@@ -4411,7 +4310,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4424,11 +4323,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 154.0,
-      "length_mm": 130.0,
+      "arc_mm": 154.0,
+      "width_mm": 130.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "154×130×13"
     },
     "material": "未知",
@@ -4454,7 +4352,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4467,11 +4365,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 208.0,
-      "length_mm": 140.0,
+      "arc_mm": 208.0,
+      "width_mm": 140.0,
       "thickness_mm": 16.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "208×140×16"
     },
     "material": "未知",
@@ -4497,7 +4394,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4510,11 +4407,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 150.0,
-      "length_mm": 100.0,
+      "arc_mm": 150.0,
+      "width_mm": 100.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": 15.5,
-      "outer_dia_mm": null,
       "raw_text": "150×100×14/15.5"
     },
     "material": "未知",
@@ -4540,7 +4436,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4553,11 +4449,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 151.0,
-      "length_mm": 160.0,
+      "arc_mm": 151.0,
+      "width_mm": 160.0,
       "thickness_mm": 14.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "151×160×14"
     },
     "material": "未知",
@@ -4583,7 +4478,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4596,11 +4491,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 153.0,
-      "length_mm": 160.0,
+      "arc_mm": 153.0,
+      "width_mm": 160.0,
       "thickness_mm": 12.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "153×160×12.5"
     },
     "material": "未知",
@@ -4626,7 +4520,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4639,11 +4533,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 211.0,
-      "length_mm": 220.0,
+      "arc_mm": 211.0,
+      "width_mm": 220.0,
       "thickness_mm": 15.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "211×220×15.5"
     },
     "material": "未知",
@@ -4669,7 +4562,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4682,11 +4575,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 201.0,
-      "length_mm": 180.0,
+      "arc_mm": 201.0,
+      "width_mm": 180.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "201×180×13/16.5"
     },
     "material": "未知",
@@ -4712,7 +4604,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4725,11 +4617,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 149.0,
-      "length_mm": 80.0,
+      "arc_mm": 149.0,
+      "width_mm": 80.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "149×80×13"
     },
     "material": "未知",
@@ -4755,7 +4646,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4768,11 +4659,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 145.0,
-      "length_mm": 160.0,
+      "arc_mm": 145.0,
+      "width_mm": 160.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "145×160×14.5"
     },
     "material": "未知",
@@ -4798,7 +4688,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4811,11 +4701,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 196.0,
-      "length_mm": 160.0,
+      "arc_mm": 196.0,
+      "width_mm": 160.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "196×160×14.5"
     },
     "material": "未知",
@@ -4841,7 +4730,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4854,11 +4743,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 201.0,
-      "length_mm": 185.0,
+      "arc_mm": 201.0,
+      "width_mm": 185.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "201×185×14.5"
     },
     "material": "未知",
@@ -4884,7 +4772,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4897,11 +4785,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 147.0,
-      "length_mm": 100.0,
+      "arc_mm": 147.0,
+      "width_mm": 100.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": 16.5,
-      "outer_dia_mm": null,
       "raw_text": "147×100×14.5/16.5"
     },
     "material": "未知",
@@ -4929,7 +4816,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4942,11 +4829,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 154.0,
-      "length_mm": 100.0,
+      "arc_mm": 154.0,
+      "width_mm": 100.0,
       "thickness_mm": 10.5,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "154×100×10.5/13.5"
     },
     "material": "未知",
@@ -4974,7 +4860,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -4987,11 +4873,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 134.0,
-      "length_mm": 100.0,
+      "arc_mm": 134.0,
+      "width_mm": 100.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "134×100×12"
     },
     "material": "未知",
@@ -5017,7 +4902,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -5030,11 +4915,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 151.0,
-      "length_mm": 80.0,
+      "arc_mm": 151.0,
+      "width_mm": 80.0,
       "thickness_mm": 13.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "151×80×13.5"
     },
     "material": "未知",
@@ -5060,7 +4944,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -5073,11 +4957,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 170.0,
-      "length_mm": 130.0,
+      "arc_mm": 170.0,
+      "width_mm": 130.0,
       "thickness_mm": 13.0,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "170×130×13"
     },
     "material": "未知",
@@ -5103,7 +4986,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -5116,11 +4999,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 145.0,
-      "length_mm": 100.0,
+      "arc_mm": 145.0,
+      "width_mm": 100.0,
       "thickness_mm": 12.0,
       "thickness_alt_mm": 13.5,
-      "outer_dia_mm": null,
       "raw_text": "145×100×12/13.5"
     },
     "material": "未知",
@@ -5148,7 +5030,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -5161,11 +5043,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 145.0,
-      "length_mm": 100.0,
+      "arc_mm": 145.0,
+      "width_mm": 100.0,
       "thickness_mm": 9.0,
       "thickness_alt_mm": 13.4,
-      "outer_dia_mm": null,
       "raw_text": "145×100×9/13.4"
     },
     "material": "未知",
@@ -5191,7 +5072,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   },
@@ -5204,11 +5085,10 @@
     "abs": false,
     "part_no": null,
     "dims": {
-      "width_mm": 210.0,
-      "length_mm": 150.0,
+      "arc_mm": 210.0,
+      "width_mm": 150.0,
       "thickness_mm": 14.5,
       "thickness_alt_mm": null,
-      "outer_dia_mm": null,
       "raw_text": "210×150×14.5"
     },
     "material": "未知",
@@ -5234,7 +5114,7 @@
       "extractor": "rule_coord",
       "verified": false,
       "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 宽×长×厚"
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
     },
     "_placeholder": false
   }

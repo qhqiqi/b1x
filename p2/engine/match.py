@@ -51,12 +51,13 @@ def parse_query(text: str, axles: list) -> dict:
     """从自由文本里抽实体（纯规则，不依赖网络）。"""
     low = text.lower()
     # 产品册口径：宽×长×厚(/备选厚)。鼓径(外径)仅用于鼓体类产品，可选。
-    dims = {"width_mm": None, "length_mm": None, "thickness_mm": None,
+    # 产品册口径（表头原文）：外弧 × 宽度 × 厚度 = outer arch / width / thickness
+    dims = {"arc_mm": None, "width_mm": None, "thickness_mm": None,
             "thickness_alt_mm": None, "outer_dia_mm": None, "raw_text": None}
     m = DIM_RE.search(text)
     if m:
-        dims["width_mm"] = float(m.group(1))
-        dims["length_mm"] = float(m.group(2))
+        dims["arc_mm"] = float(m.group(1))
+        dims["width_mm"] = float(m.group(2))
         dims["thickness_mm"] = float(m.group(3)) if m.group(3) else None
         dims["raw_text"] = m.group(0).strip()
         alt = re.search(r"/\s*([\d.]+)", m.group(0))
@@ -87,7 +88,7 @@ def parse_query(text: str, axles: list) -> dict:
 
     return {
         "dims": dims,
-        "has_dims": dims["width_mm"] is not None or dims["outer_dia_mm"] is not None,
+        "has_dims": dims["arc_mm"] is not None or dims["outer_dia_mm"] is not None,
         "codes": codes,
         "norm_codes": [norm_code(c) for c in codes],
         "axles": [{"axle_id": a.get("axle_id"), "brand": a.get("brand"), "model": a.get("model")} for a in axle_hits],
@@ -99,7 +100,7 @@ def _dims_hit(sku: dict, d: dict) -> bool:
     """宽/长/厚三项，能比的都必须在容差内；至少要比到两项才敢判命中。"""
     sd = sku.get("dims") or {}
     checked = 0
-    for key in ("width_mm", "length_mm", "thickness_mm"):
+    for key in ("arc_mm", "width_mm", "thickness_mm"):
         q, v = d.get(key), sd.get(key)
         if q is None or v is None:
             continue
@@ -144,7 +145,7 @@ def _followups(parsed: dict, best: float) -> list:
     q = []
     if parsed["has_dims"]:
         d = parsed["dims"]
-        missing = [k for k in ("width_mm", "thickness_mm") if d.get(k) is None]
+        missing = [k for k in ("arc_mm", "width_mm", "thickness_mm") if d.get(k) is None]
         if missing:
             q.append("能补一下旧片的宽/长/厚吗？（差 2mm 就会串型号）")
     else:
@@ -199,7 +200,7 @@ def _dims_err(sku: dict, d: dict) -> float:
     """尺寸偏差（归一化到各自容差），用于同分时的排序：越准越靠前。"""
     sd = sku.get("dims") or {}
     err = 0.0
-    for key, tol in (("width_mm", TOL_WIDTH_MM), ("length_mm", TOL_WIDTH_MM), ("thickness_mm", TOL_THICK_MM)):
+    for key, tol in (("arc_mm", TOL_DIA_MM), ("width_mm", TOL_WIDTH_MM), ("thickness_mm", TOL_THICK_MM)):
         q, v = d.get(key), sd.get(key)
         if q is not None and v is not None:
             err += abs(float(v) - float(q)) / tol

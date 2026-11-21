@@ -1,60 +1,77 @@
 # P2 工作区（AI & 数据工程）
 
-> 现状：**120 条真实 SKU 已入库**（适配名 + 宽×长×厚 + 产品册页码），引擎纯规则毫秒级，回归集 20/20。
-> 缺：材质 / 摩擦系数 / 价格 / 编码 —— 资料包里没有，别编。
+> 现状：**120 条真实 SKU**（适配名 + 外弧×宽度×厚度 + 产品册页码）｜引擎纯规则毫秒级｜回归 20/20、口语 6/6。
+> 缺：材质 / 型号级摩擦系数 / 价格 / 编码 —— 资料包里没有，**别编**。
 
 ## 目录
 
     data/
       structured/skus.json          主数据（120 条，schema v1.1）
-      structured/catalog_rows.json  原始行（134 行，含未配对的）
-      eval/cases.jsonl              回归评估集
+      structured/axles.json         车桥词典（7 个，由适配名反推，未核实）
+      structured/benchmark.json     企业级 14 项台架对比（企业介绍 p25）
+      structured/catalog_rows.json  原始行（134 行）
+      eval/cases.jsonl              回归集（20 条，由主数据派生）
+      eval/cases_spoken.jsonl       「客户真话」口语集（6 条）
       reports/field_inventory.md    **资料包勘察结论（先读这份）**
-      reports/keyword_census.md     关键词普查
-      reports/eval_report.md        评估结果
+      reports/test_report_gap.md    **「测试报告」到底指什么、缺哪一页**
+      reports/demo_transcript.md    Demo 文字稿（可做录屏字幕）
+      reports/{eval_report,eval_spoken,keyword_census,image_pages}.md
     p2/
       schema/sku.schema.json        数据契约 v1.1（已冻结）
       engine/{llm,store,match}.py
-      scripts/{extract_text,parse_layout,parse_catalog_words,scan_keywords,
-               make_eval,run_eval,validate_skus,extract_skus}.py
+      scripts/                      见下
     资料包/                         三份原始 PDF
 
-## 命令
+## 命令（除标注外都在仓库根目录跑）
 
-    # 1) 抽文本（普通模式看内容）
+    # 0) 一键演示（最能说明问题）
+    python p2/scripts/demo.py
+
+    # 1) 抽文本：普通模式看内容 / 版式模式保列位置
     python p2/scripts/extract_text.py --inbox 资料包
-    # 2) 抽版式（保留列位置，解析表格必备）
     python p2/scripts/extract_text.py --inbox 资料包 --out data/text_layout --layout
-    # 3) 版式解析 → SKU（主力命令，--merge 直接更新 skus.json）
-    python p2/scripts/parse_layout.py --merge
-    # 4) 自检 / 评估
-    python p2/scripts/validate_skus.py
-    python p2/scripts/make_eval.py
-    python p2/scripts/run_eval.py
+
+    # 2) 结构化
+    python p2/scripts/parse_layout.py --merge     # 产品册表格 → skus.json（主力）
+    python p2/scripts/build_axles.py              # 适配名 → 车桥词典
+    python p2/scripts/parse_benchmark.py          # 企业介绍 p25 对比表 → benchmark.json
+
+    # 3) 体检 / 评估
+    python p2/scripts/inspect_images.py           # 哪些页是纯图片、值不值得 OCR
+    python p2/scripts/validate_skus.py            # 交付自检（0 占位才合格）
+    python p2/scripts/make_eval.py && python p2/scripts/run_eval.py
+    python p2/scripts/run_eval.py --cases data/eval/cases_spoken.jsonl --out data/reports/eval_spoken.md
 
 ## 匹配引擎
 
     cd p2
-    python -m engine.match --query "汉德桥35T前"
-    python -m engine.match --query "240×220×18.5"
-    python -m engine.match --query "客户要 150×100×14/15.5 的片"
-    python -m engine.match --query "2019 款丰田 Hilux 后桥换过"    # 会追问，不瞎配
+    python -m engine.match --query "汉德 35 吨桥，前面那副"   # 口语 → 车桥 → 型号
+    python -m engine.match --query "147×100×14.5"            # 尺寸硬匹配
+    python -m engine.match --query "客户说这车是欧曼 400"      # 会追问，不瞎配
     python -m engine.match --query "..." --json
 
 模块调用（给 P3）：
 
     from engine.match import match_query
-    r = match_query("汉德桥35T前")
-    # r["candidates"] -> [{sku_id, confidence, reason, dims, evidence, price}, ...]
-    # r["followups"]  -> 追问列表（信息不足时）
+    r = match_query("汉德 35 吨桥，前面那副")
+    # r["candidates"] -> [{sku_id, confidence, reason, dims, evidence, price, stock}, ...]
+    # r["followups"]  -> 追问列表
     # r["mode"]       -> rule / llm / ask
+    # r["elapsed_ms"] -> 毫秒
 
 ## 数据口径（v1.1）
 
-- 尺寸 = **宽×长×厚(/备选厚)**，单位 mm，来自产品册原文
-- `fit_name` = 产品册上的适配名（解放虎威前A / 汉德桥35T前 / GY1054）——客户嘴里的说法
-- `evidence` = 哪份文件第几页 + 原文片段
-- 没有的字段一律 null / 「未知」，**不填占位值**
+- 尺寸 = **外弧×宽度×厚度(/备选厚)** mm，来自产品册原文（表头：外弧*宽度*厚度 孔数 / outer arch·width·thickness）
+- `fit_name` = 适配名（解放虎威前A / 汉德桥35T前 / GY1054）——客户嘴里的说法
+- `evidence` = 文件 + 页码 + 原文片段
+- 没有的字段一律 null / 「未知」，不填占位值
+
+## 已知限制
+
+1. 资料包 33 页是 Illustrator 转曲页（0 字符、上千条矢量路径），要 OCR 才能取；收益低，暂不做。
+2. 盘式产品只有 GYS-xxx 型号清单，没有尺寸。
+3. 车桥词典由适配名反推（7 个），未核实。
+4. 0 条人工核对（`provenance.verified` 全 false）——抽检后改。
 
 ## 红线
 

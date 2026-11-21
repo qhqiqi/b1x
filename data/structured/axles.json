@@ -10,7 +10,7 @@
     "brake_type": "鼓式",
     "brake_spec": {
       "drum_dia_mm": null,
-      "pad_width_mm": 206.0,
+      "pad_width_mm": 220.0,
       "thickness_mm": 14.5,
       "bonding": "未知",
       "note": "取自 FIT-新457桥后 的尺寸，未核实"
@@ -26,14 +26,14 @@
     "brand": "汉德",
     "model": "35T",
     "aliases": [
+      "汉德35吨",
       "汉德桥35T",
-      "汉德35T",
-      "汉德35吨"
+      "汉德35T"
     ],
     "brake_type": "鼓式",
     "brake_spec": {
       "drum_dia_mm": null,
-      "pad_width_mm": 240.0,
+      "pad_width_mm": 220.0,
       "thickness_mm": 18.5,
       "bonding": "未知",
       "note": "取自 FIT-汉德桥35T前 的尺寸，未核实"
@@ -50,14 +50,14 @@
     "brand": "沃胜",
     "model": "11.5TA",
     "aliases": [
-      "沃胜11.5TA",
       "沃胜11.5吨A",
+      "沃胜11.5TA",
       "沃胜桥11.5TA"
     ],
     "brake_type": "鼓式",
     "brake_spec": {
       "drum_dia_mm": null,
-      "pad_width_mm": 165.0,
+      "pad_width_mm": 200.0,
       "thickness_mm": 12.5,
       "bonding": "未知",
       "note": "取自 FIT-沃胜桥115TA 的尺寸，未核实"
@@ -73,14 +73,14 @@
     "brand": "沃胜",
     "model": "11.5TB",
     "aliases": [
-      "沃胜11.5TB",
       "沃胜11.5吨B",
+      "沃胜11.5TB",
       "沃胜桥11.5TB"
     ],
     "brake_type": "鼓式",
     "brake_spec": {
       "drum_dia_mm": null,
-      "pad_width_mm": 214.0,
+      "pad_width_mm": 200.0,
       "thickness_mm": 11.0,
       "bonding": "未知",
       "note": "取自 FIT-沃胜桥115TB 的尺寸，未核实"
@@ -102,7 +102,7 @@
     "brake_type": "鼓式",
     "brake_spec": {
       "drum_dia_mm": null,
-      "pad_width_mm": 150.0,
+      "pad_width_mm": 200.0,
       "thickness_mm": 12.5,
       "bonding": "未知",
       "note": "取自 FIT-沃胜桥3020 的尺寸，未核实"
@@ -124,7 +124,7 @@
     "brake_type": "鼓式",
     "brake_spec": {
       "drum_dia_mm": null,
-      "pad_width_mm": 158.0,
+      "pad_width_mm": 120.0,
       "thickness_mm": 14.5,
       "bonding": "未知",
       "note": "取自 FIT-湖桥54Q 的尺寸，未核实"
@@ -140,13 +140,13 @@
     "brand": "索马",
     "model": "未知",
     "aliases": [
-      "索马桥未知",
-      "索马未知"
+      "索马未知",
+      "索马桥未知"
     ],
     "brake_type": "鼓式",
     "brake_spec": {
       "drum_dia_mm": null,
-      "pad_width_mm": 205.0,
+      "pad_width_mm": 160.0,
       "thickness_mm": 14.5,
       "bonding": "未知",
       "note": "取自 FIT-索马桥后 的尺寸，未核实"

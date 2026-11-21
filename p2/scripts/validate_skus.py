@@ -32,9 +32,9 @@ def main() -> int:
         if r.get("material") not in MATS:
             warns.append("%s material 非法: %s" % (sid, r.get("material")))
         d = r.get("dims") or {}
-        nums = [k for k in ("width_mm", "length_mm", "thickness_mm") if d.get(k) is not None]
+        nums = [k for k in ("arc_mm", "width_mm", "thickness_mm") if d.get(k) is not None]
         if len(nums) < 2:
-            errs.append("%s 尺寸不足两项（宽/长/厚），无法硬匹配" % sid)
+            errs.append("%s 尺寸不足两项（外弧/宽度/厚度），无法硬匹配" % sid)
         if not d.get("raw_text"):
             errs.append("%s 缺 dims.raw_text（展示与溯源都要）" % sid)
         for e in r.get("evidence") or []:

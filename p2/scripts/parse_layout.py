@@ -89,7 +89,7 @@ def parse_page(pno, body, fname, base_id):
             rows.append({
                 "row_id": "L%04d" % (base_id + len(rows)),
                 "file": fname, "page": pno, "name": clean(name), "raw_dims": m.group(0),
-                "width_mm": float(m.group(1)), "length_mm": float(m.group(2)),
+                "arc_mm": float(m.group(1)), "width_mm": float(m.group(2)),
                 "thickness_mm": float(m.group(3)),
                 "thickness_alt_mm": float(m.group(4)) if m.group(4) else None,
                 "extras": qty,
