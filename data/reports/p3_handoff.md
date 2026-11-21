@@ -47,6 +47,10 @@ r = match_query("汉德 35 吨桥，前面那副")
       "sku_id": "FIT-解放虎威前AABS",
       "score": 1.0,
       "dims_err": 0.0,           // 尺寸偏差，0 = 硬匹配
+      "verified": true,          // ★ 这一条是否人工核对过产品册原文（true 才敢在台上说"可溯源"）
+      "ocr": false,              // ★ 是否来自扫描图页（OCR 识别）——建议 UI 上加个小灰标
+      "extractor": "rule_coord", // rule_coord=PDF 文字层 / rule_ocr=扫描图页
+      "src_rank": 1,             // 同分排序用，前端不用管
       "confidence": "高",         // 高 / 中 / 低 —— 直接拿去做 UI 徽章
       "reason": "尺寸硬匹配。解放虎威前A(ABS) 前 ABS 147×100×14.5/16.5",
       "dims": {"arc_mm": 147.0, "width_mm": 100.0, "thickness_mm": 14.5,
@@ -56,7 +60,7 @@ r = match_query("汉德 35 吨桥，前面那副")
       "axle_fit": [],
       "evidence": [{"report_id": "kooying_catalog", "page": 28,
                     "snippet": "解放虎威前A(ABS) 147×100×14.5/16.5", "kind": "产品册"}],
-      "price": null,             // 恒为 null：资料包没有价格
+      "price": null,             // 恒为 null：资料包没有价格（口径：一律答"询价确认"）
       "stock": "未知",
       "placeholder": false
     }
@@ -79,6 +83,8 @@ r = match_query("汉德 35 吨桥，前面那副")
 | 报价 | `price` | 为 `null` → 显示「询价确认」，**不要显示 0 或编价** |
 | 库存 | `stock` | 恒为「未知」→ 弱化显示，别当卖点 |
 | 追问 | `followups` | `mode == "ask"` 时把 1–3 条渲染成追问卡片，**不要给候选** |
+| **可溯源徽章** | `verified` | true 才显示「已核对产品册原文」；false 显示「未核对」。**别对 false 的说"可溯源"** |
+| **OCR 来源标** | `ocr` | true 时在出处旁加个小灰标「扫描图页识别」 |
 
 > 红线：`candidates` 为空时必须走追问界面，不能前端"猜一个"填上。
 
@@ -89,7 +95,8 @@ r = match_query("汉德 35 吨桥，前面那副")
 | 尺寸直查 | `147×100×14.5` | rule，3 候选，Top1 `FIT-解放虎威前AABS` | 7 ms |
 | 车桥口语 | `汉德 35 吨桥，前面那副` | rule，2 候选（前/后），Top1 `FIT-汉德桥35T前` | 5 ms |
 | 适配名直查 | `解放虎威前` | rule，3 候选，Top1 `FIT-解放虎威前B` | 5 ms |
-| 只有车型（应追问） | `客户说这车是欧曼 400` | **ask**，0 候选，3 条追问 | 4 ms |
+| 车型+型号数字 | `客户说这车是欧曼 400` | rule，Top1 `FIT-新欧曼400A`（A/B 并列） | 5 ms |
+| **真正的追问场景** | `BPW 空压桥的片子` | **ask**，0 候选（资料包无 BPW） | 5 ms |
 | 内部型号 | `GY1054` | rule，1 候选 `FIT-GY1054` | 5 ms |
 
 「只有车型」这条是**加分项不是缺陷**：演示时就按它讲"不瞎猜，主动追问"。

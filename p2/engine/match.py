@@ -360,6 +360,8 @@ def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
             "dims_err": dim_err,
             "src_rank": 0 if is_ocr else 1,   # 同分时文本层优先，OCR 行不抢
             "ocr": is_ocr,
+            "verified": bool((sku.get("provenance") or {}).get("verified")),
+            "extractor": (sku.get("provenance") or {}).get("extractor"),
             "confidence": _confidence(score, hard),
             "reason": _reason(sku, tags, parsed),
             "dims": sku.get("dims"),

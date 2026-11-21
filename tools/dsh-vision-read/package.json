@@ -1,0 +1,33 @@
+{
+  "name": "dsh-plugin-vision-read",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read the text inside image files (screenshots, slide renders, extracted video frames) through an OpenAI-compatible vision route and return distilled text, so an agent can work with images even when its own model declares text-only input.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "vision",
+    "ocr",
+    "image",
+    "agent-tool"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
