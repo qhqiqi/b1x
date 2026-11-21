@@ -278,10 +278,13 @@ def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
         if parsed["has_dims"] and dim_err != 99.0:
             score = min(1.0, score + 0.05 / (1.0 + dim_err))
         hard = bool({"尺寸硬匹配"} & set(tags)) or any(t.startswith("编码") for t in tags)
+        is_ocr = (sku.get("provenance") or {}).get("extractor") == "rule_ocr"
         scored.append({
             "sku_id": sku.get("sku_id"),
             "score": round(score, 3),
             "dims_err": dim_err,
+            "src_rank": 0 if is_ocr else 1,   # 同分时文本层优先，OCR 行不抢
+            "ocr": is_ocr,
             "confidence": _confidence(score, hard),
             "reason": _reason(sku, tags, parsed),
             "dims": sku.get("dims"),
@@ -294,7 +297,7 @@ def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
             "placeholder": bool(sku.get("_placeholder")),
         })
 
-    scored.sort(key=lambda x: (-x["score"], x.get("dims_err", 99)))
+    scored.sort(key=lambda x: (-x["score"], -x.get("src_rank", 1), x.get("dims_err", 99)))
     top_hits = scored[:top]
     best = top_hits[0]["score"] if top_hits else 0.0
 

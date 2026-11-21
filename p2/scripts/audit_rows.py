@@ -31,18 +31,23 @@ def main() -> int:
     for s in skus:
         if s.get("_placeholder"):
             continue
+        if (s.get("provenance") or {}).get("extractor") == "rule_ocr":
+            stat["OCR 图页(需人眼看图)"] = stat.get("OCR 图页(需人眼看图)", 0) + 1
+            continue
         v = machine_check(s)
         stat[v] = stat.get(v, 0) + 1
         rows.append((s["sku_id"], s.get("fit_name"), (s.get("dims") or {}).get("raw_text"),
                      (s.get("provenance") or {}).get("source_file"),
                      (s.get("provenance") or {}).get("source_page"), v))
 
+    ocr_n = stat.pop("OCR 图页(需人眼看图)", 0)
     total = sum(stat.values())
     good = sum(n for k, n in stat.items() if k.startswith("机器一致"))
     bad = total - good
-    md = ["# 全量一致性审计（%d 条）" % total, "",
-          "- 机器复核通过：**%d/%d = %.1f%%**" % (good, total, 100.0 * good / total if total else 0),
-          "- 可疑：%d 条" % bad, "",
+    md = ["# 全量一致性审计（文本层 %d 条）" % total, "",
+          "- 文本层机器复核通过：**%d/%d = %.1f%%**" % (good, total, 100.0 * good / total if total else 0),
+          "- 可疑：%d 条" % bad,
+          "- OCR 图页另计 **%d 条**（无文本层，只能人眼看图，不参与上面这个通过率）" % ocr_n, "",
           "| 结论 | 条数 |", "|---|---|"]
     for k, n in sorted(stat.items(), key=lambda x: -x[1]):
         md.append("| %s | %d |" % (k, n))
@@ -55,7 +60,8 @@ def main() -> int:
     out = ROOT / "data" / "reports" / "consistency.md"
     out.write_text("\n".join(md) + "\n", encoding="utf-8")
 
-    print("全量 %d 条：通过 %d（%.1f%%），可疑 %d" % (total, good, 100.0 * good / total if total else 0, bad))
+    print("文本层 %d 条：通过 %d（%.1f%%），可疑 %d；另有 OCR 图页 %d 条" % (
+        total, good, 100.0 * good / total if total else 0, bad, ocr_n))
     for k, n in sorted(stat.items(), key=lambda x: -x[1]):
         print("  %-16s %d" % (k, n))
     for r in rows:

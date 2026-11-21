@@ -1,20 +1,20 @@
-{"case_id": 1, "input": "145×130×12", "expected": {"type": "match", "sku": ["FIT-美的客车后"]}, "why": "尺寸直查"}
-{"case_id": 2, "input": "240×240×18.5", "expected": {"type": "match", "sku": ["FIT-汉德桥35T后"]}, "why": "尺寸直查"}
-{"case_id": 3, "input": "200×160×11.5/14.5", "expected": {"type": "match", "sku": ["FIT-红岩杰狮前"]}, "why": "尺寸直查"}
-{"case_id": 4, "input": "151×100×10/16", "expected": {"type": "match", "sku": ["FIT-小虎威B"]}, "why": "尺寸直查"}
-{"case_id": 5, "input": "142×80×14.4/15.5", "expected": {"type": "match", "sku": ["FIT-霸铃80宽A"]}, "why": "尺寸直查"}
-{"case_id": 6, "input": "148×130×10/15", "expected": {"type": "match", "sku": ["FIT-解放虎威-2"]}, "why": "尺寸直查"}
-{"case_id": 7, "input": "149×160×13", "expected": {"type": "match", "sku": ["FIT-GY1054"]}, "why": "尺寸直查"}
-{"case_id": 8, "input": "206×160×16/18.5", "expected": {"type": "match", "sku": ["FIT-汉威160A"]}, "why": "尺寸直查"}
-{"case_id": 9, "input": "151×85×14.5", "expected": {"type": "match", "sku": ["FIT-福田80宽"]}, "why": "尺寸直查"}
-{"case_id": 10, "input": "197×130×8.5/13.8", "expected": {"type": "match", "sku": ["FIT-新天锦130B"]}, "why": "尺寸直查"}
-{"case_id": 11, "input": "新斯太尔后B", "expected": {"type": "match", "top3": true, "sku": ["FIT-新斯太尔后B"]}, "why": "按适配名查"}
-{"case_id": 12, "input": "杰狮C6前A(ABS)", "expected": {"type": "match", "top3": true, "sku": ["FIT-杰狮C6前AABS"]}, "why": "按适配名查"}
-{"case_id": 13, "input": "小虎威B", "expected": {"type": "match", "top3": true, "sku": ["FIT-小虎威B"]}, "why": "按适配名查"}
-{"case_id": 14, "input": "通用江铃前、", "expected": {"type": "match", "top3": true, "sku": ["FIT-通用江铃前"]}, "why": "按适配名查"}
-{"case_id": 15, "input": "195×160", "expected": {"type": "match", "top3": true, "sku": ["FIT-重汽汕德卡前"]}, "why": "缺厚度，容许 Top3"}
-{"case_id": 16, "input": "205×178", "expected": {"type": "match", "top3": true, "sku": ["FIT-新98R前ABS-2"]}, "why": "缺厚度，容许 Top3"}
-{"case_id": 17, "input": "221×197", "expected": {"type": "match", "top3": true, "sku": ["FIT-JH6后B"]}, "why": "缺厚度，容许 Top3"}
+{"case_id": 1, "input": "202×150×9/20", "expected": {"type": "match", "sku": ["FIT-新奥威前B"]}, "why": "尺寸直查"}
+{"case_id": 2, "input": "218×180×9.8/15.5", "expected": {"type": "match", "sku": ["FIT-东风天锦B"]}, "why": "尺寸直查"}
+{"case_id": 3, "input": "200×200×16.5/12", "expected": {"type": "match", "sku": ["FIT-重汽汕德卡"]}, "why": "尺寸直查"}
+{"case_id": 4, "input": "149×160×13", "expected": {"type": "match", "sku": ["FIT-GY1054"]}, "why": "尺寸直查"}
+{"case_id": 5, "input": "240×220×18.5", "expected": {"type": "match", "sku": ["FIT-汉德桥35T前"]}, "why": "尺寸直查"}
+{"case_id": 6, "input": "181x150×14.5", "expected": {"type": "match", "sku": ["FIT-安徽桥"]}, "why": "尺寸直查"}
+{"case_id": 7, "input": "148×100×9.5/14.5", "expected": {"type": "match", "sku": ["FIT-福田欧马可B-2"]}, "why": "尺寸直查"}
+{"case_id": 8, "input": "142×190×11.5/15", "expected": {"type": "match", "sku": ["FIT-富华桥-2"]}, "why": "尺寸直查"}
+{"case_id": 9, "input": "155×95×11", "expected": {"type": "match", "sku": ["FIT-南骏"]}, "why": "尺寸直查"}
+{"case_id": 10, "input": "146×100×11/16", "expected": {"type": "match", "sku": ["FIT-解放虎威前B"]}, "why": "尺寸直查"}
+{"case_id": 11, "input": "解放途威", "expected": {"type": "match", "top3": true, "sku": ["FIT-解放途威-2"]}, "why": "按适配名查"}
+{"case_id": 12, "input": "QT435SH10-3502572FW江铃前", "expected": {"type": "match", "top3": true, "sku": ["FIT-QT435SH103502572FW江铃"]}, "why": "按适配名查"}
+{"case_id": 13, "input": "三一搅拌车后", "expected": {"type": "match", "top3": true, "sku": ["FIT-三一搅拌车后"]}, "why": "按适配名查"}
+{"case_id": 14, "input": "红塔100宽", "expected": {"type": "match", "top3": true, "sku": ["FIT-红塔100宽"]}, "why": "按适配名查"}
+{"case_id": 15, "input": "220×180", "expected": {"type": "match", "top3": true, "sku": ["FIT-德国拖架"]}, "why": "缺厚度，容许 Top3"}
+{"case_id": 16, "input": "210×127", "expected": {"type": "match", "top3": true, "sku": ["FIT-日野ZM440"]}, "why": "缺厚度，容许 Top3"}
+{"case_id": 17, "input": "143×120", "expected": {"type": "match", "top3": true, "sku": ["FIT-三T王前改型ABS"]}, "why": "缺厚度，容许 Top3"}
 {"case_id": 18, "input": "2019 款丰田 Hilux，后桥换过", "expected": {"type": "ask_followup", "min_questions": 2}, "why": "车型不可靠"}
 {"case_id": 19, "input": "帮我配一下刹车片", "expected": {"type": "ask_followup", "min_questions": 1}, "why": "零实体"}
 {"case_id": 20, "input": "刹车片异响、抖动怎么办", "expected": {"type": "ask_followup", "min_questions": 1}, "why": "售后问题"}
