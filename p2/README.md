@@ -6,7 +6,7 @@
 ## 目录
 
     data/
-      structured/skus.json          主数据（120 条，schema v1.1）
+      structured/skus.json          主数据（120 条，schema v1.2）
       structured/axles.json         车桥词典（7 个，由适配名反推，未核实）
       structured/benchmark.json     企业级 14 项台架对比（企业介绍 p25）
       structured/catalog_rows.json  原始行（134 行）
@@ -17,7 +17,7 @@
       reports/demo_transcript.md    Demo 文字稿（可做录屏字幕）
       reports/{eval_report,eval_spoken,keyword_census,image_pages}.md
     p2/
-      schema/sku.schema.json        数据契约 v1.1（已冻结）
+      schema/sku.schema.json        数据契约 v1.2（已冻结）
       engine/{llm,store,match}.py
       scripts/                      见下
     资料包/                         三份原始 PDF
@@ -59,7 +59,7 @@
     # r["mode"]       -> rule / llm / ask
     # r["elapsed_ms"] -> 毫秒
 
-## 数据口径（v1.1）
+## 数据口径（v1.2）
 
 - 尺寸 = **外弧×宽度×厚度(/备选厚)** mm，来自产品册原文（表头：外弧*宽度*厚度 孔数 / outer arch·width·thickness）
 - `fit_name` = 适配名（解放虎威前A / 汉德桥35T前 / GY1054）——客户嘴里的说法
