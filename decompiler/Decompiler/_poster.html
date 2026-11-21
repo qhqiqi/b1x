@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#05060A;display:grid;place-items:center;height:100vh}
+canvas{width:1400px;display:block}
+</style></head><body>
+<video id="v" src="assets/video/hero.mp4" muted preload="auto" style="display:none"></video>
+<canvas id="c" width="1400" height="788"></canvas>
+<script>
+const v=document.getElementById('v'), c=document.getElementById('c'), x=c.getContext('2d');
+v.addEventListener('loadeddata', ()=>{ v.currentTime = 2.4; });
+v.addEventListener('seeked', ()=>{ x.drawImage(v,0,0,1400,788); document.title='FRAME_OK'; });
+</script></body></html>
