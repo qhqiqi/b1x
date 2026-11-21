@@ -5637,9 +5637,9 @@
    "source_page": 12,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.97），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -5895,9 +5895,9 @@
    "source_page": 12,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.96），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -6196,9 +6196,9 @@
    "source_page": 13,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.96），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -6669,9 +6669,9 @@
    "source_page": 13,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.97），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -6927,9 +6927,9 @@
    "source_page": 14,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.94），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -7572,9 +7572,9 @@
    "source_page": 14,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.96），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -7873,9 +7873,9 @@
    "source_page": 15,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.95），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -8217,9 +8217,9 @@
    "source_page": 15,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.95），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -8475,9 +8475,9 @@
    "source_page": 16,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.95），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -8862,9 +8862,9 @@
    "source_page": 16,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.97），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -9120,9 +9120,9 @@
    "source_page": 17,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.99），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
@@ -9249,9 +9249,9 @@
    "source_page": 17,
    "extracted_at": "2026-11-21",
    "extractor": "rule_ocr",
-   "verified": false,
-   "verified_by": null,
-   "notes": "OCR 识别（RapidOCR conf 0.94），未人工核对；尺寸格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "OCR 图页人眼核对一致(2026-11-21)"
   },
   "_placeholder": false
  },
