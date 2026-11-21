@@ -1,0 +1,12 @@
+{"case_id":201,"input":"147×100×14.5","expected":{"type":"match","top3":true,"sku":["FIT-解放虎威前AABS","FIT-解放虎威前A"]},"why":"评委随口报尺寸，考察尺寸直查"}
+{"case_id":202,"input":"151×80×13 这尺寸你们有吗","expected":{"type":"match","top3":true,"sku":["FIT-少林客车","FIT-少林客车ABS"]},"why":"口语+近似尺寸，容差内多候选"}
+{"case_id":203,"input":"汉德 35 吨桥，前面那副","expected":{"type":"match","sku":["FIT-汉德桥35T前"]},"why":"车桥口语，吨↔T"}
+{"case_id":204,"input":"汉德 35 吨桥，后面那副","expected":{"type":"match","sku":["FIT-汉德桥35T后"]},"why":"同车桥，位置反过来必须换答案"}
+{"case_id":205,"input":"沃胜 11.5 吨 A 款","expected":{"type":"match","sku":["FIT-沃胜桥115TA"]},"why":"A/B 变体指认"}
+{"case_id":206,"input":"解放 J6P 后轮要一副","expected":{"type":"match","sku":["FIT-解放J6后B"]},"why":"别名 J6P → 解放J6"}
+{"case_id":207,"input":"欧曼 400 前片","expected":{"type":"match","top3":true,"sku":["FIT-新欧曼400A","FIT-新欧曼400B"]},"why":"型号数字 400 → 400A/B"}
+{"case_id":208,"input":"德龙 X5000 后片","expected":{"type":"match","sku":["FIT-德龙X5000"]},"why":"字母+数字型号，不能串到 K5000"}
+{"case_id":209,"input":"沃尔沃 FH 后轮","expected":{"type":"match","sku":["FIT-沃尔沃后刹"]},"why":"外资车型（资料包内有沃尔沃 2 条）"}
+{"case_id":210,"input":"斯堪尼亚 后轮","expected":{"type":"ask_followup","min_questions":1},"why":"资料包 0 条斯堪尼亚，必须追问"}
+{"case_id":211,"input":"随便来一副刹车片","expected":{"type":"ask_followup","min_questions":1},"why":"信息不足，不许瞎配"}
+{"case_id":212,"input":"GY1054 有没有货","expected":{"type":"match","sku":["FIT-GY1054"]},"why":"内部编码直查（评委会拿印刷编码试）"}

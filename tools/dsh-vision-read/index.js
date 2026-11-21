@@ -301,24 +301,27 @@ function visionReadTool(ctx, settings) {
       },
     },
     output: {
+      // `output.schema` is validated as the enforced raw JSON Schema subset, so
+      // required members are listed once per node, not marked per property.
       schema: {
         type: 'object',
         additionalProperties: false,
+        required: ['model', 'images'],
         properties: {
-          model: { type: 'string', required: true },
+          model: { type: 'string' },
           images: {
             type: 'array',
-            required: true,
             items: {
               type: 'object',
               additionalProperties: false,
+              required: ['path', 'mediaType', 'bytes', 'ok', 'finish', 'text'],
               properties: {
-                path: { type: 'string', required: true },
-                mediaType: { type: 'string', required: true },
-                bytes: { type: 'integer', required: true },
-                ok: { type: 'boolean', required: true },
-                finish: { type: 'string', required: true },
-                text: { type: 'string', required: true },
+                path: { type: 'string' },
+                mediaType: { type: 'string' },
+                bytes: { type: 'integer' },
+                ok: { type: 'boolean' },
+                finish: { type: 'string' },
+                text: { type: 'string' },
               },
             },
           },

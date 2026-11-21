@@ -95,6 +95,8 @@ def parse_query(text: str, axles: list) -> dict:
         "norm_codes": [norm_code(c) for c in codes],
         "axles": [{"axle_id": a.get("axle_id"), "brand": a.get("brand"), "model": a.get("model")} for a in axle_hits],
         "car_models": car,
+        # "A 款"/"B 款" 这类变体指认；只认明确的写法，避免把 "ABS"/"BPW" 的 A/B 当变体
+        "variant": (_variant(text)),
     }
 
 
@@ -290,6 +292,11 @@ def expand_query(query: str) -> str:
     return query if not extra else query + " " + " ".join(extra)
 
 
+def _variant(text: str):
+    m = re.search(r"(?:^|[\s，,])([AB])\s*款", text) or re.search(r"([AB])\s*款", text)
+    return m.group(1) if m else None
+
+
 def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
                 use_llm: bool = False, include_placeholders: bool = False) -> dict:
     t0 = time.time()
@@ -350,6 +357,14 @@ def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
                 score = min(1.0, score + 0.03)
             elif any(p in qkey for p in ("前", "后")):
                 score -= 0.03
+        # A/B 变体偏好："A 款"要压过同名 B 款（沃胜 115TA / 115TB 这种）
+        qvar = parsed.get("variant")
+        if qvar:
+            name_tail = (sku.get("fit_name") or "").strip().upper()[-1:]
+            if name_tail == qvar:
+                score = min(1.0, score + 0.02)
+            elif name_tail in ("A", "B"):
+                score -= 0.02
         if parsed["has_dims"] and dim_err != 99.0:
             score = min(1.0, score + 0.05 / (1.0 + dim_err))
         hard = bool({"尺寸硬匹配"} & set(tags)) or any(t.startswith("编码") for t in tags)
