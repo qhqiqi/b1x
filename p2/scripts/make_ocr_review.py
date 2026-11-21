@@ -20,13 +20,27 @@ pages = defaultdict(list)
 for s in ocr:
     pages[(s["provenance"]["source_file"], s["provenance"]["source_page"])].append(s)
 
-random.seed(7)
-picked = []
-for k in sorted(pages):
-    picked.append(random.choice(pages[k]))
-    if len(pages[k]) > 1:
+import argparse
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--ids", default="", help="逗号分隔的 sku_id，指定就只出这几条")
+_ap.add_argument("--out", default="OCR抽检_12条.pdf")
+_args = _ap.parse_args()
+
+if _args.ids:
+    want = [x.strip() for x in _args.ids.split(",") if x.strip()]
+    by_id = {s["sku_id"]: s for s in ocr}
+    picked = [by_id[w] for w in want if w in by_id]
+    missing = [w for w in want if w not in by_id]
+    if missing:
+        print("跳过（不是 OCR 行）:", missing)
+else:
+    random.seed(7)
+    picked = []
+    for k in sorted(pages):
         picked.append(random.choice(pages[k]))
-picked = picked[:12]
+        if len(pages[k]) > 1:
+            picked.append(random.choice(pages[k]))
+    picked = picked[:12]
 picked.sort(key=lambda s: (s["provenance"]["source_file"], s["provenance"]["source_page"]))
 
 pdfs = {p.stem: p for p in (ROOT / "资料包").glob("*.pdf")}
@@ -77,7 +91,7 @@ for i, s in enumerate(picked, 1):
         i, s["sku_id"], s["fit_name"], s["dims"]["raw_text"],
         pr["source_file"], page, (s.get("extras") or {}).get("ocr_conf") or 0))
 
-pdf_out = OUT / "OCR抽检_12条.pdf"
+pdf_out = OUT / _args.out
 doc.save(str(pdf_out))
 doc.close()
 (OUT / "ocr_review_12.md").write_text("\n".join(rows_md) + "\n", encoding="utf-8")

@@ -44,9 +44,9 @@
    "source_page": 27,
    "extracted_at": "2026-11-21",
    "extractor": "rule_coord",
-   "verified": false,
-   "verified_by": null,
-   "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "文本层逐字比对一致(2026-11-21，Demo/口语 Top1)"
   },
   "_placeholder": false
  },
@@ -639,9 +639,9 @@
    "source_page": 27,
    "extracted_at": "2026-11-21",
    "extractor": "rule_coord",
-   "verified": false,
-   "verified_by": null,
-   "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "文本层逐字比对一致(2026-11-21，Demo/口语 Top1)"
   },
   "_placeholder": false
  },
@@ -1571,9 +1571,9 @@
    "source_page": 28,
    "extracted_at": "2026-11-21",
    "extractor": "rule_coord",
-   "verified": false,
-   "verified_by": null,
-   "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "文本层逐字比对一致(2026-11-21，Demo/口语 Top1)"
   },
   "_placeholder": false
  },
@@ -1613,9 +1613,9 @@
    "source_page": 28,
    "extracted_at": "2026-11-21",
    "extractor": "rule_coord",
-   "verified": false,
-   "verified_by": null,
-   "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "文本层逐字比对一致(2026-11-21，Demo/口语 Top1)"
   },
   "_placeholder": false
  },
@@ -1830,9 +1830,9 @@
    "source_page": 28,
    "extracted_at": "2026-11-21",
    "extractor": "rule_coord",
-   "verified": false,
-   "verified_by": null,
-   "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "文本层逐字比对一致(2026-11-21，Demo/口语 Top1)"
   },
   "_placeholder": false
  },
@@ -3169,9 +3169,9 @@
    "source_page": 17,
    "extracted_at": "2026-11-21",
    "extractor": "rule_coord",
-   "verified": false,
-   "verified_by": null,
-   "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "文本层逐字比对一致(2026-11-21，Demo/口语 Top1)"
   },
   "_placeholder": false
  },
@@ -4996,9 +4996,9 @@
    "source_page": 19,
    "extracted_at": "2026-11-21",
    "extractor": "rule_coord",
-   "verified": false,
-   "verified_by": null,
-   "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+   "verified": true,
+   "verified_by": "P2",
+   "notes": "文本层逐字比对一致(2026-11-21，Demo/口语 Top1)"
   },
   "_placeholder": false
  },
