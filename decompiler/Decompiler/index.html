@@ -423,7 +423,7 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding-top:24px;display
 footer .f{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--dim2);line-height:2}
 </style>
 </head>
-<body>
+<body data-page="lab">
 <div class="wrap">
 
   <header class="top">
@@ -438,6 +438,8 @@ footer .f{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(-
       <a href="method.html">方法</a>
       <a href="devices/">装置库</a>
       <a href="archive/">档案</a>
+      <a href="quiz.html">测验</a>
+      <a href="workbench.html">工作台</a>
       <a href="case.html">案例</a>
       <a href="sound.html">声音</a>
       <a href="about.html">关于</a>
@@ -1682,5 +1684,6 @@ setInterval(updateArcade, 700);
 M1.tasks.forEach(t=>{ const i=new Image(); i.src = IMG+t.img; });
 ["m2_anxious","m2_tired","m2_calm","m3_act1","m3_act2","m3_act3","m4_honor","m4_decay","m5_ideal"].forEach(n=>{ const i=new Image(); i.src=IMG+n+".jpg"; });
 </script>
+<script src="assets/explore.js"></script>
 </body>
 </html>

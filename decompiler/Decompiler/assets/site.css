@@ -277,3 +277,30 @@ a.card:hover .thumb{transform:scale(1.03)}
 .banner:after{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(to top,rgba(7,8,11,.85) 0%,rgba(7,8,11,.25) 26%,transparent 52%)}
 @media(max-width:760px){.banner img{aspect-ratio:16/10}}
+
+/* ---------- explore progress ---------- */
+.xp{position:fixed;left:20px;bottom:20px;z-index:75;display:flex;align-items:center;gap:9px;
+  background:rgba(12,14,19,.86);border:1px solid var(--line2);border-radius:999px;padding:8px 14px 8px 11px;
+  cursor:pointer;backdrop-filter:blur(8px);transition:.2s;user-select:none}
+.xp:hover{border-color:rgba(184,255,60,.4)}
+.xp-dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime)}
+.xp-txt{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--ink2)}
+.xp i{width:44px;height:3px;background:var(--line);border-radius:3px;overflow:hidden;display:block}
+.xp i b{display:block;height:100%;background:var(--lime);transition:width .3s}
+.xp-panel{position:fixed;left:20px;bottom:64px;z-index:76;width:252px;background:rgba(10,12,17,.97);
+  border:1px solid var(--line2);border-radius:14px;padding:16px 16px 12px;display:none;backdrop-filter:blur(10px);
+  box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.xp-panel.on{display:block;animation:rise .3s both}
+.xp-h{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--lime);margin-bottom:10px}
+.xp-item{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--dim);padding:5px 0}
+.xp-item.on{color:var(--ink2)}
+.xp-item s{width:14px;height:14px;border-radius:4px;border:1px solid var(--line2);display:grid;place-items:center;
+  font-size:9px;text-decoration:none;flex:none}
+.xp-item.on s{background:var(--lime);border-color:var(--lime);color:#0A0C08}
+.xp-foot{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);font-family:var(--mono);font-size:9px;
+  color:var(--dim2);line-height:1.7}
+.xp-toast{position:fixed;left:50%;bottom:92px;transform:translate(-50%,10px);background:var(--lime);color:#0A0C08;
+  font-size:12.5px;font-weight:600;padding:11px 18px;border-radius:999px;opacity:0;transition:.3s;z-index:90;
+  max-width:86vw;text-align:center}
+.xp-toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:520px){.xp{transform:scale(.9);transform-origin:bottom left}}
