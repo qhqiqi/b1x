@@ -69,11 +69,15 @@ def parse_query(text: str, axles: list) -> dict:
 
     dim_like = re.compile(r"\d+\s*[xX×*]\s*\d+(?:\s*[xX×*]\s*\d+)*")
     codes = [c for c in CODE_RE.findall(text) if not c.isdigit() and not dim_like.fullmatch(c)]
+    # 归一化查询：去空格/标点，"35 吨"→"35T"，这样"汉德 35 吨桥"能对上车桥别名"汉德35T"
+    qk = re.sub(PUNCT_RE, "", text).upper().replace("吨", "T")
     axle_hits = []
     for a in axles:
-        keys = [a.get("model", ""), a.get("axle_id", "")] + list(a.get("aliases") or [])
+        keys = list(a.get("aliases") or []) + [a.get("model", ""), a.get("axle_id", "")]
         for k in keys:
-            if k and len(k) >= 3 and k.lower() in low:
+            if not k or len(k) < 3:
+                continue
+            if re.sub(PUNCT_RE, "", k).upper().replace("吨", "T") in qk:
                 axle_hits.append(a)
                 break
         else:
@@ -154,10 +158,13 @@ def _followups(parsed: dict, best: float) -> list:
     return q[:3]
 
 
+PUNCT_RE = "[" + chr(92) + "s，。、,.！!？?]"
+
+
 def name_keys(name: str) -> set:
     """适配名归一：去空格/标点，'吨'→'T'，并给出"去桥字"变体。
        客户嘴里是"汉德 35 吨桥"，产品册写"汉德桥35T前"，必须能对上。"""
-    n = re.sub(r"[s，。、,.！!？?]", "", (name or "")).upper().replace("吨", "T")
+    n = re.sub(PUNCT_RE, "", (name or "")).upper().replace("吨", "T")
     keys = {n}
     if "桥" in n:
         keys.add(n.replace("桥", ""))
@@ -260,6 +267,15 @@ def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
         if not comps:
             continue
         score = min(1.0, max(comps) + 0.15 * (sum(comps) - max(comps)))
+        # 前后位偏好："前面那副"要压过同名的"后"
+        pos = sku.get("position") or ""
+        if pos in ("前", "后"):
+            if pos in qkey:
+                score = min(1.0, score + 0.03)
+            elif any(p in qkey for p in ("前", "后")):
+                score -= 0.03
+        if parsed["has_dims"] and dim_err != 99.0:
+            score = min(1.0, score + 0.05 / (1.0 + dim_err))
         hard = bool({"尺寸硬匹配"} & set(tags)) or any(t.startswith("编码") for t in tags)
         scored.append({
             "sku_id": sku.get("sku_id"),

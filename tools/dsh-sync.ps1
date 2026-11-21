@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
   One-command sync for the 3-person hackathon repo. ASCII output on purpose
   (Windows PowerShell 5.1 mangles non-ASCII script text).

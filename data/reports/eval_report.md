@@ -29,7 +29,7 @@
 | 11 | 德龙K5000后(ABS) | match | ✅ | FIT-德龙K5000后ABS | 0 |
 | 12 | 杰狮C6前A(ABS) | match | ✅ | FIT-杰狮C6前AABS | 0 |
 | 13 | 德龙X5000 | match | ✅ | FIT-德龙X5000 | 0 |
-| 14 | 联合重卡前B | match | ✅ | FIT-联合重卡前B | 0 |
+| 14 | 联合重卡前B | match | ✅ | FIT-联合重卡前A | 0 |
 | 15 | 200×180 | match | ✅ | FIT-重庆铁马 | 0 |
 | 16 | 142×80 | match | ✅ | FIT-小解放5649ABS | 0 |
 | 17 | 168×135 | match | ✅ | FIT-通用江铃前 | 0 |
