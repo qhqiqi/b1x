@@ -19,7 +19,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from engine.store import BM25, load_axles, load_skus, norm_code, sku_text
+from engine.store import BM25, load_axles, load_json, load_skus, norm_code, sku_text
+
+DATA = Path(__file__).resolve().parents[2] / "data" / "structured"
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -171,7 +173,9 @@ def name_keys(name: str) -> set:
         keys.add(n.replace("桥", ""))
     if "T" in n:
         keys.add(n.replace("T", "吨"))
-    return {k for k in keys if len(k) >= 4}
+    # 2~3 字的品牌名（欧曼/金龙/宇通/富华桥）同样有效，不能因为短就丢掉；
+    # 只排除"前/后/桥"这类纯位置或泛称，否则会到处误命中。
+    return {k for k in keys if len(k) >= 2 and k not in ("前", "后", "桥", "前片", "后片", "ABS")}
 
 
 def _bigrams(s: str) -> set:
@@ -181,9 +185,16 @@ def _bigrams(s: str) -> set:
 def _name_hit(sku: dict, qkey: str) -> str | None:
     """先试子串；不中就用字符二元组覆盖率（容忍"汉德 35 吨桥"与"汉德桥35T前"的语序差异）。"""
     qb = None
-    best, best_k = 0.0, None
+    best, best_k, best_lcs = 0.0, None, 0
+    # 型号数字（"欧曼 400" 的 400、"德龙 X5000" 的 5000）：先把尺寸串抠掉再取，
+    # 否则 147×100×14.5 里的数字会到处乱撞。
+    _nq = re.sub(r"\d+(?:\.\d+)?\s*[×xX*]\s*\d+(?:\.\d+)?(?:\s*[×xX*]\s*\d+(?:\.\d+)?)?", "", qkey)
+    # 连字母一起取：X5000 与 K5000 是两个型号，只比 "5000" 会串
+    qnums = [n for n in re.findall(r"[A-Z]?\d{3,4}", _nq)]
     for k in name_keys(sku.get("fit_name") or ""):
         if k in qkey:
+            return k
+        if qnums and any(n in k for n in qnums):
             return k
         if qb is None:
             qb = _bigrams(qkey)
@@ -191,9 +202,42 @@ def _name_hit(sku: dict, qkey: str) -> str | None:
         if not kb:
             continue
         r = len(kb & qb) / len(kb)
+        # 再算一次"最长公共子串占比"：名字常比查询多尾巴（"解放J6后B" vs 查询里的"解放J6"），
+        # 用二元组覆盖率会被尾巴稀释，LCS 不会。
+        pre = _prefix_in(k, qkey)
+        r = max(r, pre / len(k))
         if r > best:
-            best, best_k = r, k
-    return best_k if best >= 0.75 else None
+            best, best_k, best_lcs = r, k, _prefix_in(k, qkey)
+    if best_k and (best >= 0.75 or (best_lcs >= 3 and best >= 0.5)):
+        return best_k
+    return None
+
+
+def _prefix_in(k: str, qkey: str) -> int:
+    """k 的最长前缀、且整段出现在 qkey 里的长度。
+    名字的辨识信息在开头（"解放J6后B" 的 "解放J6"），尾巴是变体/位置；
+    用整段 LCS 会让 "美的客车后" 靠 "客车后" 蹭到分。"""
+    for L in range(min(len(k), len(qkey)), 2, -1):
+        if k[:L] in qkey:
+            return L
+    return 0
+
+
+def _lcs_len(a: str, b: str) -> int:
+    """最长公共子串长度（名字短、查询短，DP 足够快）。"""
+    if not a or not b:
+        return 0
+    best = 0
+    prev = [0] * (len(b) + 1)
+    for ca in a:
+        cur = [0] * (len(b) + 1)
+        for j, cb in enumerate(b, 1):
+            if ca == cb:
+                cur[j] = prev[j - 1] + 1
+                if cur[j] > best:
+                    best = cur[j]
+        prev = cur
+    return best
 
 
 def _dims_err(sku: dict, d: dict) -> float:
@@ -217,9 +261,39 @@ def _reason(sku: dict, tags: list, parsed: dict) -> str:
     return ("%s。%s" % (head, tail)).strip()
 
 
+_ALIAS_CACHE = {}
+
+
+def _aliases() -> dict:
+    """口语 → 产品册名字片段（data/structured/aliases.json，缺失则空表）。"""
+    if not _ALIAS_CACHE:
+        try:
+            _ALIAS_CACHE.update(load_json(str(DATA / "aliases.json"), {}) or {})
+        except Exception:
+            _ALIAS_CACHE.update({})
+    return _ALIAS_CACHE
+
+
+def expand_query(query: str) -> str:
+    """把口语别名拼到查询后面，例如 "J6P 后轮" → "J6P 后轮 解放J6"。
+    只加不减：原词保留，命中率提升，误伤面可控。"""
+    al = _aliases()
+    if not al:
+        return query
+    low = query.upper().replace(" ", "")
+    extra = []
+    for k, v in al.items():
+        if k.startswith("_"):
+            continue
+        if k and k.upper().replace(" ", "") in low and v and v not in extra:
+            extra.append(v)
+    return query if not extra else query + " " + " ".join(extra)
+
+
 def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
                 use_llm: bool = False, include_placeholders: bool = False) -> dict:
     t0 = time.time()
+    query = expand_query(query)
     if skus is None:
         skus = load_skus(include_placeholders=include_placeholders)
     if axles is None:
@@ -248,7 +322,8 @@ def match_query(query: str, skus=None, axles=None, top: int = TOP_N,
         hit = _name_hit(sku, qkey)
         if hit:
             tags.append("适配名命中 %s" % hit)
-            comps.append(0.9)
+            # 名字命中越长越具体（"新欧曼400A" 应压过泛称 "欧曼"）
+            comps.append(0.9 + 0.06 * min(1.0, max(0, len(hit) - 2) / 6.0))
         dim_err = 99.0
         if parsed["has_dims"] and _dims_hit(sku, parsed["dims"]):
             tags.append("尺寸硬匹配")

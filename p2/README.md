@@ -1,6 +1,6 @@
 # P2 工作区（AI & 数据工程）
 
-> 现状：**217 条真实 SKU**（127 条文本层 + 90 条 OCR 图页）｜引擎纯规则毫秒级｜回归 20/20、口语 6/6｜文本层一致性审计 127/127｜12 条已人工核对。
+> 现状：**217 条真实 SKU**（127 条文本层 + 90 条 OCR 图页）｜引擎纯规则毫秒级｜回归 20/20、口语 10/10｜文本层一致性审计 127/127｜12 条已人工核对。
 > 缺：材质 / 型号级摩擦系数 / 价格 / 编码 —— 资料包里没有，**别编**。
 
 ## 目录
@@ -11,7 +11,7 @@
       structured/benchmark.json     企业级 14 项台架对比（企业介绍 p25）
       structured/catalog_rows.json  原始行（134 行）
       eval/cases.jsonl              回归集（20 条，由主数据派生）
-      eval/cases_spoken.jsonl       「客户真话」口语集（6 条）
+      eval/cases_spoken.jsonl       「客户真话」口语集（10 条：含 J6P/欧曼400/富华桥的坑）
       reports/field_inventory.md    **资料包勘察结论（先读这份）**
       reports/test_report_gap.md    **「测试报告」到底指什么、缺哪一页**
       reports/demo_transcript.md    Demo 文字稿（可做录屏字幕）

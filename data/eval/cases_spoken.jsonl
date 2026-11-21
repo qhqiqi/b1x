@@ -1,6 +1,10 @@
-{"case_id":101,"input":"客户说这车是欧曼 400，要前片","expected":{"type":"ask_followup","min_questions":1},"why":"车型别名表还没有，必须追问车桥/尺寸，不许猜"}
+{"case_id":101,"input":"客户说这车是欧曼 400，要前片","expected":{"type":"match","top3":true,"sku":["FIT-新欧曼400A","FIT-新欧曼400B"]},"why":"OCR 并入 400A/400B 之前只能追问；现在型号数字能对上，直接给 A/B 双候选（仍不替客户选）"}
 {"case_id":102,"input":"修理工量了一下 147×100×14.5 让我配","expected":{"type":"match","sku":["FIT-解放虎威前A","FIT-解放虎威前AABS"]},"why":"口语+尺寸，尺寸硬匹配优先级最高"}
 {"case_id":103,"input":"汉德 35 吨桥，前面那副","expected":{"type":"match","sku":["FIT-汉德桥35T前"]},"why":"吨↔T、桥字语序差异"}
 {"case_id":104,"input":"沃胜桥 11.5 吨的，A 款","expected":{"type":"match","sku":["FIT-沃胜桥115TA"]},"why":"小数型号 + A/B 变体"}
 {"case_id":105,"input":"有没有乘龙 H5 前轮的片子","expected":{"type":"match","top3":true,"sku":["FIT-乘龙H5前A","FIT-乘龙H5前B"]},"why":"车型名+前轮，允许 A/B 并列"}
 {"case_id":106,"input":"客户发来旧片，说大概是 151×80×13","expected":{"type":"match","top3":true,"sku":["FIT-少林客车","FIT-少林客车ABS"]},"why":"实测近似尺寸，容差内多候选"}
+{"case_id":107,"input":"BPW 空压桥的片子，来一副后轮","expected":{"type":"ask_followup","min_questions":1},"why":"资料包内 0 条 BPW 适配记录，只能追问，不许编"}
+{"case_id":108,"input":"解放 J6P 后轮要一副","expected":{"type":"match","sku":["FIT-解放J6后B"]},"why":"口语 J6P → 产品册 解放J6；后轮要压过同名前"}
+{"case_id":109,"input":"三一搅拌车 后轮","expected":{"type":"match","sku":["FIT-三一搅拌车后"]},"why":"整车名+位置，OCR 行也要能命中"}
+{"case_id":110,"input":"富华桥 13 吨的，后面","expected":{"type":"match","top3":true,"sku":["FIT-富华桥","FIT-富华桥-2","FIT-富华桥-3"]},"why":"车桥名在适配名里，吨位只做弱信号"}
