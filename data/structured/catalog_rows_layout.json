@@ -1,0 +1,2143 @@
+[
+ {
+  "row_id": "R0000",
+  "file": "2026年浙江冠英企业介绍",
+  "page": 24,
+  "name": "测",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "1"
+  ]
+ },
+ {
+  "row_id": "R0001",
+  "file": "2026年浙江冠英企业介绍",
+  "page": 25,
+  "name": "测",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "2"
+  ]
+ },
+ {
+  "row_id": "R0002",
+  "file": "2026年浙江冠英企业介绍",
+  "page": 25,
+  "name": "硬度HRM/10",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0003",
+  "file": "2026年浙江冠英企业介绍",
+  "page": 25,
+  "name": "400C2厚度磨损mm",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "0"
+  ]
+ },
+ {
+  "row_id": "R0004",
+  "file": "2026年浙江冠英企业介绍",
+  "page": 25,
+  "name": "年",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0005",
+  "file": "2026年浙江冠英企业介绍",
+  "page": 25,
+  "name": "月",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "1"
+  ]
+ },
+ {
+  "row_id": "R0006",
+  "file": "kooying_catalog",
+  "page": 12,
+  "name": "GYS-178",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "120"
+  ]
+ },
+ {
+  "row_id": "R0007",
+  "file": "kooying_catalog",
+  "page": 21,
+  "name": "Q54后",
+  "raw_dims": "153×120×14.5",
+  "width_mm": 153.0,
+  "length_mm": 120.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": []
+ },
+ {
+  "row_id": "R0008",
+  "file": "kooying_catalog",
+  "page": 21,
+  "name": null,
+  "raw_dims": "145×150×15",
+  "width_mm": 145.0,
+  "length_mm": 150.0,
+  "thickness_mm": 15.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "120"
+  ]
+ },
+ {
+  "row_id": "R0009",
+  "file": "kooying_catalog",
+  "page": 26,
+  "name": "沃胜桥3020",
+  "raw_dims": "150×200×12.5/16",
+  "width_mm": 150.0,
+  "length_mm": 200.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "8",
+   "180",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0010",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "沃胜桥11.5TA",
+  "raw_dims": "165×200×12.5/16.8",
+  "width_mm": 165.0,
+  "length_mm": 200.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": 16.8,
+  "extras": [
+   "8",
+   "180",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0011",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "沃胜桥11.5TB",
+  "raw_dims": "214×200×11/16.8",
+  "width_mm": 214.0,
+  "length_mm": 200.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": 16.8,
+  "extras": [
+   "10",
+   "180",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0012",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "小J680宽",
+  "raw_dims": "149×80×11",
+  "width_mm": 149.0,
+  "length_mm": 80.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0013",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "宇通校车后(ABS)",
+  "raw_dims": "150×150×9.5/13.5",
+  "width_mm": 150.0,
+  "length_mm": 150.0,
+  "thickness_mm": 9.5,
+  "thickness_alt_mm": 13.5,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0014",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "杰狮C6前A(ABS)",
+  "raw_dims": "191×160×14/17",
+  "width_mm": 191.0,
+  "length_mm": 160.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 17.0,
+  "extras": [
+   "8",
+   "180",
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0015",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "杰狮C6前B",
+  "raw_dims": "230×160×8.8/17",
+  "width_mm": 230.0,
+  "length_mm": 160.0,
+  "thickness_mm": 8.8,
+  "thickness_alt_mm": 17.0,
+  "extras": [
+   "10",
+   "180",
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0016",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "解放虎威A(ABS)",
+  "raw_dims": "148×100×10/15",
+  "width_mm": 148.0,
+  "length_mm": 100.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0017",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "解放虎威B",
+  "raw_dims": "150×100×14/15.5",
+  "width_mm": 150.0,
+  "length_mm": 100.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 15.5,
+  "extras": []
+ },
+ {
+  "row_id": "R0018",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "三一搅拌车前",
+  "raw_dims": "201×160×15.5",
+  "width_mm": 201.0,
+  "length_mm": 160.0,
+  "thickness_mm": 15.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "10",
+   "150",
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0019",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "三一搅拌车后",
+  "raw_dims": "211×220×15.5",
+  "width_mm": 211.0,
+  "length_mm": 220.0,
+  "thickness_mm": 15.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "17",
+   "150",
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0020",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "小虎威A(ABS)",
+  "raw_dims": "150×100×15/16.5",
+  "width_mm": 150.0,
+  "length_mm": 100.0,
+  "thickness_mm": 15.0,
+  "thickness_alt_mm": 16.5,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0021",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "小虎威B",
+  "raw_dims": "151×100×10/16",
+  "width_mm": 151.0,
+  "length_mm": 100.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0022",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "东风天锦KR前A(ABS)",
+  "raw_dims": "188×155×12.2/14",
+  "width_mm": 188.0,
+  "length_mm": 155.0,
+  "thickness_mm": 12.2,
+  "thickness_alt_mm": 14.0,
+  "extras": [
+   "10",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0023",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "东风天锦KR前B",
+  "raw_dims": "205×155×8.2/14.2",
+  "width_mm": 205.0,
+  "length_mm": 155.0,
+  "thickness_mm": 8.2,
+  "thickness_alt_mm": 14.2,
+  "extras": [
+   "10",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0024",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "一汽红塔前(ABS)",
+  "raw_dims": "151×80×12.5",
+  "width_mm": 151.0,
+  "length_mm": 80.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0025",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "6700前",
+  "raw_dims": "151×85×14.5",
+  "width_mm": 151.0,
+  "length_mm": 85.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "150",
+   "7"
+  ]
+ },
+ {
+  "row_id": "R0026",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "德龙X5000",
+  "raw_dims": "205×178×15.5",
+  "width_mm": 205.0,
+  "length_mm": 178.0,
+  "thickness_mm": 15.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "14",
+   "150",
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0027",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "新98R前(ABS)",
+  "raw_dims": "142×80×12",
+  "width_mm": 142.0,
+  "length_mm": 80.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "150",
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0028",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "小解放5649(ABS)",
+  "raw_dims": "148×80×11",
+  "width_mm": 148.0,
+  "length_mm": 80.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120"
+  ]
+ },
+ {
+  "row_id": "R0029",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "福田80宽",
+  "raw_dims": "142×80×14.4/15.5",
+  "width_mm": 142.0,
+  "length_mm": 80.0,
+  "thickness_mm": 14.4,
+  "thickness_alt_mm": 15.5,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0030",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "6.5通孔",
+  "raw_dims": "146×80×10.5/15",
+  "width_mm": 146.0,
+  "length_mm": 80.0,
+  "thickness_mm": 10.5,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0031",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "霸铃80宽A",
+  "raw_dims": "150×100×10.5/13.5",
+  "width_mm": 150.0,
+  "length_mm": 100.0,
+  "thickness_mm": 10.5,
+  "thickness_alt_mm": 13.5,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0032",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "霸铃80宽B",
+  "raw_dims": "150×130×12",
+  "width_mm": 150.0,
+  "length_mm": 130.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0033",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "解放虎威130宽A(ABS)",
+  "raw_dims": "150×130×14/15.5",
+  "width_mm": 150.0,
+  "length_mm": 130.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 15.5,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0034",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "解放虎威130宽B",
+  "raw_dims": "148×130×10/15",
+  "width_mm": 148.0,
+  "length_mm": 130.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0035",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "解放红塔后A(ABS)",
+  "raw_dims": "145×100×12/13.5",
+  "width_mm": 145.0,
+  "length_mm": 100.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": 13.5,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0036",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "解放红塔后B",
+  "raw_dims": "145×100×9/13.4",
+  "width_mm": 145.0,
+  "length_mm": 100.0,
+  "thickness_mm": 9.0,
+  "thickness_alt_mm": 13.4,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0037",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "新斯太尔后A(ABS)",
+  "raw_dims": "201×185×14.5",
+  "width_mm": 201.0,
+  "length_mm": 185.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "11",
+   "180",
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0038",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "新斯太尔后B",
+  "raw_dims": "201×185×14.5",
+  "width_mm": 201.0,
+  "length_mm": 185.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "12",
+   "180",
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0039",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "GY1054",
+  "raw_dims": "149×160×13",
+  "width_mm": 149.0,
+  "length_mm": 160.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0040",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "HQ8555后",
+  "raw_dims": "154×130×13",
+  "width_mm": 154.0,
+  "length_mm": 130.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0041",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "江淮骏铃160宽",
+  "raw_dims": "151×160×14",
+  "width_mm": 151.0,
+  "length_mm": 160.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "150",
+   "7"
+  ]
+ },
+ {
+  "row_id": "R0042",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "福田小金刚(ABS)",
+  "raw_dims": "134×100×12",
+  "width_mm": 134.0,
+  "length_mm": 100.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0043",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "德龙K5000后(ABS)",
+  "raw_dims": "201×180×13/16.5",
+  "width_mm": 201.0,
+  "length_mm": 180.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": 16.5,
+  "extras": [
+   "8",
+   "180",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0044",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "德龙LM180(ABS)",
+  "raw_dims": "149×80×13",
+  "width_mm": 149.0,
+  "length_mm": 80.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0045",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "东风多利卡前(ABS)",
+  "raw_dims": "146×100×11/16",
+  "width_mm": 146.0,
+  "length_mm": 100.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0046",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "解放虎威前A(ABS)",
+  "raw_dims": "151×80×13.5",
+  "width_mm": 151.0,
+  "length_mm": 80.0,
+  "thickness_mm": 13.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0047",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "解放虎威前B",
+  "raw_dims": "208×180×14.5",
+  "width_mm": 208.0,
+  "length_mm": 180.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "9",
+   "120",
+   "7"
+  ]
+ },
+ {
+  "row_id": "R0048",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "少林客车(ABS)",
+  "raw_dims": "150×120×14.5",
+  "width_mm": 150.0,
+  "length_mm": 120.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0049",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "乘龙L3后",
+  "raw_dims": "143×120×13.5",
+  "width_mm": 143.0,
+  "length_mm": 120.0,
+  "thickness_mm": 13.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0050",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "五征",
+  "raw_dims": "240×220×18.5",
+  "width_mm": 240.0,
+  "length_mm": 220.0,
+  "thickness_mm": 18.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "20",
+   "180",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0051",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "三T王前改型(ABS)",
+  "raw_dims": "240×240×18.5",
+  "width_mm": 240.0,
+  "length_mm": 240.0,
+  "thickness_mm": 18.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "20",
+   "180",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0052",
+  "file": "kooying_catalog",
+  "page": 29,
+  "name": "新江铃前A(ABS)",
+  "raw_dims": "149×100×13.5/15",
+  "width_mm": 149.0,
+  "length_mm": 100.0,
+  "thickness_mm": 13.5,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0053",
+  "file": "kooying_catalog",
+  "page": 29,
+  "name": "新江铃前B",
+  "raw_dims": "149×100×9.5/14.5",
+  "width_mm": 149.0,
+  "length_mm": 100.0,
+  "thickness_mm": 9.5,
+  "thickness_alt_mm": 14.5,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0054",
+  "file": "kooying_catalog",
+  "page": 29,
+  "name": "福田欧马可A(ABS)",
+  "raw_dims": "146×100×14/15.2",
+  "width_mm": 146.0,
+  "length_mm": 100.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 15.2,
+  "extras": [
+   "6",
+   "120",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0055",
+  "file": "kooying_catalog",
+  "page": 29,
+  "name": "福田欧马可B",
+  "raw_dims": "146×80×14.8/16.5",
+  "width_mm": 146.0,
+  "length_mm": 80.0,
+  "thickness_mm": 14.8,
+  "thickness_alt_mm": 16.5,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0056",
+  "file": "kooying_catalog",
+  "page": 29,
+  "name": "东风多利卡后A(ABS)",
+  "raw_dims": "147×80×10.8/15.8",
+  "width_mm": 147.0,
+  "length_mm": 80.0,
+  "thickness_mm": 10.8,
+  "thickness_alt_mm": 15.8,
+  "extras": [
+   "6",
+   "150",
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0057",
+  "file": "冠隆产品册",
+  "page": 11,
+  "name": "新457桥后",
+  "raw_dims": "206×220×14.5",
+  "width_mm": 206.0,
+  "length_mm": 220.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "17"
+  ]
+ },
+ {
+  "row_id": "R0058",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "JH6后A",
+  "raw_dims": "177×197×15.5/18.5",
+  "width_mm": 177.0,
+  "length_mm": 197.0,
+  "thickness_mm": 15.5,
+  "thickness_alt_mm": 18.5,
+  "extras": [
+   "16"
+  ]
+ },
+ {
+  "row_id": "R0059",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "QT435SH10-3502572FW江淮格尔后B",
+  "raw_dims": "195×220×10/18.5",
+  "width_mm": 195.0,
+  "length_mm": 220.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 18.5,
+  "extras": [
+   "13"
+  ]
+ },
+ {
+  "row_id": "R0060",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "JH6后B",
+  "raw_dims": "221×197×10/19",
+  "width_mm": 221.0,
+  "length_mm": 197.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 19.0,
+  "extras": [
+   "20"
+  ]
+ },
+ {
+  "row_id": "R0061",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "QT435SH10-3502572FW江铃前",
+  "raw_dims": "148×100×12.5",
+  "width_mm": 148.0,
+  "length_mm": 100.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0062",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "江淮重卡、",
+  "raw_dims": "152×100×12.5",
+  "width_mm": 152.0,
+  "length_mm": 100.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0063",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "通用江铃前、",
+  "raw_dims": "168×135×13/18.5",
+  "width_mm": 168.0,
+  "length_mm": 135.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": 18.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0064",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "德龙曼前",
+  "raw_dims": "195×180×12.5/16",
+  "width_mm": 195.0,
+  "length_mm": 180.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0065",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "解放J5前B",
+  "raw_dims": "206×135×11/18.5",
+  "width_mm": 206.0,
+  "length_mm": 135.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": 18.5,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0066",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "德龙曼前",
+  "raw_dims": "235×180×9/16",
+  "width_mm": 235.0,
+  "length_mm": 180.0,
+  "thickness_mm": 9.0,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0067",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "联合重卡前A",
+  "raw_dims": "209×178×19.5/16",
+  "width_mm": 209.0,
+  "length_mm": 178.0,
+  "thickness_mm": 19.5,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "16"
+  ]
+ },
+ {
+  "row_id": "R0068",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "东风天锦A",
+  "raw_dims": "218×180×12.3/15.5",
+  "width_mm": 218.0,
+  "length_mm": 180.0,
+  "thickness_mm": 12.3,
+  "thickness_alt_mm": 15.5,
+  "extras": []
+ },
+ {
+  "row_id": "R0069",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "联合重卡前B",
+  "raw_dims": "206×178×19/12.5",
+  "width_mm": 206.0,
+  "length_mm": 178.0,
+  "thickness_mm": 19.0,
+  "thickness_alt_mm": 12.5,
+  "extras": [
+   "16"
+  ]
+ },
+ {
+  "row_id": "R0070",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "东风天锦B",
+  "raw_dims": "218×180×9.8/15.5",
+  "width_mm": 218.0,
+  "length_mm": 180.0,
+  "thickness_mm": 9.8,
+  "thickness_alt_mm": 15.5,
+  "extras": [
+   "9"
+  ]
+ },
+ {
+  "row_id": "R0071",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "美的客车后",
+  "raw_dims": "145×130×12",
+  "width_mm": 145.0,
+  "length_mm": 130.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0072",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "厦门金龙气囊车",
+  "raw_dims": "205×150×12.7/15",
+  "width_mm": 205.0,
+  "length_mm": 150.0,
+  "thickness_mm": 12.7,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "7"
+  ]
+ },
+ {
+  "row_id": "R0073",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "沈阳日野",
+  "raw_dims": "207×180×14.5",
+  "width_mm": 207.0,
+  "length_mm": 180.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "12"
+  ]
+ },
+ {
+  "row_id": "R0074",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "索马桥后",
+  "raw_dims": "205×160×14.5",
+  "width_mm": 205.0,
+  "length_mm": 160.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0075",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "通用奥林捷运前/后、",
+  "raw_dims": "208×150×10/15",
+  "width_mm": 208.0,
+  "length_mm": 150.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "7"
+  ]
+ },
+ {
+  "row_id": "R0076",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "汉威160A",
+  "raw_dims": "206×160×16/18.5",
+  "width_mm": 206.0,
+  "length_mm": 160.0,
+  "thickness_mm": 16.0,
+  "thickness_alt_mm": 18.5,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0077",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "新K前",
+  "raw_dims": "203×130×11/14.5",
+  "width_mm": 203.0,
+  "length_mm": 130.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": 14.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0078",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "汉威160B",
+  "raw_dims": "213×160×11.5/18.2",
+  "width_mm": 213.0,
+  "length_mm": 160.0,
+  "thickness_mm": 11.5,
+  "thickness_alt_mm": 18.2,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0079",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "新欧曼400A",
+  "raw_dims": "189×222×15/17",
+  "width_mm": 189.0,
+  "length_mm": 222.0,
+  "thickness_mm": 15.0,
+  "thickness_alt_mm": 17.0,
+  "extras": [
+   "14"
+  ]
+ },
+ {
+  "row_id": "R0080",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "红岩杰狮前",
+  "raw_dims": "200×160×11.5/14.5",
+  "width_mm": 200.0,
+  "length_mm": 160.0,
+  "thickness_mm": 11.5,
+  "thickness_alt_mm": 14.5,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0081",
+  "file": "冠隆产品册",
+  "page": 17,
+  "name": "新欧曼400B",
+  "raw_dims": "234×222×9/17",
+  "width_mm": 234.0,
+  "length_mm": 222.0,
+  "thickness_mm": 9.0,
+  "thickness_alt_mm": 17.0,
+  "extras": [
+   "12"
+  ]
+ },
+ {
+  "row_id": "R0082",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "新T850前",
+  "raw_dims": "208×140×16",
+  "width_mm": 208.0,
+  "length_mm": 140.0,
+  "thickness_mm": 16.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0083",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "金龙6791E",
+  "raw_dims": "150×160×12.5",
+  "width_mm": 150.0,
+  "length_mm": 160.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0084",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "东风天锦KR",
+  "raw_dims": "188×155×12.2/14",
+  "width_mm": 188.0,
+  "length_mm": 155.0,
+  "thickness_mm": 12.2,
+  "thickness_alt_mm": 14.0,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0085",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "小解放5649",
+  "raw_dims": "142×80×12",
+  "width_mm": 142.0,
+  "length_mm": 80.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0086",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "重汽汕德卡前",
+  "raw_dims": "195×160×13.5/16",
+  "width_mm": 195.0,
+  "length_mm": 160.0,
+  "thickness_mm": 13.5,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0087",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "德龙LM160",
+  "raw_dims": "205×163×12.8/16.5",
+  "width_mm": 205.0,
+  "length_mm": 163.0,
+  "thickness_mm": 12.8,
+  "thickness_alt_mm": 16.5,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0088",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "东风天锦KR",
+  "raw_dims": "205×155×8.2/14.2",
+  "width_mm": 205.0,
+  "length_mm": 155.0,
+  "thickness_mm": 8.2,
+  "thickness_alt_mm": 14.2,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0089",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "红塔100",
+  "raw_dims": "150×100×10.5/13.5",
+  "width_mm": 150.0,
+  "length_mm": 100.0,
+  "thickness_mm": 10.5,
+  "thickness_alt_mm": 13.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0090",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "重庆铁马",
+  "raw_dims": "200×180×13/16",
+  "width_mm": 200.0,
+  "length_mm": 180.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0091",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "新款杰狮前A",
+  "raw_dims": "191×150×13.5/17",
+  "width_mm": 191.0,
+  "length_mm": 150.0,
+  "thickness_mm": 13.5,
+  "thickness_alt_mm": 17.0,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0092",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "\u0001\u0001\u0001140宽",
+  "raw_dims": "206×220×12.5/16.8",
+  "width_mm": 206.0,
+  "length_mm": 220.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": 16.8,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0093",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "一汽红塔前",
+  "raw_dims": "151×80×12.5",
+  "width_mm": 151.0,
+  "length_mm": 80.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0094",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "天龙KL后",
+  "raw_dims": "208×200×14.2",
+  "width_mm": 208.0,
+  "length_mm": 200.0,
+  "thickness_mm": 14.2,
+  "thickness_alt_mm": null,
+  "extras": [
+   "14"
+  ]
+ },
+ {
+  "row_id": "R0095",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "新款杰狮前B",
+  "raw_dims": "229×150×8.5/16.4",
+  "width_mm": 229.0,
+  "length_mm": 150.0,
+  "thickness_mm": 8.5,
+  "thickness_alt_mm": 16.4,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0096",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "新98R前",
+  "raw_dims": "207×180×15.5",
+  "width_mm": 207.0,
+  "length_mm": 180.0,
+  "thickness_mm": 15.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "14"
+  ]
+ },
+ {
+  "row_id": "R0097",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "6700前",
+  "raw_dims": "151×80×14.5",
+  "width_mm": 151.0,
+  "length_mm": 80.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0098",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "小J6\u000180宽",
+  "raw_dims": "149×80×11",
+  "width_mm": 149.0,
+  "length_mm": 80.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0099",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "小虎威A",
+  "raw_dims": "150×100×15/16.5",
+  "width_mm": 150.0,
+  "length_mm": 100.0,
+  "thickness_mm": 15.0,
+  "thickness_alt_mm": 16.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0100",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "欧曼CX490",
+  "raw_dims": "227×150×7.3/16",
+  "width_mm": 227.0,
+  "length_mm": 150.0,
+  "thickness_mm": 7.3,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0101",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "新天锦130B",
+  "raw_dims": "197×130×8.5/13.8",
+  "width_mm": 197.0,
+  "length_mm": 130.0,
+  "thickness_mm": 8.5,
+  "thickness_alt_mm": 13.8,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0102",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "霸铃80宽A",
+  "raw_dims": "142×80×14.4/15.5",
+  "width_mm": 142.0,
+  "length_mm": 80.0,
+  "thickness_mm": 14.4,
+  "thickness_alt_mm": 15.5,
+  "extras": []
+ },
+ {
+  "row_id": "R0103",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "小虎威B",
+  "raw_dims": "151×100×10/16",
+  "width_mm": 151.0,
+  "length_mm": 100.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0104",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "\u0001\u0001\u0001\u0001\u0001\u0001\u0001前B",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0105",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "沃胜桥3020",
+  "raw_dims": "150×200×12.5/16",
+  "width_mm": 150.0,
+  "length_mm": 200.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0106",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "重汽小豪沃",
+  "raw_dims": "156×160×12.5",
+  "width_mm": 156.0,
+  "length_mm": 160.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0107",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "霸铃80宽B",
+  "raw_dims": "146×80×10.5/15",
+  "width_mm": 146.0,
+  "length_mm": 80.0,
+  "thickness_mm": 10.5,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0108",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "福田80",
+  "raw_dims": "148×80×11",
+  "width_mm": 148.0,
+  "length_mm": 80.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0109",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "沃胜桥11.5TA",
+  "raw_dims": "165×200×12.5/16.8",
+  "width_mm": 165.0,
+  "length_mm": 200.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": 16.8,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0110",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "小解放后",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0111",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "宇通校车后",
+  "raw_dims": "150×150×9.5/13.5",
+  "width_mm": 150.0,
+  "length_mm": 150.0,
+  "thickness_mm": 9.5,
+  "thickness_alt_mm": 13.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0112",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "解放虎威",
+  "raw_dims": "150×130×14/15.5",
+  "width_mm": 150.0,
+  "length_mm": 130.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 15.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0113",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "沃胜桥11.5TB",
+  "raw_dims": "214×200×11/16.8",
+  "width_mm": 214.0,
+  "length_mm": 200.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": 16.8,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0114",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "杰狮C6前A",
+  "raw_dims": null,
+  "width_mm": null,
+  "length_mm": null,
+  "thickness_mm": null,
+  "thickness_alt_mm": null,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0115",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "解放虎威",
+  "raw_dims": "148×130×10/15",
+  "width_mm": 148.0,
+  "length_mm": 130.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0116",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001前A",
+  "raw_dims": "191×160×14/17",
+  "width_mm": 191.0,
+  "length_mm": 160.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 17.0,
+  "extras": []
+ },
+ {
+  "row_id": "R0117",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "Q54后",
+  "raw_dims": "153×120×14.5",
+  "width_mm": 153.0,
+  "length_mm": 120.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0118",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "豪沃TX350",
+  "raw_dims": "190×220×12/16",
+  "width_mm": 190.0,
+  "length_mm": 220.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0119",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "杰狮C6前B",
+  "raw_dims": "208×140×16",
+  "width_mm": 208.0,
+  "length_mm": 140.0,
+  "thickness_mm": 16.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0120",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "湖桥54Q",
+  "raw_dims": "158×120×14.5",
+  "width_mm": 158.0,
+  "length_mm": 120.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0121",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "Hq8555后",
+  "raw_dims": "154×130×13",
+  "width_mm": 154.0,
+  "length_mm": 130.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0122",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "⻘岛3T",
+  "raw_dims": "208×140×16",
+  "width_mm": 208.0,
+  "length_mm": 140.0,
+  "thickness_mm": 16.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0123",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "三一搅拌车前",
+  "raw_dims": "201×160×15.5",
+  "width_mm": 201.0,
+  "length_mm": 160.0,
+  "thickness_mm": 15.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "10"
+  ]
+ },
+ {
+  "row_id": "R0124",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "解放虎威A",
+  "raw_dims": "150×100×14/15.5",
+  "width_mm": 150.0,
+  "length_mm": 100.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 15.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0125",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001前B",
+  "raw_dims": "151×160×14",
+  "width_mm": 151.0,
+  "length_mm": 160.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0126",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "80G1改型",
+  "raw_dims": "153×160×12.5",
+  "width_mm": 153.0,
+  "length_mm": 160.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0127",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "三一搅拌车",
+  "raw_dims": "211×220×15.5",
+  "width_mm": 211.0,
+  "length_mm": 220.0,
+  "thickness_mm": 15.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "17"
+  ]
+ },
+ {
+  "row_id": "R0128",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "解放虎威B",
+  "raw_dims": "148×100×10/15",
+  "width_mm": 148.0,
+  "length_mm": 100.0,
+  "thickness_mm": 10.0,
+  "thickness_alt_mm": 15.0,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0129",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "欧曼CX490",
+  "raw_dims": "201×180×13/16.5",
+  "width_mm": 201.0,
+  "length_mm": 180.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": 16.5,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0130",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "东风多利卡前",
+  "raw_dims": "149×80×13",
+  "width_mm": 149.0,
+  "length_mm": 80.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0131",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": null,
+  "raw_dims": "149×160×13",
+  "width_mm": 149.0,
+  "length_mm": 160.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0132",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "龙岩8050",
+  "raw_dims": "150×130×12",
+  "width_mm": 150.0,
+  "length_mm": 130.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0133",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "乘龙H5前A",
+  "raw_dims": "145×160×14.5",
+  "width_mm": 145.0,
+  "length_mm": 160.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0134",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "乘龙L3后",
+  "raw_dims": "208×180×14.5",
+  "width_mm": 208.0,
+  "length_mm": 180.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "9"
+  ]
+ },
+ {
+  "row_id": "R0135",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "乘龙H5前B",
+  "raw_dims": "196×160×14.5",
+  "width_mm": 196.0,
+  "length_mm": 160.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "8"
+  ]
+ },
+ {
+  "row_id": "R0136",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "新斯太尔后A",
+  "raw_dims": "201×185×14.5",
+  "width_mm": 201.0,
+  "length_mm": 185.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "11"
+  ]
+ },
+ {
+  "row_id": "R0137",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "新斯太尔后B",
+  "raw_dims": "201×185×14.5",
+  "width_mm": 201.0,
+  "length_mm": 185.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "12"
+  ]
+ },
+ {
+  "row_id": "R0138",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "解放虎威前B",
+  "raw_dims": "146×100×11/16",
+  "width_mm": 146.0,
+  "length_mm": 100.0,
+  "thickness_mm": 11.0,
+  "thickness_alt_mm": 16.0,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0139",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "汉德桥35T前",
+  "raw_dims": "240×220×18.5",
+  "width_mm": 240.0,
+  "length_mm": 220.0,
+  "thickness_mm": 18.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "20"
+  ]
+ },
+ {
+  "row_id": "R0140",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "汉德桥35T后",
+  "raw_dims": "240×240×18.5",
+  "width_mm": 240.0,
+  "length_mm": 240.0,
+  "thickness_mm": 18.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "20"
+  ]
+ },
+ {
+  "row_id": "R0141",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "福田小金刚",
+  "raw_dims": "134×100×12",
+  "width_mm": 134.0,
+  "length_mm": 100.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0142",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "少林客车",
+  "raw_dims": "151×80×13.5",
+  "width_mm": 151.0,
+  "length_mm": 80.0,
+  "thickness_mm": 13.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0143",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "解放虎威前A",
+  "raw_dims": "170×130×13",
+  "width_mm": 170.0,
+  "length_mm": 130.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0144",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "解放红塔后A",
+  "raw_dims": "145×100×12/13.5",
+  "width_mm": 145.0,
+  "length_mm": 100.0,
+  "thickness_mm": 12.0,
+  "thickness_alt_mm": 13.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0145",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "解放红塔后B",
+  "raw_dims": "145×100×9/13.4",
+  "width_mm": 145.0,
+  "length_mm": 100.0,
+  "thickness_mm": 9.0,
+  "thickness_alt_mm": 13.4,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "R0146",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "解放J6前",
+  "raw_dims": "210×150×14.5",
+  "width_mm": 210.0,
+  "length_mm": 150.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": [
+   "10"
+  ]
+ }
+]

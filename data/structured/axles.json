@@ -1,0 +1,160 @@
+[
+  {
+    "axle_id": "新457-未知",
+    "brand": "新457",
+    "model": "未知",
+    "aliases": [
+      "新457桥未知",
+      "新457未知"
+    ],
+    "brake_type": "鼓式",
+    "brake_spec": {
+      "drum_dia_mm": null,
+      "pad_width_mm": 206.0,
+      "thickness_mm": 14.5,
+      "bonding": "未知",
+      "note": "取自 FIT-新457桥后 的尺寸，未核实"
+    },
+    "known_sku_ids": [
+      "FIT-新457桥后"
+    ],
+    "source": "由产品册适配名反推（新457桥后 等）",
+    "verified": false
+  },
+  {
+    "axle_id": "汉德-35T",
+    "brand": "汉德",
+    "model": "35T",
+    "aliases": [
+      "汉德桥35T",
+      "汉德35T",
+      "汉德35吨"
+    ],
+    "brake_type": "鼓式",
+    "brake_spec": {
+      "drum_dia_mm": null,
+      "pad_width_mm": 240.0,
+      "thickness_mm": 18.5,
+      "bonding": "未知",
+      "note": "取自 FIT-汉德桥35T前 的尺寸，未核实"
+    },
+    "known_sku_ids": [
+      "FIT-汉德桥35T前",
+      "FIT-汉德桥35T后"
+    ],
+    "source": "由产品册适配名反推（汉德桥35T前 等）",
+    "verified": false
+  },
+  {
+    "axle_id": "沃胜-11.5TA",
+    "brand": "沃胜",
+    "model": "11.5TA",
+    "aliases": [
+      "沃胜11.5TA",
+      "沃胜11.5吨A",
+      "沃胜桥11.5TA"
+    ],
+    "brake_type": "鼓式",
+    "brake_spec": {
+      "drum_dia_mm": null,
+      "pad_width_mm": 165.0,
+      "thickness_mm": 12.5,
+      "bonding": "未知",
+      "note": "取自 FIT-沃胜桥115TA 的尺寸，未核实"
+    },
+    "known_sku_ids": [
+      "FIT-沃胜桥115TA"
+    ],
+    "source": "由产品册适配名反推（沃胜桥11.5TA 等）",
+    "verified": false
+  },
+  {
+    "axle_id": "沃胜-11.5TB",
+    "brand": "沃胜",
+    "model": "11.5TB",
+    "aliases": [
+      "沃胜11.5TB",
+      "沃胜11.5吨B",
+      "沃胜桥11.5TB"
+    ],
+    "brake_type": "鼓式",
+    "brake_spec": {
+      "drum_dia_mm": null,
+      "pad_width_mm": 214.0,
+      "thickness_mm": 11.0,
+      "bonding": "未知",
+      "note": "取自 FIT-沃胜桥115TB 的尺寸，未核实"
+    },
+    "known_sku_ids": [
+      "FIT-沃胜桥115TB"
+    ],
+    "source": "由产品册适配名反推（沃胜桥11.5TB 等）",
+    "verified": false
+  },
+  {
+    "axle_id": "沃胜-3020",
+    "brand": "沃胜",
+    "model": "3020",
+    "aliases": [
+      "沃胜3020",
+      "沃胜桥3020"
+    ],
+    "brake_type": "鼓式",
+    "brake_spec": {
+      "drum_dia_mm": null,
+      "pad_width_mm": 150.0,
+      "thickness_mm": 12.5,
+      "bonding": "未知",
+      "note": "取自 FIT-沃胜桥3020 的尺寸，未核实"
+    },
+    "known_sku_ids": [
+      "FIT-沃胜桥3020"
+    ],
+    "source": "由产品册适配名反推（沃胜桥3020 等）",
+    "verified": false
+  },
+  {
+    "axle_id": "湖-54Q",
+    "brand": "湖",
+    "model": "54Q",
+    "aliases": [
+      "湖54Q",
+      "湖桥54Q"
+    ],
+    "brake_type": "鼓式",
+    "brake_spec": {
+      "drum_dia_mm": null,
+      "pad_width_mm": 158.0,
+      "thickness_mm": 14.5,
+      "bonding": "未知",
+      "note": "取自 FIT-湖桥54Q 的尺寸，未核实"
+    },
+    "known_sku_ids": [
+      "FIT-湖桥54Q"
+    ],
+    "source": "由产品册适配名反推（湖桥54Q 等）",
+    "verified": false
+  },
+  {
+    "axle_id": "索马-未知",
+    "brand": "索马",
+    "model": "未知",
+    "aliases": [
+      "索马桥未知",
+      "索马未知"
+    ],
+    "brake_type": "鼓式",
+    "brake_spec": {
+      "drum_dia_mm": null,
+      "pad_width_mm": 205.0,
+      "thickness_mm": 14.5,
+      "bonding": "未知",
+      "note": "取自 FIT-索马桥后 的尺寸，未核实"
+    },
+    "known_sku_ids": [
+      "FIT-索马桥后"
+    ],
+    "source": "由产品册适配名反推（索马桥后 等）",
+    "verified": false
+  }
+]

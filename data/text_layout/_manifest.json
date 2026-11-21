@@ -1,0 +1,26 @@
+[
+  {
+    "source": "Y:\\hks\\资料包\\2026年浙江冠英企业介绍.pdf",
+    "text": "Y:\\hks\\data\\text_layout\\2026年浙江冠英企业介绍.txt",
+    "pages": 26,
+    "chars": 12131,
+    "empty_pages": 6,
+    "scanned_likely": false
+  },
+  {
+    "source": "Y:\\hks\\资料包\\kooying catalog.pdf",
+    "text": "Y:\\hks\\data\\text_layout\\kooying_catalog.txt",
+    "pages": 34,
+    "chars": 34499,
+    "empty_pages": 11,
+    "scanned_likely": false
+  },
+  {
+    "source": "Y:\\hks\\资料包\\冠隆产品册.pdf",
+    "text": "Y:\\hks\\data\\text_layout\\冠隆产品册.txt",
+    "pages": 23,
+    "chars": 7799,
+    "empty_pages": 16,
+    "scanned_likely": false
+  }
+]

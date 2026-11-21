@@ -1,0 +1,25 @@
+# 比赛原始资料（100MB PDF，三人各自本地都有，不进仓库）
+资料包/
+
+# DSH / 本地产物
+.cache/
+*.tmp
+*.log
+
+# 密钥与账号
+.env
+.env.*
+!.env.example
+*.key
+credentials*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 前端
+node_modules/
+dist/
+.next/

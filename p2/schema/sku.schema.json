@@ -1,0 +1,307 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "冠英 SKU 主数据 v1.1",
+  "description": "v1.1（2026-11-21 15:45 修订）：按真实产品册口径改为 宽×长×厚(/备选厚)，新增 fit_name/position/abs/part_no。字段名冻结，只增不改。",
+  "type": "object",
+  "required": [
+    "sku_id",
+    "brand",
+    "category",
+    "dims",
+    "fit_name",
+    "provenance"
+  ],
+  "properties": {
+    "sku_id": {
+      "type": "string",
+      "description": "主键：FIT-<适配名> 或 GY 型号"
+    },
+    "brand": {
+      "type": "string",
+      "default": "冠英"
+    },
+    "category": {
+      "enum": [
+        "鼓式",
+        "盘式",
+        "风电"
+      ]
+    },
+    "fit_name": {
+      "type": "string",
+      "description": "产品册上的适配名：解放虎威前A / 汉德桥35T前 / GY1054（这是客户嘴里的东西，也是检索主键）"
+    },
+    "position": {
+      "enum": [
+        "前",
+        "后",
+        "未知"
+      ],
+      "description": "前片/后片"
+    },
+    "abs": {
+      "type": "boolean",
+      "description": "产品册标注 (ABS)"
+    },
+    "part_no": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "冠英型号，如 GY1054；适配名类记录为 null"
+    },
+    "dims": {
+      "type": "object",
+      "description": "产品册口径：宽×长×厚(/备选厚)，单位 mm",
+      "required": [
+        "raw_text"
+      ],
+      "properties": {
+        "width_mm": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "length_mm": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "thickness_mm": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "thickness_alt_mm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "原文 14/15.5 里的备选厚"
+        },
+        "outer_dia_mm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "鼓径/外径，仅鼓体类产品有"
+        },
+        "raw_text": {
+          "type": "string",
+          "description": "原文尺寸串，展示与溯源用"
+        }
+      }
+    },
+    "material": {
+      "enum": [
+        "半金属",
+        "陶瓷",
+        "NAO",
+        "石墨",
+        "其他",
+        "未知"
+      ],
+      "description": "产品册未逐条标注，默认未知"
+    },
+    "friction_coef": {
+      "type": "object",
+      "properties": {
+        "nominal": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "wear_rate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "axle_fit": {
+      "type": "array",
+      "description": "从适配名推断的车桥（汉德/沃胜/BPW/SAF），空数组=未确认",
+      "items": {
+        "type": "object",
+        "required": [
+          "brand"
+        ],
+        "properties": {
+          "brand": {
+            "type": "string"
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "brake_spec": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "cross_refs": {
+      "type": "array",
+      "description": "竞品/OE/旧编码，多对多；产品册里没有，靠客户反馈与历史询价补",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "code"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "OE",
+              "竞品",
+              "旧编码"
+            ]
+          },
+          "code": {
+            "type": "string"
+          },
+          "brand": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "enum": [
+              "catalog",
+              "客户反馈",
+              "历史询价",
+              "未知"
+            ]
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "extras": {
+      "type": "object",
+      "description": "产品册附列：数量/宽度/孔数，位置不固定，原样保留"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "report_id",
+          "page"
+        ],
+        "properties": {
+          "report_id": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "snippet": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "产品册",
+              "测试报告",
+              "企业介绍",
+              "其他"
+            ]
+          }
+        }
+      }
+    },
+    "price": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "stock": {
+      "enum": [
+        "有货",
+        "订制",
+        "停产",
+        "未知"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source_file"
+      ],
+      "properties": {
+        "source_file": {
+          "type": "string"
+        },
+        "source_page": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "extracted_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "extractor": {
+          "enum": [
+            "rule_coord",
+            "rule_layout",
+            "llm_batch",
+            "manual",
+            "seed"
+          ]
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "verified_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "_placeholder": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "车桥规格词典 v1（车型是噪声，车桥才是锚点）",
+  "type": "object",
+  "required": ["axle_id", "brand", "model", "verified"],
+  "properties": {
+    "axle_id": { "type": "string", "description": "主键，如 BPW-ECO-PLUS" },
+    "brand": { "type": "string", "description": "BPW / SAF / 富华FUWA / 中集CIMC / 蓬翔 / 约斯特 …" },
+    "model": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" }, "description": "别写/俗称/铭牌常见写法" },
+    "brake_type": { "enum": ["鼓式", "盘式", "未知"] },
+    "brake_spec": {
+      "type": "object",
+      "properties": {
+        "drum_dia_mm": { "type": ["number", "null"], "description": "鼓径" },
+        "pad_width_mm": { "type": ["number", "null"], "description": "片宽" },
+        "thickness_mm": { "type": ["number", "null"] },
+        "bonding": { "enum": ["铆接", "粘接", "未知"] }
+      }
+    },
+    "known_sku_ids": { "type": "array", "items": { "type": "string" } },
+    "source": { "type": "string", "description": "公开信息 / 冠英资料 / 客户反馈 的具体出处" },
+    "verified": { "type": "boolean", "default": false }
+  }
+}
