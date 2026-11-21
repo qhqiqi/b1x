@@ -172,11 +172,27 @@ def main(argv=None) -> int:
                 if f.get("action") == "rename" and f.get("new_fit_name"):
                     s["fit_name"] = f["new_fit_name"]
                 elif f.get("action") == "drop":
-                    skus.remove(s)
+                    s["_drop"] = True
                     continue
                 s["provenance"]["notes"] = ((s["provenance"].get("notes") or "") + "；人工更正：" + f.get("note", "")).strip("；")
                 s["provenance"]["verified"] = True
                 s["provenance"]["verified_by"] = "P2-人工核对"
+
+        skus = [s for s in skus if not s.get("_drop")]
+        # 人工核对结论单独存 data/verified.json，重跑解析不会丢
+        vp = ROOT / "data" / "verified.json"
+        if vp.exists():
+            vd = json.loads(vp.read_text(encoding="utf-8"))
+            for s in skus:
+                v = vd.get(s["sku_id"])
+                if v:
+                    s["provenance"]["verified"] = True
+                    s["provenance"]["verified_by"] = v.get("by") or "P2"
+                    if v.get("notes"):
+                        s["provenance"]["notes"] = v["notes"]
+            skip = {k for k in vd if vd[k].get("drop")}
+            if skip:
+                skus = [s for s in skus if s["sku_id"] not in skip]
         tgt = ROOT / "data" / "structured" / "skus.json"
         tgt.write_text(json.dumps(skus, ensure_ascii=False, indent=2), encoding="utf-8")
         print("合并 → skus.json：%d 条" % len(skus))

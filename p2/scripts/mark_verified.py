@@ -29,8 +29,23 @@ def load():
     return json.loads(SKUS.read_text(encoding="utf-8"))
 
 
+VERIFIED = ROOT / "data" / "verified.json"
+
+
 def save(recs):
     SKUS.write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding="utf-8")
+    # 同步到 data/verified.json：重跑 parse_layout --merge 不会丢核对结论
+    vd = {}
+    if VERIFIED.exists():
+        try:
+            vd = json.loads(VERIFIED.read_text(encoding="utf-8"))
+        except Exception:
+            vd = {}
+    for s in recs:
+        pr = s.get("provenance") or {}
+        if pr.get("verified"):
+            vd[s["sku_id"]] = {"by": pr.get("verified_by"), "notes": pr.get("notes") or ""}
+    VERIFIED.write_text(json.dumps(vd, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def main():
