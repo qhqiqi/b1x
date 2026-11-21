@@ -1,12 +1,12 @@
 # P2 工作区（AI & 数据工程）
 
-> 现状：**120 条真实 SKU**（适配名 + 外弧×宽度×厚度 + 产品册页码）｜引擎纯规则毫秒级｜回归 20/20、口语 6/6。
+> 现状：**128 条真实 SKU**（适配名 + 外弧×宽度×厚度 + 产品册页码）｜引擎纯规则毫秒级｜回归 20/20、口语 6/6｜全量一致性审计 128/128。
 > 缺：材质 / 型号级摩擦系数 / 价格 / 编码 —— 资料包里没有，**别编**。
 
 ## 目录
 
     data/
-      structured/skus.json          主数据（120 条，schema v1.2）
+      structured/skus.json          主数据（128 条，schema v1.2）
       structured/axles.json         车桥词典（7 个，由适配名反推，未核实）
       structured/benchmark.json     企业级 14 项台架对比（企业介绍 p25）
       structured/catalog_rows.json  原始行（134 行）

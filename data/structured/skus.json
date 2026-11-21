@@ -310,6 +310,48 @@
     "_placeholder": false
   },
   {
+    "sku_id": "FIT-小虎威AABS",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "小虎威A(ABS)",
+    "position": "未知",
+    "abs": true,
+    "part_no": null,
+    "dims": {
+      "arc_mm": 150.0,
+      "width_mm": 100.0,
+      "thickness_mm": 14.0,
+      "thickness_alt_mm": 15.5,
+      "raw_text": "150×100×14/15.5"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": []
+    },
+    "evidence": [
+      {
+        "report_id": "kooying_catalog",
+        "page": 27,
+        "snippet": "小虎威A(ABS) 150×100×14/15.5",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "kooying_catalog",
+      "source_page": 27,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
     "sku_id": "FIT-三一搅拌车前",
     "brand": "冠英",
     "category": "鼓式",
@@ -394,7 +436,7 @@
     "_placeholder": false
   },
   {
-    "sku_id": "FIT-小虎威AABS",
+    "sku_id": "FIT-小虎威AABS-2",
     "brand": "冠英",
     "category": "鼓式",
     "fit_name": "小虎威A(ABS)",
@@ -486,6 +528,174 @@
     "abs": false,
     "part_no": null,
     "dims": {
+      "arc_mm": 188.0,
+      "width_mm": 155.0,
+      "thickness_mm": 12.2,
+      "thickness_alt_mm": 14.0,
+      "raw_text": "188×155×12.2/14"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": []
+    },
+    "evidence": [
+      {
+        "report_id": "kooying_catalog",
+        "page": 27,
+        "snippet": "德龙X5000 188×155×12.2/14",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "kooying_catalog",
+      "source_page": 27,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
+    "sku_id": "FIT-新98R前ABS",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "新98R前(ABS)",
+    "position": "前",
+    "abs": true,
+    "part_no": null,
+    "dims": {
+      "arc_mm": 205.0,
+      "width_mm": 155.0,
+      "thickness_mm": 8.2,
+      "thickness_alt_mm": 14.2,
+      "raw_text": "205×155×8.2/14.2"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": []
+    },
+    "evidence": [
+      {
+        "report_id": "kooying_catalog",
+        "page": 27,
+        "snippet": "新98R前(ABS) 205×155×8.2/14.2",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "kooying_catalog",
+      "source_page": 27,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
+    "sku_id": "FIT-小解放5649ABS",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "小解放5649(ABS)",
+    "position": "未知",
+    "abs": true,
+    "part_no": null,
+    "dims": {
+      "arc_mm": 151.0,
+      "width_mm": 80.0,
+      "thickness_mm": 12.5,
+      "thickness_alt_mm": null,
+      "raw_text": "151×80×12.5"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": []
+    },
+    "evidence": [
+      {
+        "report_id": "kooying_catalog",
+        "page": 27,
+        "snippet": "小解放5649(ABS) 151×80×12.5",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "kooying_catalog",
+      "source_page": 27,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
+    "sku_id": "FIT-福田80宽",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "福田80 宽",
+    "position": "未知",
+    "abs": false,
+    "part_no": null,
+    "dims": {
+      "arc_mm": 151.0,
+      "width_mm": 85.0,
+      "thickness_mm": 14.5,
+      "thickness_alt_mm": null,
+      "raw_text": "151×85×14.5"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": []
+    },
+    "evidence": [
+      {
+        "report_id": "kooying_catalog",
+        "page": 27,
+        "snippet": "福田80 宽 151×85×14.5",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "kooying_catalog",
+      "source_page": 27,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
+    "sku_id": "FIT-德龙X5000-2",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "德龙X5000",
+    "position": "未知",
+    "abs": false,
+    "part_no": null,
+    "dims": {
       "arc_mm": 206.0,
       "width_mm": 220.0,
       "thickness_mm": 12.5,
@@ -522,7 +732,7 @@
     "_placeholder": false
   },
   {
-    "sku_id": "FIT-新98R前ABS",
+    "sku_id": "FIT-新98R前ABS-2",
     "brand": "冠英",
     "category": "鼓式",
     "fit_name": "新98R前(ABS)",
@@ -564,7 +774,7 @@
     "_placeholder": false
   },
   {
-    "sku_id": "FIT-小解放5649ABS",
+    "sku_id": "FIT-小解放5649ABS-2",
     "brand": "冠英",
     "category": "鼓式",
     "fit_name": "小解放5649(ABS)",
@@ -606,7 +816,7 @@
     "_placeholder": false
   },
   {
-    "sku_id": "FIT-福田80宽",
+    "sku_id": "FIT-福田80宽-2",
     "brand": "冠英",
     "category": "鼓式",
     "fit_name": "福田80 宽",
@@ -984,6 +1194,50 @@
     "_placeholder": false
   },
   {
+    "sku_id": "FIT-福田小金刚ABS",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "福田小金刚(ABS)",
+    "position": "未知",
+    "abs": true,
+    "part_no": null,
+    "dims": {
+      "arc_mm": 170.0,
+      "width_mm": 130.0,
+      "thickness_mm": 13.0,
+      "thickness_alt_mm": null,
+      "raw_text": "170×130×13"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": [
+        "170×130×1366120120"
+      ]
+    },
+    "evidence": [
+      {
+        "report_id": "kooying_catalog",
+        "page": 28,
+        "snippet": "福田小金刚(ABS) 170×130×13",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "kooying_catalog",
+      "source_page": 28,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
     "sku_id": "FIT-GY1054",
     "brand": "冠英",
     "category": "鼓式",
@@ -1110,7 +1364,7 @@
     "_placeholder": false
   },
   {
-    "sku_id": "FIT-福田小金刚ABS",
+    "sku_id": "FIT-福田小金刚ABS-2",
     "brand": "冠英",
     "category": "鼓式",
     "fit_name": "福田小金刚(ABS)",
@@ -1720,6 +1974,50 @@
     "_placeholder": false
   },
   {
+    "sku_id": "FIT-福田欧马可B",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "福田欧马可B",
+    "position": "未知",
+    "abs": false,
+    "part_no": null,
+    "dims": {
+      "arc_mm": 149.0,
+      "width_mm": 100.0,
+      "thickness_mm": 9.5,
+      "thickness_alt_mm": 14.5,
+      "raw_text": "149×100×9.5/14.5"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": [
+        "6"
+      ]
+    },
+    "evidence": [
+      {
+        "report_id": "kooying_catalog",
+        "page": 29,
+        "snippet": "福田欧马可B 149×100×9.5/14.5",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "kooying_catalog",
+      "source_page": 29,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
     "sku_id": "FIT-福田欧马可AABS",
     "brand": "冠英",
     "category": "鼓式",
@@ -1764,7 +2062,7 @@
     "_placeholder": false
   },
   {
-    "sku_id": "FIT-福田欧马可B",
+    "sku_id": "FIT-福田欧马可B-2",
     "brand": "冠英",
     "category": "鼓式",
     "fit_name": "福田欧马可B",
@@ -2111,7 +2409,7 @@
     "sku_id": "FIT-JH6后B-2",
     "brand": "冠英",
     "category": "鼓式",
-    "fit_name": "JH6后B",
+    "fit_name": "Q54",
     "position": "后",
     "abs": false,
     "part_no": null,
@@ -2143,9 +2441,9 @@
       "source_page": 17,
       "extracted_at": "2026-11-21",
       "extractor": "rule_coord",
-      "verified": false,
-      "verified_by": null,
-      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+      "verified": true,
+      "verified_by": "P2-人工核对",
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度；人工更正：冠隆产品册 p17：152×100×12.5 的真实名称在下一行「Q54」（块状排版），解析器误取上方第 4 行的 JH6后B。人工核对后更正。"
     },
     "_placeholder": false
   },
@@ -2994,6 +3292,48 @@
     "_placeholder": false
   },
   {
+    "sku_id": "FIT-金龙6791E",
+    "brand": "冠英",
+    "category": "鼓式",
+    "fit_name": "金龙6791E",
+    "position": "未知",
+    "abs": false,
+    "part_no": null,
+    "dims": {
+      "arc_mm": 150.0,
+      "width_mm": 160.0,
+      "thickness_mm": 12.5,
+      "thickness_alt_mm": null,
+      "raw_text": "150×160×12.5"
+    },
+    "material": "未知",
+    "axle_fit": [],
+    "cross_refs": [],
+    "extras": {
+      "cols": []
+    },
+    "evidence": [
+      {
+        "report_id": "冠隆产品册",
+        "page": 18,
+        "snippet": "金龙6791E 150×160×12.5",
+        "kind": "产品册"
+      }
+    ],
+    "price": null,
+    "stock": "未知",
+    "provenance": {
+      "source_file": "冠隆产品册",
+      "source_page": 18,
+      "extracted_at": "2026-11-21",
+      "extractor": "rule_coord",
+      "verified": false,
+      "verified_by": null,
+      "notes": "坐标解析，需抽检；尺寸单位 mm，格式 外弧×宽度×厚度"
+    },
+    "_placeholder": false
+  },
+  {
     "sku_id": "FIT-东风天锦KR",
     "brand": "冠英",
     "category": "鼓式",
@@ -3339,7 +3679,7 @@
     "sku_id": "FIT-前B",
     "brand": "冠英",
     "category": "鼓式",
-    "fit_name": "\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001前B",
+    "fit_name": "前B",
     "position": "前",
     "abs": false,
     "part_no": null,
@@ -3362,7 +3702,7 @@
       {
         "report_id": "冠隆产品册",
         "page": 18,
-        "snippet": "\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001前B 206×220×12.5/16.8",
+        "snippet": "前B 206×220×12.5/16.8",
         "kind": "产品册"
       }
     ],
@@ -4570,7 +4910,7 @@
     "sku_id": "FIT-160宽",
     "brand": "冠英",
     "category": "鼓式",
-    "fit_name": "\u0001\u0001160宽",
+    "fit_name": "160宽",
     "position": "未知",
     "abs": false,
     "part_no": null,
@@ -4591,7 +4931,7 @@
       {
         "report_id": "冠隆产品册",
         "page": 18,
-        "snippet": "\u0001\u0001160宽 201×180×13/16.5",
+        "snippet": "160宽 201×180×13/16.5",
         "kind": "产品册"
       }
     ],
@@ -4949,13 +5289,13 @@
     "_placeholder": false
   },
   {
-    "sku_id": "FIT-少林客车-2",
+    "sku_id": "FIT-GY8055",
     "brand": "冠英",
     "category": "鼓式",
-    "fit_name": "少林客车",
+    "fit_name": "GY8055",
     "position": "未知",
     "abs": false,
-    "part_no": null,
+    "part_no": "GY8055",
     "dims": {
       "arc_mm": 170.0,
       "width_mm": 130.0,
@@ -4973,7 +5313,7 @@
       {
         "report_id": "冠隆产品册",
         "page": 19,
-        "snippet": "少林客车 170×130×13",
+        "snippet": "GY8055 170×130×13",
         "kind": "产品册"
       }
     ],

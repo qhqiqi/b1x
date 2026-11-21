@@ -89,6 +89,18 @@
   "row_id": "L0007",
   "file": "kooying_catalog",
   "page": 27,
+  "name": "小虎威A(ABS)",
+  "raw_dims": "150×100×14/15.5",
+  "arc_mm": 150.0,
+  "width_mm": 100.0,
+  "thickness_mm": 14.0,
+  "thickness_alt_mm": 15.5,
+  "extras": []
+ },
+ {
+  "row_id": "L0008",
+  "file": "kooying_catalog",
+  "page": 27,
   "name": "三一搅拌车前",
   "raw_dims": "201×160×15.5",
   "arc_mm": 201.0,
@@ -98,7 +110,7 @@
   "extras": []
  },
  {
-  "row_id": "L0008",
+  "row_id": "L0009",
   "file": "kooying_catalog",
   "page": 27,
   "name": "三一搅拌车后",
@@ -110,7 +122,7 @@
   "extras": []
  },
  {
-  "row_id": "L0009",
+  "row_id": "L0010",
   "file": "kooying_catalog",
   "page": 27,
   "name": "小虎威A(ABS)",
@@ -122,7 +134,7 @@
   "extras": []
  },
  {
-  "row_id": "L0010",
+  "row_id": "L0011",
   "file": "kooying_catalog",
   "page": 27,
   "name": "小虎威B",
@@ -134,7 +146,55 @@
   "extras": []
  },
  {
-  "row_id": "L0011",
+  "row_id": "L0012",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "德龙X5000",
+  "raw_dims": "188×155×12.2/14",
+  "arc_mm": 188.0,
+  "width_mm": 155.0,
+  "thickness_mm": 12.2,
+  "thickness_alt_mm": 14.0,
+  "extras": []
+ },
+ {
+  "row_id": "L0013",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "新98R前(ABS)",
+  "raw_dims": "205×155×8.2/14.2",
+  "arc_mm": 205.0,
+  "width_mm": 155.0,
+  "thickness_mm": 8.2,
+  "thickness_alt_mm": 14.2,
+  "extras": []
+ },
+ {
+  "row_id": "L0014",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "小解放5649(ABS)",
+  "raw_dims": "151×80×12.5",
+  "arc_mm": 151.0,
+  "width_mm": 80.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": []
+ },
+ {
+  "row_id": "L0015",
+  "file": "kooying_catalog",
+  "page": 27,
+  "name": "福田80 宽",
+  "raw_dims": "151×85×14.5",
+  "arc_mm": 151.0,
+  "width_mm": 85.0,
+  "thickness_mm": 14.5,
+  "thickness_alt_mm": null,
+  "extras": []
+ },
+ {
+  "row_id": "L0016",
   "file": "kooying_catalog",
   "page": 27,
   "name": "德龙X5000",
@@ -148,7 +208,7 @@
   ]
  },
  {
-  "row_id": "L0012",
+  "row_id": "L0017",
   "file": "kooying_catalog",
   "page": 27,
   "name": "新98R前(ABS)",
@@ -160,7 +220,7 @@
   "extras": []
  },
  {
-  "row_id": "L0013",
+  "row_id": "L0018",
   "file": "kooying_catalog",
   "page": 27,
   "name": "小解放5649(ABS)",
@@ -172,7 +232,7 @@
   "extras": []
  },
  {
-  "row_id": "L0014",
+  "row_id": "L0019",
   "file": "kooying_catalog",
   "page": 27,
   "name": "福田80 宽",
@@ -184,7 +244,7 @@
   "extras": []
  },
  {
-  "row_id": "L0015",
+  "row_id": "L0020",
   "file": "kooying_catalog",
   "page": 27,
   "name": "霸铃80宽A",
@@ -196,7 +256,7 @@
   "extras": []
  },
  {
-  "row_id": "L0016",
+  "row_id": "L0021",
   "file": "kooying_catalog",
   "page": 27,
   "name": "霸铃80宽B",
@@ -208,7 +268,7 @@
   "extras": []
  },
  {
-  "row_id": "L0017",
+  "row_id": "L0022",
   "file": "kooying_catalog",
   "page": 27,
   "name": "红塔100宽",
@@ -220,7 +280,7 @@
   "extras": []
  },
  {
-  "row_id": "L0018",
+  "row_id": "L0023",
   "file": "kooying_catalog",
   "page": 27,
   "name": "龙岩8050",
@@ -232,7 +292,7 @@
   "extras": []
  },
  {
-  "row_id": "L0019",
+  "row_id": "L0024",
   "file": "kooying_catalog",
   "page": 28,
   "name": "解放虎威130宽A(ABS)",
@@ -244,7 +304,7 @@
   "extras": []
  },
  {
-  "row_id": "L0020",
+  "row_id": "L0025",
   "file": "kooying_catalog",
   "page": 28,
   "name": "解放红塔后A(ABS)",
@@ -256,7 +316,7 @@
   "extras": []
  },
  {
-  "row_id": "L0021",
+  "row_id": "L0026",
   "file": "kooying_catalog",
   "page": 28,
   "name": "新斯太尔后A(ABS)",
@@ -268,7 +328,7 @@
   "extras": []
  },
  {
-  "row_id": "L0022",
+  "row_id": "L0027",
   "file": "kooying_catalog",
   "page": 28,
   "name": "新斯太尔后B",
@@ -280,7 +340,21 @@
   "extras": []
  },
  {
-  "row_id": "L0023",
+  "row_id": "L0028",
+  "file": "kooying_catalog",
+  "page": 28,
+  "name": "福田小金刚(ABS)",
+  "raw_dims": "170×130×13",
+  "arc_mm": 170.0,
+  "width_mm": 130.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": [
+   "170×130×1366120120"
+  ]
+ },
+ {
+  "row_id": "L0029",
   "file": "kooying_catalog",
   "page": 28,
   "name": "GY1054",
@@ -292,7 +366,7 @@
   "extras": []
  },
  {
-  "row_id": "L0024",
+  "row_id": "L0030",
   "file": "kooying_catalog",
   "page": 28,
   "name": "HQ8555后",
@@ -304,7 +378,7 @@
   "extras": []
  },
  {
-  "row_id": "L0025",
+  "row_id": "L0031",
   "file": "kooying_catalog",
   "page": 28,
   "name": "江淮骏铃160宽",
@@ -316,7 +390,7 @@
   "extras": []
  },
  {
-  "row_id": "L0026",
+  "row_id": "L0032",
   "file": "kooying_catalog",
   "page": 28,
   "name": "福田小金刚(ABS)",
@@ -328,7 +402,7 @@
   "extras": []
  },
  {
-  "row_id": "L0027",
+  "row_id": "L0033",
   "file": "kooying_catalog",
   "page": 28,
   "name": "德龙K5000后(ABS)",
@@ -342,7 +416,7 @@
   ]
  },
  {
-  "row_id": "L0028",
+  "row_id": "L0034",
   "file": "kooying_catalog",
   "page": 28,
   "name": "德龙LM180(ABS)",
@@ -354,7 +428,7 @@
   "extras": []
  },
  {
-  "row_id": "L0029",
+  "row_id": "L0035",
   "file": "kooying_catalog",
   "page": 28,
   "name": "东风多利卡前(ABS)",
@@ -366,7 +440,7 @@
   "extras": []
  },
  {
-  "row_id": "L0030",
+  "row_id": "L0036",
   "file": "kooying_catalog",
   "page": 28,
   "name": "解放虎威前A(ABS)",
@@ -380,7 +454,7 @@
   ]
  },
  {
-  "row_id": "L0031",
+  "row_id": "L0037",
   "file": "kooying_catalog",
   "page": 28,
   "name": "解放虎威前B",
@@ -392,7 +466,7 @@
   "extras": []
  },
  {
-  "row_id": "L0032",
+  "row_id": "L0038",
   "file": "kooying_catalog",
   "page": 28,
   "name": "少林客车(ABS)",
@@ -404,7 +478,7 @@
   "extras": []
  },
  {
-  "row_id": "L0033",
+  "row_id": "L0039",
   "file": "kooying_catalog",
   "page": 28,
   "name": "乘龙L3后",
@@ -416,7 +490,7 @@
   "extras": []
  },
  {
-  "row_id": "L0034",
+  "row_id": "L0040",
   "file": "kooying_catalog",
   "page": 28,
   "name": "五征",
@@ -428,7 +502,7 @@
   "extras": []
  },
  {
-  "row_id": "L0035",
+  "row_id": "L0041",
   "file": "kooying_catalog",
   "page": 28,
   "name": "三T王前改型(ABS)",
@@ -440,7 +514,7 @@
   "extras": []
  },
  {
-  "row_id": "L0036",
+  "row_id": "L0042",
   "file": "kooying_catalog",
   "page": 28,
   "name": "汉德桥35T前",
@@ -452,7 +526,7 @@
   "extras": []
  },
  {
-  "row_id": "L0037",
+  "row_id": "L0043",
   "file": "kooying_catalog",
   "page": 28,
   "name": "汉德桥35T后",
@@ -464,7 +538,7 @@
   "extras": []
  },
  {
-  "row_id": "L0038",
+  "row_id": "L0044",
   "file": "kooying_catalog",
   "page": 28,
   "name": "东风天锦后(ABS)",
@@ -478,7 +552,7 @@
   ]
  },
  {
-  "row_id": "L0039",
+  "row_id": "L0045",
   "file": "kooying_catalog",
   "page": 29,
   "name": "新江铃前A(ABS)",
@@ -492,7 +566,21 @@
   ]
  },
  {
-  "row_id": "L0040",
+  "row_id": "L0046",
+  "file": "kooying_catalog",
+  "page": 29,
+  "name": "福田欧马可B",
+  "raw_dims": "149×100×9.5/14.5",
+  "arc_mm": 149.0,
+  "width_mm": 100.0,
+  "thickness_mm": 9.5,
+  "thickness_alt_mm": 14.5,
+  "extras": [
+   "6"
+  ]
+ },
+ {
+  "row_id": "L0047",
   "file": "kooying_catalog",
   "page": 29,
   "name": "福田欧马可A(ABS)",
@@ -506,7 +594,7 @@
   ]
  },
  {
-  "row_id": "L0041",
+  "row_id": "L0048",
   "file": "kooying_catalog",
   "page": 29,
   "name": "福田欧马可B",
@@ -520,7 +608,7 @@
   ]
  },
  {
-  "row_id": "L0042",
+  "row_id": "L0049",
   "file": "kooying_catalog",
   "page": 29,
   "name": "东风多利卡后A(ABS)",
@@ -534,7 +622,7 @@
   ]
  },
  {
-  "row_id": "L0043",
+  "row_id": "L0050",
   "file": "kooying_catalog",
   "page": 29,
   "name": "东风多利卡后B",
@@ -548,7 +636,7 @@
   ]
  },
  {
-  "row_id": "L0044",
+  "row_id": "L0051",
   "file": "冠隆产品册",
   "page": 11,
   "name": "新457桥后",
@@ -560,7 +648,7 @@
   "extras": []
  },
  {
-  "row_id": "L0045",
+  "row_id": "L0052",
   "file": "冠隆产品册",
   "page": 17,
   "name": "JH6后A",
@@ -574,7 +662,7 @@
   ]
  },
  {
-  "row_id": "L0046",
+  "row_id": "L0053",
   "file": "冠隆产品册",
   "page": 17,
   "name": "QT435SH10-3502572FW江淮格尔后B",
@@ -586,7 +674,7 @@
   "extras": []
  },
  {
-  "row_id": "L0047",
+  "row_id": "L0054",
   "file": "冠隆产品册",
   "page": 17,
   "name": "JH6后B",
@@ -598,7 +686,7 @@
   "extras": []
  },
  {
-  "row_id": "L0048",
+  "row_id": "L0055",
   "file": "冠隆产品册",
   "page": 17,
   "name": "QT435SH10-3502572FW江铃前",
@@ -610,7 +698,7 @@
   "extras": []
  },
  {
-  "row_id": "L0049",
+  "row_id": "L0056",
   "file": "冠隆产品册",
   "page": 17,
   "name": "JH6后B",
@@ -622,7 +710,7 @@
   "extras": []
  },
  {
-  "row_id": "L0050",
+  "row_id": "L0057",
   "file": "冠隆产品册",
   "page": 17,
   "name": "通用江铃前、",
@@ -634,7 +722,7 @@
   "extras": []
  },
  {
-  "row_id": "L0051",
+  "row_id": "L0058",
   "file": "冠隆产品册",
   "page": 17,
   "name": "德龙曼前",
@@ -646,7 +734,7 @@
   "extras": []
  },
  {
-  "row_id": "L0052",
+  "row_id": "L0059",
   "file": "冠隆产品册",
   "page": 17,
   "name": "解放J5前B",
@@ -658,7 +746,7 @@
   "extras": []
  },
  {
-  "row_id": "L0053",
+  "row_id": "L0060",
   "file": "冠隆产品册",
   "page": 17,
   "name": "德龙曼前",
@@ -670,7 +758,7 @@
   "extras": []
  },
  {
-  "row_id": "L0054",
+  "row_id": "L0061",
   "file": "冠隆产品册",
   "page": 17,
   "name": "联合重卡前A",
@@ -682,7 +770,7 @@
   "extras": []
  },
  {
-  "row_id": "L0055",
+  "row_id": "L0062",
   "file": "冠隆产品册",
   "page": 17,
   "name": "东风天锦A",
@@ -694,7 +782,7 @@
   "extras": []
  },
  {
-  "row_id": "L0056",
+  "row_id": "L0063",
   "file": "冠隆产品册",
   "page": 17,
   "name": "联合重卡前B",
@@ -706,7 +794,7 @@
   "extras": []
  },
  {
-  "row_id": "L0057",
+  "row_id": "L0064",
   "file": "冠隆产品册",
   "page": 17,
   "name": "东风天锦B",
@@ -718,7 +806,7 @@
   "extras": []
  },
  {
-  "row_id": "L0058",
+  "row_id": "L0065",
   "file": "冠隆产品册",
   "page": 17,
   "name": "美的客车后",
@@ -730,7 +818,7 @@
   "extras": []
  },
  {
-  "row_id": "L0059",
+  "row_id": "L0066",
   "file": "冠隆产品册",
   "page": 17,
   "name": "东风天龙前A",
@@ -742,7 +830,7 @@
   "extras": []
  },
  {
-  "row_id": "L0060",
+  "row_id": "L0067",
   "file": "冠隆产品册",
   "page": 17,
   "name": "沈阳日野",
@@ -754,7 +842,7 @@
   "extras": []
  },
  {
-  "row_id": "L0061",
+  "row_id": "L0068",
   "file": "冠隆产品册",
   "page": 17,
   "name": "索马桥后",
@@ -766,7 +854,7 @@
   "extras": []
  },
  {
-  "row_id": "L0062",
+  "row_id": "L0069",
   "file": "冠隆产品册",
   "page": 17,
   "name": "东风天龙前B",
@@ -778,7 +866,7 @@
   "extras": []
  },
  {
-  "row_id": "L0063",
+  "row_id": "L0070",
   "file": "冠隆产品册",
   "page": 17,
   "name": "汉威160A",
@@ -790,7 +878,7 @@
   "extras": []
  },
  {
-  "row_id": "L0064",
+  "row_id": "L0071",
   "file": "冠隆产品册",
   "page": 17,
   "name": "新K前",
@@ -802,7 +890,7 @@
   "extras": []
  },
  {
-  "row_id": "L0065",
+  "row_id": "L0072",
   "file": "冠隆产品册",
   "page": 17,
   "name": "汉威160B",
@@ -816,7 +904,7 @@
   ]
  },
  {
-  "row_id": "L0066",
+  "row_id": "L0073",
   "file": "冠隆产品册",
   "page": 17,
   "name": "新欧曼400A",
@@ -828,7 +916,7 @@
   "extras": []
  },
  {
-  "row_id": "L0067",
+  "row_id": "L0074",
   "file": "冠隆产品册",
   "page": 17,
   "name": "红岩杰狮前",
@@ -842,7 +930,7 @@
   ]
  },
  {
-  "row_id": "L0068",
+  "row_id": "L0075",
   "file": "冠隆产品册",
   "page": 17,
   "name": "新欧曼400B",
@@ -854,7 +942,7 @@
   "extras": []
  },
  {
-  "row_id": "L0069",
+  "row_id": "L0076",
   "file": "冠隆产品册",
   "page": 18,
   "name": "新T850前",
@@ -866,7 +954,19 @@
   "extras": []
  },
  {
-  "row_id": "L0070",
+  "row_id": "L0077",
+  "file": "冠隆产品册",
+  "page": 18,
+  "name": "金龙6791E",
+  "raw_dims": "150×160×12.5",
+  "arc_mm": 150.0,
+  "width_mm": 160.0,
+  "thickness_mm": 12.5,
+  "thickness_alt_mm": null,
+  "extras": []
+ },
+ {
+  "row_id": "L0078",
   "file": "冠隆产品册",
   "page": 18,
   "name": "东风天锦KR",
@@ -878,7 +978,7 @@
   "extras": []
  },
  {
-  "row_id": "L0071",
+  "row_id": "L0079",
   "file": "冠隆产品册",
   "page": 18,
   "name": "小解放5649",
@@ -890,7 +990,7 @@
   "extras": []
  },
  {
-  "row_id": "L0072",
+  "row_id": "L0080",
   "file": "冠隆产品册",
   "page": 18,
   "name": "重汽汕德卡前",
@@ -902,7 +1002,7 @@
   "extras": []
  },
  {
-  "row_id": "L0073",
+  "row_id": "L0081",
   "file": "冠隆产品册",
   "page": 18,
   "name": "德龙LM160",
@@ -916,7 +1016,7 @@
   ]
  },
  {
-  "row_id": "L0074",
+  "row_id": "L0082",
   "file": "冠隆产品册",
   "page": 18,
   "name": "东风天锦KR",
@@ -930,7 +1030,7 @@
   ]
  },
  {
-  "row_id": "L0075",
+  "row_id": "L0083",
   "file": "冠隆产品册",
   "page": 18,
   "name": "红塔100",
@@ -944,7 +1044,7 @@
   ]
  },
  {
-  "row_id": "L0076",
+  "row_id": "L0084",
   "file": "冠隆产品册",
   "page": 18,
   "name": "重庆铁马",
@@ -956,7 +1056,7 @@
   "extras": []
  },
  {
-  "row_id": "L0077",
+  "row_id": "L0085",
   "file": "冠隆产品册",
   "page": 18,
   "name": "新款杰狮前A",
@@ -968,10 +1068,10 @@
   "extras": []
  },
  {
-  "row_id": "L0078",
+  "row_id": "L0086",
   "file": "冠隆产品册",
   "page": 18,
-  "name": "\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001前B",
+  "name": "前B",
   "raw_dims": "206×220×12.5/16.8",
   "arc_mm": 206.0,
   "width_mm": 220.0,
@@ -982,7 +1082,7 @@
   ]
  },
  {
-  "row_id": "L0079",
+  "row_id": "L0087",
   "file": "冠隆产品册",
   "page": 18,
   "name": "一汽红塔前",
@@ -994,7 +1094,7 @@
   "extras": []
  },
  {
-  "row_id": "L0080",
+  "row_id": "L0088",
   "file": "冠隆产品册",
   "page": 18,
   "name": "天龙KL后",
@@ -1006,7 +1106,7 @@
   "extras": []
  },
  {
-  "row_id": "L0081",
+  "row_id": "L0089",
   "file": "冠隆产品册",
   "page": 18,
   "name": "新款杰狮前B",
@@ -1018,7 +1118,7 @@
   "extras": []
  },
  {
-  "row_id": "L0082",
+  "row_id": "L0090",
   "file": "冠隆产品册",
   "page": 18,
   "name": "新98R前",
@@ -1030,7 +1130,7 @@
   "extras": []
  },
  {
-  "row_id": "L0083",
+  "row_id": "L0091",
   "file": "冠隆产品册",
   "page": 18,
   "name": "6700前",
@@ -1042,7 +1142,7 @@
   "extras": []
  },
  {
-  "row_id": "L0084",
+  "row_id": "L0092",
   "file": "冠隆产品册",
   "page": 18,
   "name": "欧曼CX490",
@@ -1056,7 +1156,7 @@
   ]
  },
  {
-  "row_id": "L0085",
+  "row_id": "L0093",
   "file": "冠隆产品册",
   "page": 18,
   "name": "新天锦130A",
@@ -1070,10 +1170,10 @@
   ]
  },
  {
-  "row_id": "L0086",
+  "row_id": "L0094",
   "file": "冠隆产品册",
   "page": 18,
-  "name": "小J6\u000180宽",
+  "name": "小J680宽",
   "raw_dims": "149×80×11",
   "arc_mm": 149.0,
   "width_mm": 80.0,
@@ -1082,7 +1182,7 @@
   "extras": []
  },
  {
-  "row_id": "L0087",
+  "row_id": "L0095",
   "file": "冠隆产品册",
   "page": 18,
   "name": "小虎威A",
@@ -1094,7 +1194,7 @@
   "extras": []
  },
  {
-  "row_id": "L0088",
+  "row_id": "L0096",
   "file": "冠隆产品册",
   "page": 18,
   "name": "欧曼CX490",
@@ -1106,7 +1206,7 @@
   "extras": []
  },
  {
-  "row_id": "L0089",
+  "row_id": "L0097",
   "file": "冠隆产品册",
   "page": 18,
   "name": "新天锦130B",
@@ -1118,7 +1218,7 @@
   "extras": []
  },
  {
-  "row_id": "L0090",
+  "row_id": "L0098",
   "file": "冠隆产品册",
   "page": 18,
   "name": "霸铃80宽A",
@@ -1130,7 +1230,7 @@
   "extras": []
  },
  {
-  "row_id": "L0091",
+  "row_id": "L0099",
   "file": "冠隆产品册",
   "page": 18,
   "name": "小虎威B",
@@ -1142,7 +1242,7 @@
   "extras": []
  },
  {
-  "row_id": "L0092",
+  "row_id": "L0100",
   "file": "冠隆产品册",
   "page": 18,
   "name": "沃胜桥3020",
@@ -1154,7 +1254,7 @@
   "extras": []
  },
  {
-  "row_id": "L0093",
+  "row_id": "L0101",
   "file": "冠隆产品册",
   "page": 18,
   "name": "重汽小豪沃",
@@ -1166,7 +1266,7 @@
   "extras": []
  },
  {
-  "row_id": "L0094",
+  "row_id": "L0102",
   "file": "冠隆产品册",
   "page": 18,
   "name": "霸铃80宽B",
@@ -1178,7 +1278,7 @@
   "extras": []
  },
  {
-  "row_id": "L0095",
+  "row_id": "L0103",
   "file": "冠隆产品册",
   "page": 18,
   "name": "福田80",
@@ -1190,7 +1290,7 @@
   "extras": []
  },
  {
-  "row_id": "L0096",
+  "row_id": "L0104",
   "file": "冠隆产品册",
   "page": 18,
   "name": "沃胜桥11.5TA",
@@ -1204,7 +1304,7 @@
   ]
  },
  {
-  "row_id": "L0097",
+  "row_id": "L0105",
   "file": "冠隆产品册",
   "page": 18,
   "name": "小解放后",
@@ -1216,7 +1316,7 @@
   "extras": []
  },
  {
-  "row_id": "L0098",
+  "row_id": "L0106",
   "file": "冠隆产品册",
   "page": 18,
   "name": "宇通校车后",
@@ -1228,7 +1328,7 @@
   "extras": []
  },
  {
-  "row_id": "L0099",
+  "row_id": "L0107",
   "file": "冠隆产品册",
   "page": 18,
   "name": "解放虎威",
@@ -1240,7 +1340,7 @@
   "extras": []
  },
  {
-  "row_id": "L0100",
+  "row_id": "L0108",
   "file": "冠隆产品册",
   "page": 18,
   "name": "沃胜桥11.5TB",
@@ -1252,7 +1352,7 @@
   "extras": []
  },
  {
-  "row_id": "L0101",
+  "row_id": "L0109",
   "file": "冠隆产品册",
   "page": 18,
   "name": "解放虎威",
@@ -1264,7 +1364,7 @@
   "extras": []
  },
  {
-  "row_id": "L0102",
+  "row_id": "L0110",
   "file": "冠隆产品册",
   "page": 18,
   "name": "杰狮C6前A",
@@ -1276,7 +1376,7 @@
   "extras": []
  },
  {
-  "row_id": "L0103",
+  "row_id": "L0111",
   "file": "冠隆产品册",
   "page": 18,
   "name": "Q54后",
@@ -1288,7 +1388,7 @@
   "extras": []
  },
  {
-  "row_id": "L0104",
+  "row_id": "L0112",
   "file": "冠隆产品册",
   "page": 18,
   "name": "豪沃TX350",
@@ -1300,7 +1400,7 @@
   "extras": []
  },
  {
-  "row_id": "L0105",
+  "row_id": "L0113",
   "file": "冠隆产品册",
   "page": 18,
   "name": "杰狮C6前B",
@@ -1312,7 +1412,7 @@
   "extras": []
  },
  {
-  "row_id": "L0106",
+  "row_id": "L0114",
   "file": "冠隆产品册",
   "page": 18,
   "name": "湖桥54Q",
@@ -1324,7 +1424,7 @@
   "extras": []
  },
  {
-  "row_id": "L0107",
+  "row_id": "L0115",
   "file": "冠隆产品册",
   "page": 18,
   "name": "Hq8555后",
@@ -1336,7 +1436,7 @@
   "extras": []
  },
  {
-  "row_id": "L0108",
+  "row_id": "L0116",
   "file": "冠隆产品册",
   "page": 18,
   "name": "青岛3T",
@@ -1348,7 +1448,7 @@
   "extras": []
  },
  {
-  "row_id": "L0109",
+  "row_id": "L0117",
   "file": "冠隆产品册",
   "page": 18,
   "name": "三一搅拌车前",
@@ -1360,7 +1460,7 @@
   "extras": []
  },
  {
-  "row_id": "L0110",
+  "row_id": "L0118",
   "file": "冠隆产品册",
   "page": 18,
   "name": "解放虎威A",
@@ -1372,7 +1472,7 @@
   "extras": []
  },
  {
-  "row_id": "L0111",
+  "row_id": "L0119",
   "file": "冠隆产品册",
   "page": 18,
   "name": "Hq8555后",
@@ -1384,7 +1484,7 @@
   "extras": []
  },
  {
-  "row_id": "L0112",
+  "row_id": "L0120",
   "file": "冠隆产品册",
   "page": 18,
   "name": "80G1改型",
@@ -1396,7 +1496,7 @@
   "extras": []
  },
  {
-  "row_id": "L0113",
+  "row_id": "L0121",
   "file": "冠隆产品册",
   "page": 18,
   "name": "三一搅拌车",
@@ -1408,7 +1508,7 @@
   "extras": []
  },
  {
-  "row_id": "L0114",
+  "row_id": "L0122",
   "file": "冠隆产品册",
   "page": 18,
   "name": "解放虎威B",
@@ -1420,10 +1520,10 @@
   "extras": []
  },
  {
-  "row_id": "L0115",
+  "row_id": "L0123",
   "file": "冠隆产品册",
   "page": 18,
-  "name": "\u0001\u0001160宽",
+  "name": "160宽",
   "raw_dims": "201×180×13/16.5",
   "arc_mm": 201.0,
   "width_mm": 180.0,
@@ -1432,7 +1532,7 @@
   "extras": []
  },
  {
-  "row_id": "L0116",
+  "row_id": "L0124",
   "file": "冠隆产品册",
   "page": 19,
   "name": "东风多利卡前",
@@ -1444,7 +1544,19 @@
   "extras": []
  },
  {
-  "row_id": "L0117",
+  "row_id": "L0125",
+  "file": "冠隆产品册",
+  "page": 19,
+  "name": "GY1054",
+  "raw_dims": "149×160×13",
+  "arc_mm": 149.0,
+  "width_mm": 160.0,
+  "thickness_mm": 13.0,
+  "thickness_alt_mm": null,
+  "extras": []
+ },
+ {
+  "row_id": "L0126",
   "file": "冠隆产品册",
   "page": 19,
   "name": "龙岩8050",
@@ -1456,7 +1568,7 @@
   "extras": []
  },
  {
-  "row_id": "L0118",
+  "row_id": "L0127",
   "file": "冠隆产品册",
   "page": 19,
   "name": "乘龙H5前A",
@@ -1468,7 +1580,7 @@
   "extras": []
  },
  {
-  "row_id": "L0119",
+  "row_id": "L0128",
   "file": "冠隆产品册",
   "page": 19,
   "name": "乘龙L3后",
@@ -1480,7 +1592,7 @@
   "extras": []
  },
  {
-  "row_id": "L0120",
+  "row_id": "L0129",
   "file": "冠隆产品册",
   "page": 19,
   "name": "乘龙H5前B",
@@ -1492,7 +1604,7 @@
   "extras": []
  },
  {
-  "row_id": "L0121",
+  "row_id": "L0130",
   "file": "冠隆产品册",
   "page": 19,
   "name": "新斯太尔后A",
@@ -1504,7 +1616,7 @@
   "extras": []
  },
  {
-  "row_id": "L0122",
+  "row_id": "L0131",
   "file": "冠隆产品册",
   "page": 19,
   "name": "解放虎威前A",
@@ -1518,7 +1630,7 @@
   ]
  },
  {
-  "row_id": "L0123",
+  "row_id": "L0132",
   "file": "冠隆产品册",
   "page": 19,
   "name": "新斯太尔后B",
@@ -1530,7 +1642,7 @@
   "extras": []
  },
  {
-  "row_id": "L0124",
+  "row_id": "L0133",
   "file": "冠隆产品册",
   "page": 19,
   "name": "解放虎威前B",
@@ -1542,7 +1654,7 @@
   "extras": []
  },
  {
-  "row_id": "L0125",
+  "row_id": "L0134",
   "file": "冠隆产品册",
   "page": 19,
   "name": "汉德桥35T前",
@@ -1554,7 +1666,7 @@
   "extras": []
  },
  {
-  "row_id": "L0126",
+  "row_id": "L0135",
   "file": "冠隆产品册",
   "page": 19,
   "name": "德龙K5000后",
@@ -1568,7 +1680,7 @@
   ]
  },
  {
-  "row_id": "L0127",
+  "row_id": "L0136",
   "file": "冠隆产品册",
   "page": 19,
   "name": "汉德桥35T后",
@@ -1580,7 +1692,7 @@
   "extras": []
  },
  {
-  "row_id": "L0128",
+  "row_id": "L0137",
   "file": "冠隆产品册",
   "page": 19,
   "name": "福田小金刚",
@@ -1592,7 +1704,7 @@
   "extras": []
  },
  {
-  "row_id": "L0129",
+  "row_id": "L0138",
   "file": "冠隆产品册",
   "page": 19,
   "name": "少林客车",
@@ -1604,10 +1716,10 @@
   "extras": []
  },
  {
-  "row_id": "L0130",
+  "row_id": "L0139",
   "file": "冠隆产品册",
   "page": 19,
-  "name": "少林客车",
+  "name": "GY8055",
   "raw_dims": "170×130×13",
   "arc_mm": 170.0,
   "width_mm": 130.0,
@@ -1616,7 +1728,7 @@
   "extras": []
  },
  {
-  "row_id": "L0131",
+  "row_id": "L0140",
   "file": "冠隆产品册",
   "page": 19,
   "name": "解放红塔后A",
@@ -1630,7 +1742,7 @@
   ]
  },
  {
-  "row_id": "L0132",
+  "row_id": "L0141",
   "file": "冠隆产品册",
   "page": 19,
   "name": "解放红塔后B",
@@ -1642,7 +1754,7 @@
   "extras": []
  },
  {
-  "row_id": "L0133",
+  "row_id": "L0142",
   "file": "冠隆产品册",
   "page": 19,
   "name": "解放J6前",

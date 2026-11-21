@@ -10,10 +10,12 @@
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SKUS = ROOT / "data" / "structured" / "skus.json"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 OUT_DIR = ROOT / "data" / "reports"
 
 CATALOG_NAME = {
@@ -62,6 +64,7 @@ def pick(recs, n):
 
 
 def render(rows, n, total_recs, total_pages):
+    from spotcheck import machine_check  # 复用独立复核
     covered = len({(r["provenance"]["source_file"], r["provenance"]["source_page"]) for r in rows})
     lines = []
     lines.append(
@@ -77,22 +80,23 @@ def render(rows, n, total_recs, total_pages):
         "> 不一致的不要改 true，写在「差异」列里，回到解析脚本修。\n"
         % (total_recs, total_pages)
     )
-    lines.append("| # | sku_id | 适配名 | 尺寸（原文） | 出处 | 核对 | 差异 / 备注 |")
-    lines.append("|---|---|---|---|---|---|---|")
+    lines.append("> 机器预判是**独立复核**（用版式文本判断名称与尺寸是否同页同区），只用来排优先级：先核「可疑」的。")
+    lines.append("| # | sku_id | 适配名 | 尺寸（原文） | 出处 | 机器预判 | 核对 | 差异 / 备注 |")
+    lines.append("|---|---|---|---|---|---|---|---|")
     for i, r in enumerate(rows, 1):
         src = r["provenance"]["source_file"]
         page = r["provenance"]["source_page"]
         book = CATALOG_NAME.get(src, src)
         dims = (r.get("dims") or {}).get("raw_text") or "—"
         lines.append(
-            "| %d | `%s` | %s | %s | %s p%d | ☐ 一致 / ☐ 不一致 |  |"
-            % (i, r["sku_id"], r.get("fit_name") or "—", dims, book, page)
+            "| %d | `%s` | %s | %s | %s p%d | %s | ☐ 一致 / ☐ 不一致 |  |"
+            % (i, r["sku_id"], r.get("fit_name") or "—", dims, book, page, machine_check(r))
         )
     lines.append("")
     lines.append("## 抽检结论（核完填这一段，直接抄进 PPT）\n")
     lines.append("- 核对条数：__ / %d" % n)
     lines.append("- 一致：__ 条；不一致：__ 条")
-    lines.append("- 覆盖率：__ / 120 = __%")
+    lines.append("- 覆盖率：__ / %d = __%%" % total_recs)
     lines.append("- 不一致的原因归类：__")
     lines.append("")
     return "\n".join(lines)

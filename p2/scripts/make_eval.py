@@ -28,7 +28,7 @@ def add(inp, exp, why):
 by_dims = {}
 for s in skus:
     d = s["dims"]
-    by_dims.setdefault((d["width_mm"], d["length_mm"], d["thickness_mm"]), []).append(s)
+    by_dims.setdefault((d["arc_mm"], d["width_mm"], d["thickness_mm"]), []).append(s)
 uniq = [v[0] for k, v in by_dims.items() if len(v) == 1]
 for s in random.sample(uniq, min(10, len(uniq))):
     add(s["dims"]["raw_text"], {"type": "match", "sku": [s["sku_id"]]}, "尺寸直查")
@@ -41,7 +41,7 @@ for s in random.sample(named, min(4, len(named))):
 # 3) 只有宽×长（缺厚度）→ 允许 Top3 命中（3 条）
 for s in random.sample([x for x in uniq if x["dims"]["thickness_mm"]], 3):
     d = s["dims"]
-    add("%g×%g" % (d["width_mm"], d["length_mm"]),
+    add("%g×%g" % (d["arc_mm"], d["width_mm"]),
         {"type": "match", "top3": True, "sku": [s["sku_id"]]}, "缺厚度，容许 Top3")
 
 # 4) 陷阱（3 条）：必须追问

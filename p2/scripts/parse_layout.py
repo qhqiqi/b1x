@@ -31,7 +31,11 @@ NUM = re.compile(r"^\(?\d{1,3}(?:\.\d)?\)?\.?$")
 
 
 RADICALS.update({"⻘": "青", "⻮": "齿", "⻬": "齐", "⻩": "黄", "⻪": "黾", "⻭": "齿"})
+CTRL = re.compile(r"[\x00-\x1f\x7f]") if False else re.compile("[" + chr(0) + "-" + chr(31) + chr(127) + "]")
+
+
 def clean(s):
+    s = CTRL.sub("", s)
     s = "".join(RADICALS.get(c, c) for c in s)
     s = unicodedata.normalize("NFKC", s) if not s.isascii() else s
     s = "".join(RADICALS.get(c, c) for c in s)
@@ -42,7 +46,7 @@ def cells(line):
     out, pos = [], 0
     for part in re.split(r"(\s{2,})", line):
         if part.strip():
-            out.append([pos, pos + len(part), part.strip()])
+            out.append([pos, pos + len(part), clean(part.strip())])
         pos += len(part)
     return out
 
@@ -53,7 +57,12 @@ def is_name(t):
         return False
     if re.fullmatch(r"[\d\s./×xX+\-()]+", t):
         return False
-    return bool(CJK.search(t)) or bool(re.fullmatch(r"(?i)GY?s?[-\s]?\d{2,4}", t))
+    if re.fullmatch(r"(?i)GY?s?[-\s]?\d{2,4}", t):
+        return True
+    # 短型号名：Q54 / Hq8555 / J6 这类（产品册里确实存在）
+    if re.fullmatch(r"[A-Za-z]{1,3}\d{1,4}[A-Za-z]?", t):
+        return True
+    return bool(CJK.search(t))
 
 
 def parse_page(pno, body, fname, base_id):
@@ -74,16 +83,27 @@ def parse_page(pno, body, fname, base_id):
             elif idx > 0 and is_name(cs[idx - 1][2]):
                 name, name_line = cs[idx - 1][2], li
             else:
+                # 名称可能在尺寸上方（常见）或在下方（块状排版，如 p17 的 Q54）
+                # 打分：上方给折扣（0.5），下方不打折；同分再看横向距离
                 best = None
                 for (pli, ps, pe, ptxt) in prev_names:
-                    if li - pli > 4:
+                    dy = li - pli
+                    if dy > 4:
                         continue
-                    if ps <= e + 8 and pe >= s - 8:     # 横向重叠（容差）
-                        cand = (li - pli, abs(ps - s))
-                        if best is None or cand < best[0]:
-                            best = (cand, ptxt, pli)
+                    if ps <= e + 8 and pe >= s - 8:      # 横向重叠（容差）
+                        sc = dy * 0.5 + abs(ps - s) * 0.01
+                        if best is None or sc < best[0]:
+                            best = (sc, ptxt)
+                for lj in range(li + 1, min(len(lines), li + 3)):
+                    for (s2, e2, t2) in cells(lines[lj]):
+                        if not is_name(t2):
+                            continue
+                        if s2 <= e + 10 and e2 >= s - 10:
+                            sc = (lj - li) * 1.0 + abs(s2 - s) * 0.01
+                            if best is None or sc < best[0]:
+                                best = (sc, t2)
                 if best:
-                    name, name_line = best[1], best[0]
+                    name = best[1]
             if name is None:
                 continue
             rows.append({
@@ -141,6 +161,22 @@ def main(argv=None) -> int:
                 s["sku_id"] = "%s-%d" % (s["sku_id"].rsplit("-", 1)[0] if s["sku_id"].rsplit("-", 1)[-1].isdigit() else s["sku_id"], n)
                 n += 1
             skus.append(s)
+        # 应用人工确认的更正（可追溯：每条都写明为什么）
+        fixp = ROOT / "data" / "curated_fixes.json"
+        if fixp.exists():
+            fx = {f["sku_id"]: f for f in json.loads(fixp.read_text(encoding="utf-8"))}
+            for s in skus:
+                f = fx.get(s["sku_id"])
+                if not f:
+                    continue
+                if f.get("action") == "rename" and f.get("new_fit_name"):
+                    s["fit_name"] = f["new_fit_name"]
+                elif f.get("action") == "drop":
+                    skus.remove(s)
+                    continue
+                s["provenance"]["notes"] = ((s["provenance"].get("notes") or "") + "；人工更正：" + f.get("note", "")).strip("；")
+                s["provenance"]["verified"] = True
+                s["provenance"]["verified_by"] = "P2-人工核对"
         tgt = ROOT / "data" / "structured" / "skus.json"
         tgt.write_text(json.dumps(skus, ensure_ascii=False, indent=2), encoding="utf-8")
         print("合并 → skus.json：%d 条" % len(skus))
