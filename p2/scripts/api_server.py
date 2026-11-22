@@ -72,9 +72,9 @@ class Handler(BaseHTTPRequestHandler):
         if u.path == "/health":
             return self._json(200, {"ok": True, "skus": len(SKUS), "axles": len(AXLES)})
         if u.path in ("/", "/index.html"):
-            page = ROOT / "p2" / "web" / "select.html"
+            page = ROOT / "app" / "index.html"
             if not page.exists():
-                page = ROOT / "p2" / "web" / "index.html"
+                page = ROOT / "p2" / "web" / "catalog.html"
             if not page.exists():
                 return self._json(404, {"error": "演示页 p2/web/index.html 不存在"})
             body = page.read_bytes()

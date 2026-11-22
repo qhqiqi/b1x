@@ -1,40 +1,10 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>冠英 SELECT · 入口</title><style>
-:root{--bg:#0a0c10;--card:#151922;--line:#252b38;--txt:#e8eaf0;--dim:#8b93a7;--acc:#4c8dff;--ok:#39c07a;--warn:#e5a33a}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 500px at 50% -10%,#12233d 0%,var(--bg) 60%);color:var(--txt);font:15px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;min-height:100vh}
-.wrap{max-width:920px;margin:0 auto;padding:64px 22px 40px}
-h1{font-size:30px;margin:0 0 6px;letter-spacing:.5px}
-.sub{color:var(--dim);font-size:13.5px;margin-bottom:34px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;text-decoration:none;color:inherit;transition:.15s;position:relative}
-a.card:hover{border-color:var(--acc);transform:translateY(-2px)}
-.k{font-size:11.5px;color:var(--acc);letter-spacing:1.2px;text-transform:uppercase}
-.t{font-size:17px;font-weight:700;margin:6px 0 4px}
-.d{font-size:12.8px;color:var(--dim);line-height:1.55}
-.live{position:absolute;top:14px;right:14px;font-size:11px;padding:2px 8px;border-radius:99px;background:#232838;color:var(--dim)}
-.live.on{background:#12321f;color:var(--ok)}.live.off{background:#3a2a12;color:var(--warn)}
-.foot{color:#5b6478;font-size:11.5px;margin-top:30px;line-height:1.8;border-top:1px solid var(--line);padding-top:14px}
-code{background:#1b2030;padding:1px 5px;border-radius:4px;font-size:11.5px}
-</style></head><body><div class="wrap">
-<h1>冠英 SELECT</h1>
-<div class="sub">刹车片选型 · 217 条型号 · 每个答案都能翻到产品册那一页</div>
-<div class="grid">
-<a class="card" href="app/index.html"><div class="k">Product</div><div class="t">产品落地页</div><div class="d">讲清楚我们在做什么：口语进、3 个方案出、带页码出处</div></a>
-<a class="card" id="matchCard" href="app/match.html?api=https://diy-wagner-aqua-exact.trycloudflare.com"><div class="k">Live Match</div><div class="t">实时选型查询</div><div class="d">车型 / 车桥 / 编码 / 尺寸 → Top3 + 置信度 + 出处 + 海外对码</div><span class="live" id="live">检测中…</span></a>
-<a class="card" href="p2/web/catalog.html"><div class="k">Catalogue</div><div class="t">全库 217 条</div><div class="d">可搜索、可筛选、点行展开看原页原文，可导出 CSV</div></a>
-<a class="card" href="p2/web/select.html"><div class="k">Demo</div><div class="t">选型演示页</div><div class="d">7 条真实提问的离线快照，含海外对码与追问两种状态</div></a>
-</div>
-<div class="foot">数据：4 本官方产品册 → 217 条型号（127 文字层 + 90 扫描图页）· 34 条出口对码 · 纯规则引擎 3–6 ms<br>
-「实时选型查询」已连演示机上的真引擎（令牌见 <code>?api=</code> 参数）；<b>演示机关机时会自动退回离线缓存</b>。<br>
-报价一律「询价确认」（资料包无价格）。</div>
-</div>
-<script>
-const API = "https://diy-wagner-aqua-exact.trycloudflare.com";
-const box = document.getElementById("live");
-fetch(API + "/health", {cache: "no-store"})
-  .then(r => r.json())
-  .then(j => { box.textContent = "引擎在线 · " + j.skus + " 条"; box.className = "live on"; })
-  .catch(() => { box.textContent = "引擎离线 · 用缓存"; box.className = "live off"; });
-</script>
+<title>冠英摩擦材料</title>
+<meta http-equiv="refresh" content="0; url=app/index.html">
+<link rel="canonical" href="app/index.html">
+<style>body{background:#f2f0eb;color:#282827;font:15px/1.6 Inter,"Segoe UI","PingFang SC",sans-serif;display:grid;place-items:center;height:100vh;margin:0}a{color:#a9693c}</style>
+</head><body><div>正在进入 <a href="app/index.html">冠英摩擦材料</a>…</div>
+<script>location.replace("app/index.html");</script>
 </body></html>
