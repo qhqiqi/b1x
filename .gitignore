@@ -5,6 +5,7 @@
 .cache/
 *.tmp
 *.log
+deploy/*.zip
 
 # 密钥与账号
 .env

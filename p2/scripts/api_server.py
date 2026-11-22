@@ -86,6 +86,18 @@ class Handler(BaseHTTPRequestHandler):
             return
         if u.path.startswith("/app/"):
             return self._static(ROOT / "app" / u.path[len("/app/"):].lstrip("/"))
+        # 隧道直出整站：根路径直接映射到 app/，这样 demo 链接不依赖 GitHub Pages
+        if u.path == "/app":
+            u = u._replace(path = "/")
+        rel = u.path.lstrip("/") or "index.html"
+        if rel and not rel.startswith("match") and rel not in ("health",):
+            cand = ROOT / "app" / rel
+            if cand.is_file():
+                return self._static(cand)
+        if rel.startswith("match"):
+            cand = ROOT / "app" / rel
+            if cand.is_file():
+                return self._static(cand)
         if u.path != "/match":
             return self._json(404, {"error": "use /  (演示页)  or /app/match.html  or /match?q=...  or /health"})
         q = (parse_qs(u.query).get("q") or [""])[0]

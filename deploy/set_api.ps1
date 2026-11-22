@@ -15,16 +15,24 @@ $probe = ""
 try { $probe = (Invoke-WebRequest "$Api/health" -UseBasicParsing -TimeoutSec 10).Content } catch { }
 if ($probe -match "skus") { Write-Host "health OK: $probe" } else { Write-Host "WARN: $Api/health did not answer as expected" }
 
-$file = "Y:\hks\index.html"
-$text = Get-Content $file -Raw
-$new = [regex]::Replace($text, "https://[a-z0-9-]+\.trycloudflare\.com", $Api)
-if ($new -eq $text) {
-    Write-Host "index.html already points to this url, nothing to do"
+$changed = $false
+$enc = New-Object System.Text.UTF8Encoding($false)
+foreach ($file in @("Y:\hks\app\api-config.js")) {
+    if (-not (Test-Path $file)) { continue }
+    $text = Get-Content $file -Raw
+    $new = [regex]::Replace($text, "https://[a-z0-9-]+\.trycloudflare\.com", $Api)
+    if ($new -ne $text) {
+        [System.IO.File]::WriteAllText($file, $new, $enc)
+        $changed = $true
+        Write-Host "updated $file"
+    }
+}
+if (-not $changed) {
+    Write-Host "all files already point to this url, nothing to do"
     exit 0
 }
-Set-Content -Path $file -Value $new -Encoding utf8NoBOM
 
-git -C Y:\hks add index.html
+git -C Y:\hks add app/api-config.js
 $msg = "[P2] home page api -> " + ($Api -replace "https://", "")
 git -C Y:\hks -c user.name="P2" -c user.email="p2@hks.local" commit -q -m $msg
 git -C Y:\hks push 2>&1 | Select-Object -Last 2 | Out-String | Write-Host
