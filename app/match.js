@@ -11,11 +11,13 @@
   const API = (() => {
     const p = new URLSearchParams(location.search).get('api');
     if (p) return p.replace(/\/+$/, '');
-    // 部署在 qhqiqi.cn 上时，走同源的 /b1x/api（由服务器 nginx 反代到引擎），
-    // 这样访客不需要开着本地服务也能真查。
-    if (/^(qhqiqi\.cn|www\.qhqiqi\.cn)$/.test(location.hostname)) {
-      return location.origin + '/b1x/api';
-    }
+    const host = location.hostname;
+    // 本机演示：直连本地服务，最快
+    if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(host)) return 'http://127.0.0.1:8787';
+    // 线上：优先用 api-config.js 里的演示地址（隧道/自己的服务器）
+    if (window.GY_API) return String(window.GY_API).replace(/\/+$/, '');
+    // 若引擎已部署在同域（如阿里云方案 B），走 /b1x/api
+    if (/qhqiqi\.cn$/.test(host)) return location.origin + '/b1x/api';
     return 'http://127.0.0.1:8787';
   })();
 
