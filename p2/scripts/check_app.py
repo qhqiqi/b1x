@@ -15,7 +15,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(r"Y:\hks")
 APP = ROOT / "app"
 
-REQUIRED = ["index.html", "match.html", "match.js", "styles.css", "match.css", "samples.js"]
+REQUIRED = ["index.html", "match.html", "match.js", "styles.css", "match.css", "samples.js",
+            "premium.css", "match-premium.css"]
 FIELDS = ["mode", "candidates", "export_matches", "followups", "confidence",
           "evidence", "sku_id", "report_id", "page", "verified", "ocr"]
 

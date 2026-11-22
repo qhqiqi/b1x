@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none"><title>风电摩擦片材质示意</title><defs>
+  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7c6c5"/><stop offset=".2" stop-color="#6e6d6c"/><stop offset=".39" stop-color="#e2e1de"/><stop offset=".52" stop-color="#8c8b8a"/><stop offset=".72" stop-color="#3c3b3a"/><stop offset="1" stop-color="#b1b0ae"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7c7b79"/><stop offset=".4" stop-color="#1e1d1c"/><stop offset=".8" stop-color="#565553"/><stop offset="1" stop-color="#10100f"/></linearGradient>
+  <linearGradient id="hub" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#959493"/><stop offset=".45" stop-color="#444341"/><stop offset="1" stop-color="#1b1a19"/></linearGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#f3b37d"/><stop offset=".27" stop-color="#cd7745"/><stop offset=".62" stop-color="#ab4b26"/><stop offset="1" stop-color="#652c1b"/></linearGradient>
+  <linearGradient id="graphite" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#595958"/><stop offset=".45" stop-color="#30302f"/><stop offset="1" stop-color="#191817"/></linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#faf8f5" stop-opacity=".6"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#ffffff" stop-opacity=".14"/></linearGradient>
+  <radialGradient id="hole"><stop offset=".6" stop-color="#0d0d0c"/><stop offset=".86" stop-color="#2a2927"/><stop offset="1" stop-color="#9f9d9a"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" seed="8"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".17"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs><ellipse cx="305" cy="328" rx="154" ry="25" fill="#302f2c" opacity=".15" filter="url(#shadow)"/>
+<g transform="translate(290 211) rotate(-22) skewX(10)">
+<rect x="-117" y="-109" width="256" height="250" rx="18" fill="url(#edge)" stroke="#94928e" stroke-width="2"/>
+<rect x="-129" y="-125" width="256" height="250" rx="18" fill="url(#silver)" stroke="#d8d6d3"/>
+<rect x="-108" y="-105" width="214" height="208" rx="10" fill="url(#graphite)" stroke="#8e8c88"/>
+<rect x="-108" y="-105" width="214" height="208" rx="10" fill="#ffffff" opacity=".1" filter="url(#grain)"/>
+<path d="M-1-105 V103 M-108-1 H106" stroke="#1a1918" stroke-width="7"/><path d="M3-105 V103 M-108 3 H106" stroke="#85837e" stroke-opacity=".45"/>
+<circle cx="-117" cy="-114" r="5" fill="url(#hole)"/><circle cx="115" cy="-114" r="5" fill="url(#hole)"/><circle cx="-117" cy="114" r="5" fill="url(#hole)"/><circle cx="115" cy="114" r="5" fill="url(#hole)"/>
+</g></svg>

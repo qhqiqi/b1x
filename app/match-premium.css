@@ -1,0 +1,41 @@
+/* Shared material palette for the query workspace. */
+:root {
+  --ink: #161615;
+  --ink-2: #2d2c2a;
+  --paper: #f3f2f1;
+  --card: #fdfdfc;
+  --line: #deddd9;
+  --text: #373633;
+  --muted: #7e7c76;
+  --accent: #a66c43;
+  --accent-2: #d49b6e;
+  --radius: 3px;
+  --shadow: none;
+}
+body { text-rendering: optimizeLegibility; }
+.topbar { background: #161615f5; border-bottom-color: #d5d3ce22; }
+.topbar-inner { height: 78px; max-width: 1040px; }
+.brand-text strong { font-size: 18px; letter-spacing: .15em; }
+.brand-text em { color: #b1afab; }
+.mark { background: conic-gradient(from 210deg, #d49b6e, #ecd0aa 35%, #826344 70%, #d49b6e); }
+.wrap { max-width: 1040px; padding-top: 60px; }
+h1 { font-size: clamp(30px,4vw,46px); line-height: 1.35; font-weight: 500; letter-spacing: -.05em; margin-bottom: 20px; }
+.eyebrow { font-size: 10px; letter-spacing: .13em; margin-bottom: 20px; }
+.sub { font-size: 13px; max-width: 72ch; line-height: 1.9; margin-bottom: 34px; }
+.searchbar { border-radius: 3px; padding: 7px; box-shadow: none; border-color: #cbc9c3; }
+.searchbar input { font-size: 16px; padding: 15px 17px; }
+.searchbar button { border-radius: 2px; background: #474542; color: #f4f3f0; padding-inline: 28px; font-size: 13px; }
+.chip { border-radius: 2px; background: transparent; font-size: 11px; padding: 9px 13px; }
+.chip b { color: #5d5b56; }
+.chip:hover { background: #edece9; border-color: #c0bdb6; color: #5d5b56; }
+code { background: #edece9; color: #62605b; border-radius: 2px; }
+.notice { border-radius: 3px; font-size: 12px; }
+:focus-visible { outline: 3px solid #a66c43; outline-offset: 4px; }
+@media(max-width:640px) {
+  .topbar-inner { height: 66px; padding-inline: 20px; }
+  .wrap { padding: 38px 20px 50px; }
+  h1 { font-size: 30px; }
+  .sub { font-size: 12px; }
+  .searchbar button { padding-inline: 16px; }
+  .searchbar input { padding-inline: 10px; }
+}

@@ -33,7 +33,7 @@ const PRODUCTS = [
 ];
 
 const CHIPS = {
-  vehicle: ['解放 J6', '豪沃 T7H', '欧曼 GTL', '德龙 X3000', 'Actros', 'Hino 500'],
+  vehicle: ['解放 J6', '豪沃 T7H', '欧曼 GTL', '德龙 X3000', 'Actros', '解放 J7'],
   axle: ['457 桥', '485 桥', '13T 桥', '富华桥', '奔驰桥'],
   size: ['Φ420×180', 'Φ410×220', '290×44', '330×45', '320×40'],
   photo: []
@@ -48,7 +48,7 @@ const PLACEHOLDER = {
 
 /* ---------- 2. 选型匹配 ---------- */
 
-const state = { mode: 'vehicle', query: '' };
+const state = { mode: 'vehicle', query: '', expanded: false };
 
 const el = {
   results: document.getElementById('results'),
@@ -62,7 +62,7 @@ const el = {
 const normalize = (s) => String(s)
   .toLowerCase()
   .replace(/[Φφ]/g, '')
-  .replace(/[×x*]/g, '')
+  .replace(/(?<=\d)\s*[×x*]\s*(?=\d)/g, '')
   .replace(/[\s\-_/]/g, '');
 
 /* 每个产品生成一条可检索文本；客户怎么写都能撞上 */
@@ -76,10 +76,10 @@ function indexText(p) {
 const INDEXED = PRODUCTS.map((p) => ({ ...p, _idx: indexText(p) }));
 
 function search(query) {
-  const q = normalize(query);
+  const q = query.trim();
   if (!q) return INDEXED;
   /* 拆词：车型 + 车桥混写也能命中 */
-  const terms = q.split(/[+，,、]/).filter(Boolean);
+  const terms = q.replace(/(\d)\s*[×x*]\s*(?=\d)/gi, '$1').split(/[+，,、\s]+/).map(normalize).filter(Boolean);
   return INDEXED.filter((p) => terms.every((t) => p._idx.includes(t)));
 }
 
@@ -90,6 +90,9 @@ function tagClass(type) {
 }
 
 function renderResults() {
+  const more = document.getElementById('moreResults');
+  more.hidden = true;
+  more.setAttribute('aria-expanded', 'false');
   if (state.mode === 'photo') return renderPhoto();
   const list = search(state.query);
   el.count.textContent = `共 ${list.length} 条 · 匹配「${state.query || '全部'}」`;
@@ -104,7 +107,14 @@ function renderResults() {
     return;
   }
 
-  el.results.innerHTML = list.map((p) => `
+  const expandable = !state.query.trim() && list.length > 4;
+  const visible = expandable && !state.expanded ? list.slice(0, 4) : list;
+  more.hidden = !expandable;
+  more.setAttribute('aria-expanded', String(expandable && state.expanded));
+  more.textContent = state.expanded ? '收起示例型号 ↑' : `继续浏览其余 ${list.length - visible.length} 款型号 ↓`;
+  if (expandable) el.count.textContent = `共 ${list.length} 款示例 · 当前展示 ${visible.length} 款`;
+
+  el.results.innerHTML = visible.map((p) => `
     <article class="result">
       <div class="result-title">
         <b>${p.code}</b>
@@ -118,21 +128,45 @@ function renderResults() {
         <i>${p.mat}</i><i>μ ${p.mu}</i><i>${p.temp}</i><i>MOQ ${p.moq}</i><i>交期 ${p.lead}</i>
       </div>
     </article>`).join('');
+  updateAddButtons();
 }
 
+let photoUrl = '';
 function renderPhoto() {
-  el.count.textContent = '旧片比对 · 人工复核';
+  el.count.textContent = '旧片比对 · 本地预览';
   el.results.innerHTML = `
     <div class="empty">
-      <b>发一张旧片照片就够了</b>
-      照片、钢背编号、卡钳尺寸任一即可。系统按摩擦面轮廓与孔位粗筛，再由外贸团队复核车桥变更。<br><br>
-      <button class="btn btn-dark" type="button" id="fakeUpload">模拟上传照片</button>
+      <b>从一张旧片照片开始</b>
+      建议准备正反面照片、孔位和尺寸，方便后续人工确认。<br>
+      <button class="btn btn-dark" type="button" id="choosePhoto">选择旧片照片 ↗</button>
+      <input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+      <img class="photo-preview" id="photoPreview" alt="所选旧片照片预览" hidden>
+      <p class="photo-note" id="photoNote" role="status">仅在当前浏览器预览，不会上传或自动识别。</p>
     </div>`;
-  const btn = document.getElementById('fakeUpload');
-  btn?.addEventListener('click', () => {
-    btn.textContent = '已提交，2 小时内回复';
-    btn.disabled = true;
-    toast('照片已提交（演示）：真实版本进入外贸团队待办');
+  const input = document.getElementById('photoInput');
+  const preview = document.getElementById('photoPreview');
+  if (photoUrl) { preview.src = photoUrl; preview.hidden = false; }
+  document.getElementById('choosePhoto').addEventListener('click', () => input.click());
+  input.addEventListener('change', () => {
+    const file = input.files[0];
+    if (!file) return;
+    const note = document.getElementById('photoNote');
+    if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type) || file.size > 10 * 1024 * 1024) {
+      note.textContent = '请选择不超过 10 MB 的 JPG、PNG 或 WebP 图片。';
+      input.value = '';
+      return;
+    }
+    if (photoUrl) URL.revokeObjectURL(photoUrl);
+    photoUrl = URL.createObjectURL(file);
+    preview.src = photoUrl;
+    preview.hidden = false;
+    preview.onerror = () => {
+      preview.hidden = true;
+      URL.revokeObjectURL(photoUrl);
+      photoUrl = '';
+      note.textContent = '无法读取这张图片，请选择有效的 JPG、PNG 或 WebP 图片。';
+    };
+    note.textContent = `已选择 ${file.name}，仅在本地预览。请在联系团队时另行提供照片。`;
   });
 }
 
@@ -143,6 +177,7 @@ function renderChips() {
 }
 
 function setMode(mode) {
+  state.expanded = false;
   state.mode = mode;
   state.query = '';
   el.input.value = '';
@@ -157,7 +192,9 @@ function setMode(mode) {
     const on = t.dataset.mode === mode;
     t.classList.toggle('is-active', on);
     t.setAttribute('aria-selected', String(on));
+    t.tabIndex = on ? 0 : -1;
   });
+  el.results.setAttribute('aria-labelledby', `tab-${mode}`);
   renderChips();
   renderResults();
 }
@@ -196,55 +233,70 @@ function syncCart() {
       <button class="icon-btn" type="button" data-remove="${p.code}" aria-label="移除 ${p.code}">×</button>
     </li>`).join('');
 
-  /* 页面上所有“加入询价”按钮同步状态 */
-  document.querySelectorAll('[data-add]').forEach((b) => {
-    const inCart = cart.has(b.dataset.add);
-    if (b.classList.contains('link-btn') && b.closest('.result')) {
-      b.textContent = inCart ? '已加入' : '加入询价';
-    }
-  });
+  updateAddButtons();
+  try { localStorage.setItem('gy_cart', JSON.stringify([...cart])); } catch { /* 浏览器可能禁用存储 */ }
+}
 
-  try { localStorage.setItem('gy_cart', JSON.stringify([...cart])); } catch { /* 忽略 */ }
+function updateAddButtons() {
+  document.querySelectorAll('[data-add]').forEach((button) => {
+    const selected = cart.has(button.dataset.add);
+    button.setAttribute('aria-pressed', String(selected));
+    button.textContent = selected ? '已加入 ✓' : button.closest('.result') ? '加入询价 +' : '加入询价清单 ↗';
+  });
 }
 
 /* ---------- 4. 表单 ---------- */
 
+let quoteUrl = '';
+
+function syncNeed() {
+  const need = document.getElementById('need');
+  const text = need.value.split('\n').filter(line => !line.startsWith('型号：')).join('\n').trim();
+  need.value = [text, cart.size ? `型号：${[...cart].join(', ')}` : ''].filter(Boolean).join('\n');
+}
+
 function submitQuote(form) {
   const note = document.getElementById('formNote');
-  const need = document.getElementById('need');
-  const codes = [...cart];
-
-  if (codes.length && !need.value.includes('GY-')) {
-    need.value = `${need.value ? need.value + '\n' : ''}型号：${codes.join(', ')}`;
-  }
-
   const required = ['company', 'country', 'contactWay'];
-  let ok = true;
+  let firstInvalid = null;
   required.forEach((id) => {
     const input = document.getElementById(id);
     const bad = !input.value.trim();
     input.closest('.field').classList.toggle('is-invalid', bad);
-    if (bad) ok = false;
+    input.setAttribute('aria-invalid', String(bad));
+    if (bad) { input.setAttribute('aria-describedby', 'formNote'); firstInvalid ||= input; }
+    else input.removeAttribute('aria-describedby');
   });
-
   note.hidden = false;
-  if (!ok) {
+  if (firstInvalid) {
     note.className = 'form-note is-error';
-    note.textContent = '还差带 * 的必填项：公司名称、国家/地区、联系方式。';
+    note.textContent = '请填写公司名称、国家 / 地区和联系方式。';
+    firstInvalid.focus();
     return;
   }
-
-  const id = 'GY-Q-' + new Date().toISOString().slice(0, 10).replace(/-/g, '') +
-    '-' + String(Math.floor(Math.random() * 900) + 100);
-
+  syncNeed();
+  const now = new Date();
+  const date = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0')].join('');
+  const id = `GY-Q-${date}-${String(Math.floor(Math.random() * 900) + 100)}`;
+  const data = new FormData(form);
+  const lines = ['冠英 · 询价草稿', `草稿编号：${id}`, '状态：仅本地生成，尚未发送', '',
+    `公司名称：${data.get('company')}`, `国家 / 地区：${data.get('country')}`,
+    `联系方式：${data.get('contactWay')}`, `年采购量：${data.get('qty') || '待确认'}`,
+    '', '需求：', data.get('need') || '待补充', '', '价格、适配、材质、MOQ 与交期均需人工确认。'];
+  if (quoteUrl) URL.revokeObjectURL(quoteUrl);
+  quoteUrl = URL.createObjectURL(new Blob(['\uFEFF' + lines.join('\r\n')], { type: 'text/plain;charset=utf-8' }));
   note.className = 'form-note';
-  note.innerHTML = `<b>已提交 ${id}</b><br>外贸团队会在工作时段 2 小时内回复${codes.length ? '，并附上 ' + codes.length + ' 个型号的报价' : ''}。`;
-  toast('需求已提交，等待外贸团队跟进');
-
-  if (codes.length) {
-    cart.clear();
-    syncCart();
-  }
+  note.replaceChildren();
+  const title = document.createElement('strong');
+  title.textContent = `草稿已生成 · ${id}`;
+  const detail = document.createElement('p');
+  detail.textContent = '尚未发送给团队。请下载草稿，通过确认后的联系方式发送。';
+  const link = document.createElement('a');
+  link.href = quoteUrl;
+  link.download = `${id}.txt`;
+  link.textContent = '下载询价草稿 ↓';
+  note.append(title, detail, link);
+  toast('询价草稿已生成，清单已保留');
 }
 
 /* ---------- 5. 交互绑定 ---------- */
@@ -258,25 +310,37 @@ function toast(msg) {
   toastTimer = setTimeout(() => t.classList.remove('is-show'), 2400);
 }
 
+let drawerReturnFocus = null;
+let previousOverflow = '';
+const drawer = document.getElementById('drawer');
+const backgroundRegions = [...document.querySelectorAll('.site-header, main, .site-footer, .skip-link')];
 function openDrawer() {
-  document.getElementById('drawer').classList.add('is-open');
-  document.getElementById('drawer').setAttribute('aria-hidden', 'false');
+  if (drawer.classList.contains('is-open')) return;
+  drawerReturnFocus = document.activeElement;
+  previousOverflow = document.body.style.overflow;
+  document.body.style.overflow = 'hidden';
+  backgroundRegions.forEach(node => { node.inert = true; });
+  drawer.inert = false;
+  drawer.setAttribute('aria-hidden', 'false');
+  drawer.classList.add('is-open');
+  document.getElementById('drawerClose').focus();
 }
 function closeDrawer() {
-  document.getElementById('drawer').classList.remove('is-open');
-  document.getElementById('drawer').setAttribute('aria-hidden', 'true');
+  if (!drawer.classList.contains('is-open')) return;
+  drawer.classList.remove('is-open');
+  backgroundRegions.forEach(node => { node.inert = false; });
+  document.body.style.overflow = previousOverflow;
+  drawerReturnFocus?.focus({ preventScroll: true });
+  drawer.inert = true;
+  drawer.setAttribute('aria-hidden', 'true');
 }
 
 function goContact() {
-  const codes = [...cart];
-  const need = document.getElementById('need');
-  if (codes.length) {
-    const line = `型号：${codes.join(', ')}`;
-    if (!need.value.includes(line)) need.value = need.value ? `${need.value}\n${line}` : line;
-  }
+  syncNeed();
   closeDrawer();
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  setTimeout(() => document.getElementById('company').focus({ preventScroll: true }), 500);
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('contact').scrollIntoView({ behavior: reduced ? 'instant' : 'smooth', block: 'start' });
+  document.getElementById('company').focus({ preventScroll: true });
 }
 
 document.addEventListener('click', (e) => {
@@ -284,7 +348,7 @@ document.addEventListener('click', (e) => {
   if (add) { addToCart(add.dataset.add); return; }
 
   const rm = e.target.closest('[data-remove]');
-  if (rm) { removeFromCart(rm.dataset.remove); return; }
+  if (rm) { removeFromCart(rm.dataset.remove); (document.querySelector('[data-remove]') || document.getElementById('drawerClose')).focus(); return; }
 
   const chip = e.target.closest('[data-chip]');
   if (chip) {
@@ -299,19 +363,35 @@ document.addEventListener('click', (e) => {
 });
 
 document.getElementById('q').addEventListener('input', (e) => {
-  state.query = e.target.value;
-  if (state.mode === 'photo' && e.target.value.trim()) {
-    state.mode = 'size'; /* 输入编号时按尺寸/编号检索 */
-    el.tabs.forEach((t) => t.classList.toggle('is-active', t.dataset.mode === 'size'));
+  const value = e.target.value;
+  if (state.mode === 'photo' && value.trim()) {
+    setMode('size');
+    el.input.value = value;
   }
+  state.query = value;
   renderResults();
 });
 
+document.querySelector('.tabs').addEventListener('keydown', (e) => {
+  if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+  e.preventDefault();
+  const current = el.tabs.indexOf(document.activeElement);
+  const next = e.key === 'Home' ? 0 : e.key === 'End' ? el.tabs.length - 1 : (current + (e.key === 'ArrowRight' ? 1 : -1) + el.tabs.length) % el.tabs.length;
+  setMode(el.tabs[next].dataset.mode);
+  el.tabs[next].focus();
+});
+
 document.getElementById('resetBtn').addEventListener('click', () => {
+  state.expanded = false;
   state.query = '';
   el.input.value = '';
   renderResults();
   el.input.focus();
+});
+
+document.getElementById('moreResults').addEventListener('click', () => {
+  state.expanded = !state.expanded;
+  renderResults();
 });
 
 document.getElementById('cartBtn').addEventListener('click', openDrawer);
@@ -322,7 +402,16 @@ document.getElementById('drawer').addEventListener('click', (e) => {
   if (e.target.id === 'drawer') closeDrawer();
 });
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeDrawer();
+  if (e.key === 'Escape') {
+    closeDrawer();
+    if (nav.classList.contains('is-open')) { closeNav(); navToggle.focus(); }
+  }
+  if (e.key === 'Tab' && drawer.classList.contains('is-open')) {
+    const focusable = [...drawer.querySelectorAll('button:not(:disabled), a[href], input:not(:disabled)')];
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
 });
 
 document.getElementById('quoteForm').addEventListener('submit', (e) => {
@@ -336,11 +425,34 @@ const nav = document.getElementById('nav');
 navToggle.addEventListener('click', () => {
   const open = nav.classList.toggle('is-open');
   navToggle.setAttribute('aria-expanded', String(open));
+  navToggle.setAttribute('aria-label', open ? '关闭菜单' : '打开菜单');
 });
 nav.addEventListener('click', (e) => {
   if (e.target.tagName === 'A') {
-    nav.classList.remove('is-open');
-    navToggle.setAttribute('aria-expanded', 'false');
+    closeNav();
+  }
+});
+
+function closeNav() {
+  nav.classList.remove('is-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', '打开菜单');
+}
+document.addEventListener('click', event => {
+  if (!event.target.closest('.site-header')) closeNav();
+});
+window.matchMedia('(min-width: 901px)').addEventListener('change', event => { if (event.matches) closeNav(); });
+document.querySelector('.hero-search').addEventListener('submit', event => {
+  const query = document.getElementById('heroQuery');
+  query.value = query.value.trim();
+  if (!query.value) { event.preventDefault(); query.reportValidity(); }
+});
+document.getElementById('quoteForm').addEventListener('input', event => {
+  const input = event.target;
+  if (input.required && input.value.trim()) {
+    input.setAttribute('aria-invalid', 'false');
+    input.closest('.field').classList.remove('is-invalid');
+    input.removeAttribute('aria-describedby');
   }
 });
 
@@ -349,17 +461,17 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* 入场动画 */
-const io = new IntersectionObserver((entries) => {
+const io = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
   entries.forEach((en) => {
     if (en.isIntersecting) {
       en.target.classList.add('is-in');
       io.unobserve(en.target);
     }
   });
-}, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+}, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }) : null;
 
 document.querySelectorAll('.section-head, .card, .steps li, .selector, .brand-strip, .contact-inner')
-  .forEach((n) => { n.classList.add('reveal'); io.observe(n); });
+  .forEach((n) => { n.classList.add('reveal'); io?.observe(n); });
 
 /* 恢复上次清单 */
 try {

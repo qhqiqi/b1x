@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none"><title>盘式摩擦片材质示意</title><defs>
+  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7c6c5"/><stop offset=".2" stop-color="#6e6d6c"/><stop offset=".39" stop-color="#e2e1de"/><stop offset=".52" stop-color="#8c8b8a"/><stop offset=".72" stop-color="#3c3b3a"/><stop offset="1" stop-color="#b1b0ae"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7c7b79"/><stop offset=".4" stop-color="#1e1d1c"/><stop offset=".8" stop-color="#565553"/><stop offset="1" stop-color="#10100f"/></linearGradient>
+  <linearGradient id="hub" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#959493"/><stop offset=".45" stop-color="#444341"/><stop offset="1" stop-color="#1b1a19"/></linearGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#f3b37d"/><stop offset=".27" stop-color="#cd7745"/><stop offset=".62" stop-color="#ab4b26"/><stop offset="1" stop-color="#652c1b"/></linearGradient>
+  <linearGradient id="graphite" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#595958"/><stop offset=".45" stop-color="#30302f"/><stop offset="1" stop-color="#191817"/></linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#faf8f5" stop-opacity=".6"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#ffffff" stop-opacity=".14"/></linearGradient>
+  <radialGradient id="hole"><stop offset=".6" stop-color="#0d0d0c"/><stop offset=".86" stop-color="#2a2927"/><stop offset="1" stop-color="#9f9d9a"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" seed="8"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".17"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs><ellipse cx="300" cy="316" rx="172" ry="26" fill="#302f2c" opacity=".15" filter="url(#shadow)"/>
+<g transform="translate(300 218) rotate(-17)">
+<path d="M-180-35 L-147-96 Q0-154 144-96 L173-39 L190-23 L184 77 L-189 77 L-194-23Z" fill="url(#edge)" stroke="#8b8985" stroke-width="2"/>
+<path d="M-180-43 L-147-104 Q0-162 144-104 L173-47 L190-31 L184 64 L-189 64 L-194-31Z" fill="url(#hub)" stroke="#a7a5a0"/>
+<path d="M-167-39 L-138-95 Q0-147 136-95 L161-39 L155 44 L-165 44Z" fill="url(#graphite)" stroke="#8a8885" stroke-width="1.5"/>
+<path d="M-167-39 L-138-95 Q0-147 136-95 L161-39 L155 44 L-165 44Z" fill="#ffffff" opacity=".12" filter="url(#grain)"/>
+<path d="M-10-124 L-14 44" stroke="#151513" stroke-width="7"/><path d="M-5-124 L-9 44" stroke="#92908c" stroke-opacity=".5"/>
+<path d="M-180 57 L172 57" stroke="#a4a29d" stroke-opacity=".6"/>
+<circle cx="-180" cy="10" r="7" fill="url(#hole)"/><circle cx="177" cy="10" r="7" fill="url(#hole)"/>
+<text x="0" y="94" fill="#898783" font-family="Arial" font-size="10" text-anchor="middle" letter-spacing="3">GUANYING FRICTION</text>
+</g></svg>
