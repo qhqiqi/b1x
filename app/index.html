@@ -34,7 +34,7 @@
       <button class="cart-btn" id="cartBtn" type="button" aria-label="查看询价清单">
         <span class="cart-label">询价清单</span> <span class="cart-count" id="cartCount">0</span>
       </button>
-      <a class="btn btn-primary" href="#contact">洽谈合作 <span aria-hidden="true">↗</span></a>
+      <a class="btn btn-primary" href="https://cn.kooying.com" target="_blank" rel="noopener">洽谈合作 <span aria-hidden="true">↗</span></a>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="nav">
         <span></span><span></span>
       </button>
@@ -333,6 +333,37 @@
         <button class="btn btn-primary btn-block" type="submit">生成询价草稿 ↗</button>
         <p class="micro center">演示页面：信息仅用于本地生成草稿，不会发送给团队。</p>
       </form>
+    </div>
+  </section>
+  <section class="about" id="about" aria-labelledby="aboutTitle">
+    <style>
+      .about{background:#161615;color:#efece6;padding:clamp(56px,7vw,96px) 0}
+      .about-in{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:start}
+      .about .eyebrow{color:#d38b5d}
+      .about h2{font-size:clamp(26px,3.2vw,38px);line-height:1.2;letter-spacing:-.02em;margin:10px 0 18px;font-weight:600;color:#fff}
+      .about p{color:#b8b2a9;font-size:14.5px;line-height:1.95;margin:0 0 14px}
+      .about p b{color:#efece6;font-weight:600}
+      .about-stats{display:grid;grid-template-columns:1fr;gap:18px;border-left:1px solid #33302c;padding-left:clamp(18px,3vw,34px)}
+      .about-stat .n{font-size:clamp(30px,4vw,44px);line-height:1;color:#d38b5d;font-weight:600;letter-spacing:-.02em}
+      .about-stat .n sup{font-size:.45em;vertical-align:super;margin-left:2px}
+      .about-stat .l{font-size:12.5px;color:#8f8880;margin-top:8px;letter-spacing:.08em}
+      .about-stat{padding-bottom:16px;border-bottom:1px solid #262421}
+      .about-stat:last-child{border-bottom:0;padding-bottom:0}
+      @media(max-width:860px){.about-in{grid-template-columns:1fr}.about-stats{border-left:0;padding-left:0;grid-template-columns:repeat(3,1fr);gap:14px}.about-stat{border-bottom:0}}
+    </style>
+    <div class="wrap about-in">
+      <div>
+        <p class="eyebrow">06 / ABOUT US</p>
+        <h2 id="aboutTitle">公司简介</h2>
+        <p><b>浙江冠英汽车零部件有限公司</b>是一家专业致力于汽车摩擦材料系列产品的研发、生产、销售、服务于一体的企业，始创于 2006 年，坐落于风景秀丽的太湖之滨——浙江省湖州市，建筑总面积 43000 平方米。公司秉承「以质量求生存、以创新促发展、以服务占市场」的经营理念，致力于为汽车制造商提供品质的零部件产品和服务。</p>
+        <p>公司拥有一支经验丰富的技术团队，以及先进的生产设备和检测设施，确保产品质量始终处于行业水平。公司专业生产供应各种国产、进口汽车刹车片，新能源风力发电制动块，制动蹄总成，具有年供应刹车片和风电制动块 <b>10000 余吨</b>、制动蹄总成 <b>60 万套</b> 的能力，是国内摩擦材料行业中知名企业之一。</p>
+        <p>公司拥有完善的销售网络和售后服务体系，具有产品优良、品类齐全、市场竞争力强等优势。产品远销<b>欧美、非洲、中东、东南亚</b>等多个国家和地区，与多家外国企业有着良好的合作关系，深受广大客户青睐。</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat"><div class="n">43000<sup>m²</sup></div><div class="l">总建筑面积</div></div>
+        <div class="about-stat"><div class="n">100<sup>+</sup></div><div class="l">在职员工人数</div></div>
+        <div class="about-stat"><div class="n">60<sup>%+</sup></div><div class="l">出口海外市场</div></div>
+      </div>
     </div>
   </section>
 </main>
