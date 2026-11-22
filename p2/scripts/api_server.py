@@ -47,6 +47,26 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _static(self, path: Path) -> None:
+        """把 app/ 下的静态文件发出去，让 P3 的页面与接口同源，省掉 file:// 的麻烦。"""
+        try:
+            path = path.resolve()
+            path.relative_to((ROOT / "app").resolve())
+        except (ValueError, OSError):
+            return self._json(403, {"error": "越界"})
+        if not path.is_file():
+            return self._json(404, {"error": "文件不存在: %s" % path.name})
+        ctype = {".html": "text/html; charset=utf-8", ".js": "application/javascript; charset=utf-8",
+                 ".css": "text/css; charset=utf-8", ".png": "image/png", ".jpg": "image/jpeg",
+                 ".svg": "image/svg+xml", ".json": "application/json; charset=utf-8"}.get(path.suffix.lower(), "application/octet-stream")
+        body = path.read_bytes()
+        self.send_response(200)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.end_headers()
+        self.wfile.write(body)
+
     def do_GET(self) -> None:  # noqa: N802
         u = urlparse(self.path)
         if u.path == "/health":
@@ -64,8 +84,10 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(body)
             return
+        if u.path.startswith("/app/"):
+            return self._static(ROOT / "app" / u.path[len("/app/"):].lstrip("/"))
         if u.path != "/match":
-            return self._json(404, {"error": "use /  (演示页)  or /match?q=...  or /health"})
+            return self._json(404, {"error": "use /  (演示页)  or /app/match.html  or /match?q=...  or /health"})
         q = (parse_qs(u.query).get("q") or [""])[0]
         q = unquote(q).strip()
         if not q:
