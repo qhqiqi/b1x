@@ -246,6 +246,16 @@ img {
   flex-shrink:0
 }
 
+.brand-logo {
+  display:block;
+  height:42px;
+  width:auto
+}
+
+@media (max-width:760px){
+  .brand-logo { height:34px }
+}
+
 .brand-mark {
   position:relative;
   width:34px;
