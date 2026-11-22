@@ -1,10 +1,28 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>冠英 SELECT · 刹车片选型</title>
-<meta http-equiv="refresh" content="0; url=app/index.html">
-<style>body{background:#0a0c10;color:#e8eaf0;font:15px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;display:grid;place-items:center;height:100vh;margin:0;text-align:center}a{color:#6fb0ff}</style>
-</head><body><div>
-<p>正在进入 <strong>冠英 SELECT</strong>…</p>
-<p><a href="app/index.html">落地页</a> · <a href="app/match.html">实时选型查询</a></p>
+<title>冠英 SELECT · 入口</title><style>
+:root{--bg:#0a0c10;--card:#151922;--line:#252b38;--txt:#e8eaf0;--dim:#8b93a7;--acc:#4c8dff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 500px at 50% -10%,#12233d 0%,var(--bg) 60%);color:var(--txt);font:15px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;min-height:100vh}
+.wrap{max-width:920px;margin:0 auto;padding:64px 22px 40px}
+h1{font-size:30px;margin:0 0 6px;letter-spacing:.5px}
+.sub{color:var(--dim);font-size:13.5px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;text-decoration:none;color:inherit;transition:.15s}
+a.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.k{font-size:11.5px;color:var(--acc);letter-spacing:1.2px;text-transform:uppercase}
+.t{font-size:17px;font-weight:700;margin:6px 0 4px}
+.d{font-size:12.8px;color:var(--dim);line-height:1.55}
+.foot{color:#5b6478;font-size:11.5px;margin-top:30px;line-height:1.8;border-top:1px solid var(--line);padding-top:14px}
+</style></head><body><div class="wrap">
+<h1>冠英 SELECT</h1>
+<div class="sub">刹车片选型 · 217 条型号 · 每个答案都能翻到产品册那一页</div>
+<div class="grid">
+<a class="card" href="app/index.html"><div class="k">Product</div><div class="t">产品落地页</div><div class="d">讲清楚我们在做什么：口语进、3 个方案出、带页码出处</div></a>
+<a class="card" href="app/match.html"><div class="k">Live Match</div><div class="t">实时选型查询</div><div class="d">车型 / 车桥 / 编码 / 尺寸 → Top3 + 置信度 + 出处 + 海外对码</div></a>
+<a class="card" href="p2/web/catalog.html"><div class="k">Catalogue</div><div class="t">全库 217 条</div><div class="d">可搜索、可筛选、点行展开看原页原文，可导出 CSV</div></a>
+<a class="card" href="p2/web/select.html"><div class="k">Demo</div><div class="t">选型演示页</div><div class="d">7 条真实提问的离线快照，含海外对码与追问两种状态</div></a>
+</div>
+<div class="foot">数据：4 本官方产品册 → 217 条型号（127 文字层 + 90 扫描图页）· 34 条出口对码 · 纯规则引擎 3–6 ms<br>
+「实时选型查询」需要本机跑匹配服务（<code>python p2/scripts/api_server.py --port 8787</code>）；没有服务时页面自动切离线缓存。<br>
+报价一律「询价确认」（资料包无价格）。</div>
 </div></body></html>
