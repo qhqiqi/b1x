@@ -1,0 +1,16 @@
+[Unit]
+Description=冠英刹车片匹配引擎（纯规则，零依赖）
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/b1x
+ExecStart=/usr/bin/python3 /opt/b1x/p2/scripts/api_server.py --port 8787 --host 127.0.0.1
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

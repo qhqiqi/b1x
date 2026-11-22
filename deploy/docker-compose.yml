@@ -1,0 +1,7 @@
+services:
+  gy-match:
+    build: ..
+    container_name: gy-match
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8787:8787"   # 只监听本机，由 nginx 反代对外

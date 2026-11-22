@@ -10,7 +10,13 @@
 
   const API = (() => {
     const p = new URLSearchParams(location.search).get('api');
-    return (p || 'http://127.0.0.1:8787').replace(/\/+$/, '');
+    if (p) return p.replace(/\/+$/, '');
+    // 部署在 qhqiqi.cn 上时，走同源的 /b1x/api（由服务器 nginx 反代到引擎），
+    // 这样访客不需要开着本地服务也能真查。
+    if (/^(qhqiqi\.cn|www\.qhqiqi\.cn)$/.test(location.hostname)) {
+      return location.origin + '/b1x/api';
+    }
+    return 'http://127.0.0.1:8787';
   })();
 
   const CACHE_KEY = 'p3_match_cache_v1';
